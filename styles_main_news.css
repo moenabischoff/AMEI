@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    position: relative;
+}
+
+.a-badge {
+    border-radius: 6px;
+    background-color: #2f421c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+
+.title {
+    width: 100%; /* Make the title take the full width */
+    font-size: 24px;
+    text-align: left; /* Align the text to the left */
+    font-family: 'Lora', serif;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 16px;
+    width: 100%;
+    height: 100%; /* Ensure it takes the full height of the parent */
+    text-align: left; /* Align the text to the left */
+}
+
+.image-icon {
+    display: none; /* Hide the image element */
+}
+
+.a-author {
+    display: flex;
+    flex-direction: column; /* Change to column to stack text above the image */
+    align-items: flex-start; /* Align items to the start horizontally */
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.dezember-2024 {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 21px;
+}
+
+.short-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the start horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px;
+}
+
+.content {
+    align-self: stretch;
+    position: relative;
+    height: 100%; /* Ensure it takes the full height of the parent */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the start horizontally */
+    color: #fff; /* Ensure text is readable over the background image */
+    padding: 20px; /* Add some padding to the content */
+}
+
+.main.picture {
+    width: 100%;
+    height: 500px; /* Set a defined height */
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 40px;
+    box-sizing: border-box;
+    background-image: url('Img/Fahrradgewicht_TaylorWheels.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    text-align: left; /* Align the text to the left */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
