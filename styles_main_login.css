@@ -1,0 +1,168 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.login1 {
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    font-size: 40px;
+    display: inline-block;
+    width: 180px;
+}
+.willkommen-zurck-bitte {
+    position: absolute;
+    top: 84px;
+    left: 14px;
+    font-family: Roboto;
+    display: inline-block;
+    width: 321px;
+    height: 44px;
+}
+.e-mail {
+    position: absolute;
+    top: 154px;
+    left: 14px;
+    display: inline-block;
+    width: 658px;
+}
+.passwort {
+    position: absolute;
+    top: 253px;
+    left: 15px;
+    display: inline-block;
+    width: 658px;
+}
+.login-div-child {
+    position: absolute;
+    top: 187px;
+    left: 14px;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 85%;
+    height: 50px;
+    font-family: Roboto;
+    border: 0cap;
+    padding-left: 20px;
+
+}
+
+.login-div-item {
+    position: absolute;
+    top: 286px;
+    left: 14px;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 85%;
+    height: 50px;
+    font-family: Roboto;
+    font-style: po;
+    border: 0cap;
+    padding-left: 20px;
+}
+.remember-me1 {
+    position: absolute;
+    top: 0px;
+    left: 29px;
+}
+.remember-me {
+    position: absolute;
+    top: 358px;
+    left: 14px;
+    width: 292px;
+    height: 21px;
+    font-family: Roboto;
+}
+.login-div-inner {
+    position: absolute;
+    top: 359px;
+    left: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+}
+.passwort-vergessen {
+    position: absolute;
+    top: 485px;
+    left: 97px;
+    font-family: Roboto;
+    color: #b4da7c;
+}
+.kein-account {
+    color: #b4da7c;
+}
+.span {
+    color: #2f421c;
+}
+.sign-up1 {
+    text-decoration: underline;
+}
+.sign-up1 a:hover {
+   color: #b4da7c;
+
+}
+.kein-account-sign-container {
+    position: absolute;
+    top: 653px;
+    left: 95px;
+    font-family: Roboto;
+}
+.login-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 16px;
+    background-color: #2f421c;
+    width: 320px;
+    height: 50px;
+}
+.login2 {
+    position: absolute;
+    top: 13px;
+    left: 38px;
+    display: inline-block;
+    width: 234px;
+    height: 24px;
+}
+.login-button-parent {
+    position: absolute;
+    top: 422px;
+    left: 15px;
+    width: 320px;
+    height: 50px;
+    text-align: center;
+    color: #f3f2f0;
+}
+.login-div {
+    position: absolute;
+    top: 107px;
+    left: 20px;
+    border-radius: 16px;
+    background-color: #f3f2f0;
+    width: 350px;
+    height: 685px;
+    overflow: hidden;
+}
+.adobestock-357137685-1-icon {
+    position: absolute;
+    top: 811px;
+    left: 20px;
+    border-radius: 16px 0px 0px 16px;
+    width: 370px;
+    height: 335px;
+    object-fit: cover;
+}
+.login {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1658px;
+    text-align: left;
+    font-size: 16px;
+    color: #2f421c;
+    font-family: Lora;
+}
+
