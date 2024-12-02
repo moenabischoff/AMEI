@@ -1,96 +1,177 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.main_title {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.main_text {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.main_content {
+    position: absolute; /* Allows precise positioning */
+    bottom: 10px; /* Align content 10px from the bottom */
+    left: 10px; /* Align content 10px from the left */
+    color: #000; /* Optional: Text color */
+    padding: 10px; /* Optional: Padding for text block */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.m-post-card-overlay {
+    position: relative;
+    border-radius: 4px;
+    height: 276px;
+    overflow: hidden;
+    background-image: url('image/News/Zimmer draussen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Setzt den Margin auf Null */
+    padding: 0; /* Setzt das Padding auf Null */
+    box-sizing: border-box; /* Stellt sicher, dass das Box-Modell korrekt ist */
+}
+
+.news-card-child {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .text {
     position: relative;
+    line-height: 20px;
+    font-weight: 500;
 }
 
-.a-badge {
+.a-badge_main {
     border-radius: 6px;
-    background-color: #2f421c;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
+    border: 2px solid #2f421c; /* Rahmen */
+    background-color: rgba(47, 66, 28, 0.05); /* Hintergrund */
+    box-sizing: border-box; /* Korrekte Berechnung */
+}
+
+.a-badge {
+    border-radius: 6px;
+    background-color: rgba(47, 66, 28, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border: 2px solid #2f421c; /* Fügen Sie den Border-Stil explizit hinzu */
 }
 
 .title {
-    width: 100%; /* Make the title take the full width */
-    font-size: 24px;
-    text-align: left; /* Align the text to the left */
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
     font-family: 'Lora', serif;
+    color: #181a2a;
 }
 
 .heading {
+    align-self: stretch;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start horizontally */
-    justify-content: center; /* Center items vertically */
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 16px;
-    width: 100%;
-    height: 100%; /* Ensure it takes the full height of the parent */
-    text-align: left; /* Align the text to the left */
 }
 
 .image-icon {
-    display: none; /* Hide the image element */
+    width: 36px;
+    position: relative;
+    border-radius: 28px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.author {
+    position: relative;
 }
 
 .a-author {
     display: flex;
-    flex-direction: column; /* Change to column to stack text above the image */
-    align-items: flex-start; /* Align items to the start horizontally */
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
-    gap: 12px;
-}
-
-.dezember-2024 {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: 21px;
+    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
 }
 
 .short-info {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Align items to the start horizontally */
-    justify-content: center; /* Center items vertically */
-    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    font-size: 16px;
+    color: #97989f;
+    font-family: 'Roboto', sans-serif;
 }
 
 .content {
     align-self: stretch;
-    position: relative;
-    height: 100%; /* Ensure it takes the full height of the parent */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center items vertically */
-    align-items: flex-start; /* Align items to the start horizontally */
-    color: #fff; /* Ensure text is readable over the background image */
-    padding: 20px; /* Add some padding to the content */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px;
+    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
 }
 
-.main.picture {
-    width: 100%;
-    height: 500px; /* Set a defined height */
-    position: relative;
-    border-radius: 4px;
+.news-card {
+    align-self: stretch;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #e8e8ea;
+    box-sizing: border-box;
+    height: 409px;
     overflow: hidden;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start horizontally */
-    justify-content: center; /* Center items vertically */
-    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.news-card-parent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px 21px;
     box-sizing: border-box;
-    background-image: url('Img/Fahrradgewicht_TaylorWheels.jpg'); /* Ensure this path is correct */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
-    text-align: left; /* Align the text to the left */
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    gap: 54px;
+    text-align: left;
+    font-size: 14px;
+    color: #2f421c;
+    font-family: 'Work Sans', sans-serif;
 }
