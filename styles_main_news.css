@@ -43,6 +43,7 @@ body {
     margin: 0; /* Setzt den Margin auf Null */
     padding: 0; /* Setzt das Padding auf Null */
     box-sizing: border-box; /* Stellt sicher, dass das Box-Modell korrekt ist */
+    margin-top:  20px;
 }
 
 .news-card-child {
@@ -174,4 +175,62 @@ body {
     font-size: 14px;
     color: #2f421c;
     font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Media query for screens larger than 834px */
+@media (min-width: 834px) {
+    .news-card-parent {
+        flex-wrap: wrap; /* Allow wrapping of flex items */
+        flex-direction: row; /* Change layout to row on larger screens */
+        justify-content: space-between; /* Adjust alignment */
+        padding: 32px 40px; /* Increase padding */
+        gap: 32px; /* Adjust gap between elements */
+    }
+
+    .news-card {
+        width: calc(50% - 16px); /* Ensure two cards fit in one row with gap */
+    }
+    .m-post-card-overlay {
+        height: 400px;
+        margin-top:  60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .news-card-parent {
+        flex-wrap: wrap; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 32px 40px; 
+        gap: 32px; 
+    }
+
+    .news-card {
+        width: calc(33.333% - 21.33px); /* Ensure three cards fit in one row with gap */
+    }
+
+    .m-post-card-overlay {
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top:  60px;
+        height: 400px;
+    }
+
+    .main_title { /* incase i have to change the size */
+        width: 720px;
+        position: relative;
+        font-size: 28px;
+        display: inline-block;
+        font-family: Lora;
+        color: #fff;
+        text-align: left;
+        }
+
+    .main_text { /* incase i have to change the size */
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            font-weight: 400;
+        }
 }
