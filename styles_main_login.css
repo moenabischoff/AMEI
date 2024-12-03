@@ -4,7 +4,7 @@
     padding: 20px;
     border-radius: 16px;
     background-color: #f3f2f0;
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px; /* Abstand zwischen Elementen */
@@ -67,6 +67,7 @@
     color: #b4da7c;
     cursor: pointer;
     text-align: center;
+    font-family: Roboto;
 }
 
 .passwort-vergessen:hover {
@@ -95,6 +96,7 @@
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
+    font-family: Roboto;
 }
 
 .sign-up1 {
@@ -175,14 +177,7 @@ body {
     top: 0px;
     left: 29px;
 }
-.remember-me {
-    position: absolute;
-    top: 358px;
-    left: 14px;
-    width: 292px;
-    height: 21px;
-    font-family: Roboto;
-}
+
 .passwort-vergessen {
     position: absolute;
     top: 485px;
@@ -196,6 +191,7 @@ body {
 .span {
     color: #2f421c;
 }
+
 .sign-up1 {
     text-decoration: underline;
 }
@@ -266,38 +262,33 @@ body {
     font-size: 16px;
     color: #2f421c;
     font-family: Lora;
-}
+} */
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 10px; /* Abstand zwischen Text und Checkbox */
     cursor: pointer;
-    font-size: 16px;
-    color: #b4da7c;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    font-family: Roboto;
+    font-size: 14px;
   }
 /* Hide the browser's default checkbox */
 .container input {
-    position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
+    position: absolute;
   }
   
   /* Create a custom checkbox */
   .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: inline-block; /* Wichtig für die Positionierung */
+    position: relative; 
     height: 20px;
     width: 20px;
     border-radius: 8px;
     background-color: #eee;
+    transition: background-color 0.3s;
   }
   
   /* On mouse-over, add a grey background color */
@@ -313,6 +304,13 @@ body {
     content: "";
     position: absolute;
     display: none;
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
   }
   .container input:checked ~ .checkmark:after {
     display: block;
@@ -400,3 +398,28 @@ body {
     width: 370px;
     height: 335px;
     object-fit: cover;
+
+
+    /* CODE VON FIGMA
+
+        <div class="login">
+  	    <div>
+            <h1 class="logintext">Login</h1>
+        </div>
+        <div class="willkommen">
+            <b class="willkommen_text">Willkommen zurück! Bitte log dich ein um zu deinem Account zu gelangen.</b>
+        </div>
+        <div class="loginfeld">
+            <b class="beschreibung">E-Mail</b>
+            <div>
+                <input class="loginfeld_email" type="text" id="textfeld" name="email" placeholder="E-Mail">
+            </div>
+        </div>
+        <div class="loginfeld">
+            <b class="beschreibung">Passwort</b>
+            <div>
+                <input class="loginfeld_passwort" type="password" name="passwort" placeholder="Passwort">
+            </div>
+        </div>
+    </div>
+
