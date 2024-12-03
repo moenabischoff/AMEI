@@ -3,7 +3,7 @@
     margin: 40px;
     padding: 20px;
     border-radius: 16px;
-    background-color: #f3f2f0;
+    background-color: #F3F2F0;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@
     padding: 20px;
     border-radius: 16px;
     border: 2px solid transparent;
-    background-color: #fff;
+    background-color: #FFFFFF;
     font-size: 14px;
     box-sizing: border-box; /* Behebt Probleme mit Padding */
 }
@@ -68,6 +68,7 @@
     cursor: pointer;
     text-align: center;
     font-family: Roboto;
+    font-weight: bold;
 }
 
 .passwort-vergessen:hover {
@@ -88,6 +89,7 @@
     text-decoration: none; /* Entfernt die Unterstreichung */
     cursor: pointer;
     font-family: Lora;
+    box-sizing: border-box;
 }
 
 .login_button:hover {
@@ -192,6 +194,21 @@ body {
 .login-div-item:focus {
     outline: 0px;
     border: 2px solid #2f421c; /* Dunkelgrün als Umrandung */
+}
+.image {
+    border-radius: 16px;
+    width: 370px;
+    height: 335px;
+}
+.home {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: inherit; /* Optional: Beibehaltung der Textfarbe */
+    font-family: Roboto;
+}
+
+.home:hover {
+    text-decoration: underline; /* Optional: Unterstreichung bei Hover */
+    color: #2f421c; /* Optional: Hover-Farbe */
 }
 /*
 .login1 {
@@ -407,14 +424,7 @@ body {
     font-family: Roboto;
     font-size: 16px;
 }
-.adobestock-357137685-1-icon {
-    position: absolute;
-    flex: content;
-    left: 20px;
-    border-radius: 16px;
-    width: 370px;
-    height: 335px;
-    object-fit: cover;
+
 
 
     /* CODE VON FIGMA
