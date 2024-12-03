@@ -4,7 +4,7 @@
     padding: 20px;
     border-radius: 16px;
     background-color: #f3f2f0;
-    width: 70%;
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 20px; /* Abstand zwischen Elementen */
@@ -45,7 +45,7 @@
     width: 100%;
     padding: 20px;
     border-radius: 16px;
-    border: 0px;
+    border: 2px solid transparent;
     background-color: #fff;
     font-size: 14px;
     box-sizing: border-box; /* Behebt Probleme mit Padding */
@@ -67,6 +67,7 @@
     color: #b4da7c;
     cursor: pointer;
     text-align: center;
+    font-family: Roboto;
 }
 
 .passwort-vergessen:hover {
@@ -75,15 +76,18 @@
 
 /* Login-Button */
 .login_button {
-    width: 100%;
+    display: inline-block; /* Damit das <a> wie ein Button aussieht */
+    width: 100%; /* Füllt die Breite */
     padding: 10px;
     background-color: #2f421c;
     color: white;
     border: none;
     border-radius: 16px;
     font-size: 16px;
-    cursor: pointer;
     text-align: center;
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    cursor: pointer;
+    font-family: Lora;
 }
 
 .login_button:hover {
@@ -95,6 +99,7 @@
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
+    font-family: Roboto;
 }
 
 .sign-up1 {
@@ -106,12 +111,89 @@
 .sign-up1:hover {
     color: #2f421c;
 }
-/*
+
 body {
     margin: 0;
+    padding: 20px;
     line-height: normal;
+    justify-content: center;
+    align-items: center;
+    width: screen;
 }
-
+.container {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 10px; /* Abstand zwischen Text und Checkbox */
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 14px;
+  }
+/* Hide the browser's default checkbox */
+.container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    display: inline-block; /* Wichtig für die Positionierung */
+    position: relative; 
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    background-color: #eee;
+    transition: background-color 0.3s;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2f421c;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .login-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.login-div-child:focus,
+.login-div-item:focus {
+    outline: 0px;
+    border: 2px solid #2f421c; /* Dunkelgrün als Umrandung */
+}
+/*
 .login1 {
     position: absolute;
     top: 18px;
@@ -175,14 +257,7 @@ body {
     top: 0px;
     left: 29px;
 }
-.remember-me {
-    position: absolute;
-    top: 358px;
-    left: 14px;
-    width: 292px;
-    height: 21px;
-    font-family: Roboto;
-}
+
 .passwort-vergessen {
     position: absolute;
     top: 485px;
@@ -196,6 +271,7 @@ body {
 .span {
     color: #2f421c;
 }
+
 .sign-up1 {
     text-decoration: underline;
 }
@@ -256,78 +332,17 @@ body {
     width: 370px;
     height: 335px;
     object-fit: cover;
-}
+} 
 .login {
-    width: 100%;
-    position: relative;
+    width: 90%;
     background-color: #fff;
-    height: 1658px;
-    text-align: left;
-    font-size: 16px;
-    color: #2f421c;
-    font-family: Lora;
-}
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #b4da7c;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-/* Hide the browser's default checkbox */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border-radius: 8px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #2f421c;
-  }
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  .container .checkmark:after {
-    left: 7px;
-    top: 3px;
-    width: 3px;
-    height: 8px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+} */
+
 /*
 body {
     margin: 0;
@@ -400,3 +415,28 @@ body {
     width: 370px;
     height: 335px;
     object-fit: cover;
+
+
+    /* CODE VON FIGMA
+
+        <div class="login">
+  	    <div>
+            <h1 class="logintext">Login</h1>
+        </div>
+        <div class="willkommen">
+            <b class="willkommen_text">Willkommen zurück! Bitte log dich ein um zu deinem Account zu gelangen.</b>
+        </div>
+        <div class="loginfeld">
+            <b class="beschreibung">E-Mail</b>
+            <div>
+                <input class="loginfeld_email" type="text" id="textfeld" name="email" placeholder="E-Mail">
+            </div>
+        </div>
+        <div class="loginfeld">
+            <b class="beschreibung">Passwort</b>
+            <div>
+                <input class="loginfeld_passwort" type="password" name="passwort" placeholder="Passwort">
+            </div>
+        </div>
+    </div>
+*/
