@@ -1,4 +1,112 @@
 
+.login-div {
+    margin: 40px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #f3f2f0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Abstand zwischen Elementen */
+    align-items: left;
+}
+
+/* Titel */
+.login1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2f421c;
+    font-family: Lora;
+}
+
+/* Beschreibung */
+.willkommen-zurck-bitte {
+    font-size: 16px;
+    font-family: Roboto;
+    color: #2f421c;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/* Labels */
+.e-mail,
+.passwort {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Lora;
+    color: #2f421c;
+    width: 100%;
+    text-align: left;
+}
+
+/* Eingabefelder */
+.login-div-child,
+.login-div-item {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    border: 0px;
+    background-color: #fff;
+    font-size: 14px;
+    box-sizing: border-box; /* Behebt Probleme mit Padding */
+}
+
+/* Checkbox */
+.remember-me {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Passwort vergessen */
+.passwort-vergessen {
+    font-size: 14px;
+    color: #b4da7c;
+    cursor: pointer;
+    text-align: center;
+}
+
+.passwort-vergessen:hover {
+    color: #2f421c;
+}
+
+/* Login-Button */
+.login_button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2f421c;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login_button:hover {
+    background-color: #1e2d14;
+}
+
+/* Footer */
+.kein-account-sign-container {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sign-up1 {
+    color: #b4da7c;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-up1:hover {
+    color: #2f421c;
+}
+/*
 body {
     margin: 0;
     line-height: normal;
@@ -75,15 +183,6 @@ body {
     height: 21px;
     font-family: Roboto;
 }
-.login-div-inner {
-    position: absolute;
-    top: 359px;
-    left: 15px;
-    border-radius: 4px;
-    background-color: #fff;
-    width: 20px;
-    height: 20px;
-}
 .passwort-vergessen {
     position: absolute;
     top: 485px;
@@ -110,14 +209,17 @@ body {
     left: 95px;
     font-family: Roboto;
 }
-.login-button {
+.login_button {
+    text-align: center;
+    font-size: 16px;
+    font-family: Lora;
+    display: inline-block;
     position: absolute;
-    top: 0px;
-    left: 0px;
     border-radius: 16px;
-    background-color: #2f421c;
-    width: 320px;
-    height: 50px;
+    color: #2f421c;
+    width: 70%;
+    height: 40px;
+    cursor: pointer;
 }
 .login2 {
     position: absolute;
@@ -165,4 +267,136 @@ body {
     color: #2f421c;
     font-family: Lora;
 }
-
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #b4da7c;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2f421c;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/*
+body {
+    margin: 0;
+    line-height: normal;
+}
+.loginfeld_email {
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 80%;
+    height: 50px;
+    font-family: Roboto;
+    border: 0cap;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.loginfeld_passwort {
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 80%;
+    height: 50px;
+    font-family: Roboto;
+    border: 0cap;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.login {
+    margin: 20px;
+    padding: 20px;
+    width: 60%;
+    position: relative;
+    background-color: #e8e8e8;
+    border-radius: 16px;
+    text-align: left;
+    
+}
+.logintext {
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #2f421c;
+    font-family: Lora;
+}
+.beschreibung {
+    font-family: Lora;
+    font-size: 16px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.loginfeld {
+    margin: 40px;
+    width: 100%;
+}
+.willkommen {
+    margin: 40px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+}
+.adobestock-357137685-1-icon {
+    position: absolute;
+    flex: content;
+    left: 20px;
+    border-radius: 16px;
+    width: 370px;
+    height: 335px;
+    object-fit: cover;
