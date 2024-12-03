@@ -7,11 +7,10 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Abstand zwischen Elementen */
+    gap: 20px;
     align-items: left;
 }
 
-/* Titel */
 .login1 {
     font-size: 40px;
     font-weight: bold;
@@ -19,7 +18,6 @@
     font-family: Lora;
 }
 
-/* Beschreibung */
 .willkommen-zurck-bitte {
     font-size: 16px;
     font-family: Roboto;
@@ -28,7 +26,6 @@
     padding-bottom: 20px;
 }
 
-/* Labels */
 .e-mail,
 .passwort {
     font-size: 16px;
@@ -39,7 +36,6 @@
     text-align: left;
 }
 
-/* Eingabefelder */
 .login-div-child,
 .login-div-item {
     width: 100%;
@@ -48,10 +44,9 @@
     border: 2px solid transparent;
     background-color: #FFFFFF;
     font-size: 14px;
-    box-sizing: border-box; /* Behebt Probleme mit Padding */
+    box-sizing: border-box;
 }
 
-/* Checkbox */
 .remember-me {
     width: 100%;
     display: flex;
@@ -61,24 +56,33 @@
     color: #666;
 }
 
-/* Passwort vergessen */
 .passwort-vergessen {
     font-size: 14px;
     color: #b4da7c;
     cursor: pointer;
     text-align: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: bold;
+}
+.passwort-text {
+    font-size: 14px;
+    color: #b4da7c;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
     font-family: Roboto;
     font-weight: bold;
 }
 
-.passwort-vergessen:hover {
+.passwort-vergessen:hover,
+.passwort-text:hover {
     color: #2f421c;
 }
 
-/* Login-Button */
 .login_button {
-    display: inline-block; /* Damit das <a> wie ein Button aussieht */
-    width: 100%; /* Füllt die Breite */
+    display: inline-block;
+    width: 100%;
     padding: 10px;
     background-color: #2f421c;
     color: white;
@@ -86,7 +90,7 @@
     border-radius: 16px;
     font-size: 16px;
     text-align: center;
-    text-decoration: none; /* Entfernt die Unterstreichung */
+    text-decoration: none;
     cursor: pointer;
     font-family: Lora;
     box-sizing: border-box;
@@ -96,7 +100,6 @@
     background-color: #1e2d14;
 }
 
-/* Footer */
 .kein-account-sign-container {
     font-size: 14px;
     text-align: center;
@@ -114,23 +117,15 @@
     color: #2f421c;
 }
 
-body_login {
-    margin: 0;
-    padding: 20px;
-    line-height: normal;
-    justify-content: center;
-    align-items: center;
-    width: screen;
-}
 .container {
     display: flex;
-    align-items: center; /* Vertikale Zentrierung */
-    gap: 10px; /* Abstand zwischen Text und Checkbox */
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
     font-family: Roboto;
     font-size: 14px;
   }
-/* Hide the browser's default checkbox */
+
 .container input {
     opacity: 0;
     cursor: pointer;
@@ -139,9 +134,8 @@ body_login {
     position: absolute;
   }
   
-  /* Create a custom checkbox */
   .checkmark {
-    display: inline-block; /* Wichtig für die Positionierung */
+    display: inline-block;
     position: relative; 
     height: 20px;
     width: 20px;
@@ -150,12 +144,10 @@ body_login {
     transition: background-color 0.3s;
   }
   
-  /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
-  /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color: #2f421c;
   }
@@ -193,7 +185,7 @@ body_login {
 .login-div-child:focus,
 .login-div-item:focus {
     outline: 0px;
-    border: 2px solid #2f421c; /* Dunkelgrün als Umrandung */
+    border: 2px solid #2f421c;
 }
 .image {
     border-radius: 16px;
@@ -201,14 +193,14 @@ body_login {
     height: 335px;
 }
 .home {
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    color: inherit; /* Optional: Beibehaltung der Textfarbe */
+    text-decoration: none;
+    color: inherit;
     font-family: Roboto;
 }
 
 .home:hover {
-    text-decoration: underline; /* Optional: Unterstreichung bei Hover */
-    color: #2f421c; /* Optional: Hover-Farbe */
+    text-decoration: underline;
+    color: #2f421c;
 }
 /*
 .login1 {
@@ -424,8 +416,6 @@ body {
     font-family: Roboto;
     font-size: 16px;
 }
-
-
 
     /* CODE VON FIGMA
 
