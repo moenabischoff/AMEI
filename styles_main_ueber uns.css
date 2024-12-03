@@ -1,18 +1,30 @@
-.crew-box-single-buttons-child {
+/*---------------------------------------
+button ueber uns               
+-----------------------------------------*/
+.crew-box-single-dots-standard{
     width: 11px;
     position: relative;
     border-radius: 50%;
-    background-color: #f3f2f0;
+    background-color: #fff;
     height: 11px;
 }
-.crew-box-single-buttons-item {
+.crew-box-single-dots-hover{
     width: 11px;
     position: relative;
     border-radius: 50%;
     background-color: #476a21;
     height: 11px;
 }
-.crew-box-single-buttons {
+
+.crew-box-single-dots-standard:hover{
+    width: 11px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #476a21;
+    height: 11px;
+}
+    
+.crew-box-single-dots {
     width: 176px;
     height: 30px;
     display: flex;
@@ -21,6 +33,10 @@
     justify-content: space-between;
     z-index: 0;
 }
+
+/*---------------------------------------
+crew box               
+-----------------------------------------*/
 .crew-box-button {
     position: absolute;
     top: 694px;
@@ -97,24 +113,27 @@
 }
 .crew-box-und-title {
     position: absolute;
-    top: 1009px;
+    top: 900px;
     left: 20px;
     width: 350px;
     height: 737px;
 }
+
+/*---------------------------------------
+  Wir sind AMEI               
+-----------------------------------------*/
 .wir-sind-amei-text-title {
     align-self: stretch;
     position: relative;
 }
-.hey-fremde-oder {
-    margin: 0;
-}
+
 .wir-sind-amei-text-bodytext {
     align-self: stretch;
     position: relative;
     font-size: 16px;
     font-family: Roboto;
     color: #000;
+    margin: 0;
 }
 .wir-sind-amei-text {
     width: 350px;
@@ -131,7 +150,7 @@
     border-radius: 32px;
     background-color: #fff;
     width: 350px;
-    height: 782px;
+    height: 680px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -141,7 +160,13 @@
     box-sizing: border-box;
     text-align: center;
     font-size: 24px;
+    background-color: #fff
 }
+
+/*---------------------------------------
+  Navigation               
+-----------------------------------------*/
+
 .logo-icon {
     position: absolute;
     top: 15px;
@@ -180,6 +205,19 @@
     gap: 12px;
     color: #f3f2f0;
 }
+
+.ueber-uns-mobile {
+    width: 100%;
+    position: relative;
+    background-color: #f3f2f0;
+    height: 1867px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #2f421c;
+    font-family: Lora;
+}
+
 .navigation {
     position: absolute;
     top: 0px;
@@ -191,15 +229,9 @@
     height: 100px;
     overflow: hidden;
 }
-.ueber-uns-mobile {
-    width: 100%;
-    position: relative;
-    background-color: #f3f2f0;
-    height: 1867px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 18px;
-    color: #2f421c;
-    font-family: Lora;
+
+body {
+    margin: 0;
+    line-height: normal;
 }
 
