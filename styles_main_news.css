@@ -1,3 +1,14 @@
+:root {
+    /* Colors */
+   --background-light-gray: #f3f2f0;
+   --text-color: #2f421c;
+   --button-color-hover: #476a21;
+   
+   /* Border radiuses */
+   --br-base: 16px;
+   --br-9xs: 4px;
+     }
+
 body {
     margin: 0;
     padding: 0;
@@ -40,10 +51,16 @@ body {
     font-size: 16px;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    margin: 0; /* Setzt den Margin auf Null */
-    padding: 0; /* Setzt das Padding auf Null */
-    box-sizing: border-box; /* Stellt sicher, dass das Box-Modell korrekt ist */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
     margin-top:  20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.m-post-card-overlay:hover {
+    transform: scale(1.01);
+    filter: brightness(1.2);
 }
 
 .news-card-child {
@@ -53,7 +70,7 @@ body {
     border-radius: 4px;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -150,7 +167,7 @@ body {
     background-color: #fff;
     border: 1px solid #e8e8ea;
     box-sizing: border-box;
-    height: 409px;
+    min-height: 409px;
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
@@ -159,6 +176,18 @@ body {
     justify-content: center;
     padding: 16px;
     gap: 16px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.news-card:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: scale(1.01);
+}
+
+.news-card-parent .news-card-child:hover,
+.news-card-parent .content a:hover {
+    pointer-events: auto; /* Retain interactivity for children */
 }
 
 .news-card-parent {
@@ -175,6 +204,155 @@ body {
     font-size: 14px;
     color: #2f421c;
     font-family: 'Work Sans', sans-serif;
+}
+
+/* Target the anchor tag with the specific href attribute */
+a[href="index_main_news_story.html"] {
+    display: block; /* Ensure the anchor tag is displayed as a block */
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the text color from the parent */
+    transition: color 0.3s ease; /* Add a transition effect for color */
+}
+
+
+
+
+.single_news-card-parent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px 21px;
+    box-sizing: border-box;
+    gap: 54px;
+    text-align: left;
+    font-size: 14px;
+    color: #2f421c;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.single_news-card {
+    align-self: stretch;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #e8e8ea;
+    box-sizing: border-box;
+    min-height: 409px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.single_news-card-child {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 4px;
+    max-width: 100%; /* Ensure the image does not exceed 100px in width */
+    max-height: 200px; /* Ensure the image does not exceed 100px in height */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.single_news-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px;
+    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+}
+
+.single_news-heading {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.single_news-a-badge {
+    border-radius: 6px;
+    background-color: rgba(47, 66, 28, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border: 2px solid #2f421c; /* Fügen Sie den Border-Stil explizit hinzu */
+}
+
+.single_news-title {
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: #181a2a;
+}
+
+.single_news-short-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    font-size: 16px;
+    color: #97989f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.single_news-a-author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+}
+
+.single_news-image-icon {
+    width: 36px;
+    position: relative;
+    border-radius: 28px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.single_news-author {
+    position: relative;
+}
+
+.single_news-button {
+    background-color: #2f421c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-left: 8px; /* Add some space between the author and the button */
+    align-self: center;
+    text-decoration: none;
+}
+
+.single_news-button:hover {
+    background-color: #3a5a2c;
+}
+
+.single_news_text {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #181a2a;
+    font-weight: 400;
 }
 
 
