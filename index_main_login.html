@@ -18,28 +18,26 @@
             <b class="login1">Login</b>
             <div class="willkommen-zurck-bitte">Willkommen zurück! Bitte logge dich ein, um zu deinem Benutzerkonto zu gelangen.</div>
     
-            <label class="e-mail" for="textfeld">E-Mail</label>
-            <input class="login-div-child" type="email" id="e-mail" name="e-mail" placeholder="E-Mail">
-    
-            <label class="passwort" for="passwort">Passwort</label>
-            <input class="login-div-item" type="password" id="passwort" name="passwort" placeholder="Passwort">
-    
-            <div class="remember-me">
-                <label class="container">
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                    <a>Remember me</a>
-                </label>
-            </div>
-    
-            <div class="passwort-vergessen">
-                <a href="/index_main_login_pwv.html" class="passwort-text">Passwort vergessen?</a>
+            <form action="index_main_login_login.html">
+                <label class="e-mail" for="textfeld">E-Mail</label>
+                <input class="login-div-child" type="email" id="e-mail" name="e-mail" required placeholder="E-Mail">
+                
+                <label class="passwort" for="passwort">Passwort</label>
+                <input class="login-div-item" type="password" id="password" name="password" required placeholder="Passwort">
+                <div class="remember-me">
+                    <label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        <a>Remember me</a>
+                    </label>
                 </div>
-            <a class="login_button" type="button" href="index_main_login_login.html">
-                Login
-            </a>
+                <div class="passwort-vergessen">
+                    <a href="/index_main_login_pwv.html" class="passwort-text">Passwort vergessen?</a>
+                    </div>
+                <button type="submit" class="login_button"><a>Loginn</a></button>
+            </form>
             <div class="kein-account-sign-container">
-                <span>Kein Account? <span class="sign-up1">Sign up</span></span>
+                <span>Kein Account? <a href="/index_main_login_signup.html" class="sign-up1"><span>Sign up</a></span></span>
             </div>
             <div class="login-image">
                 <img src="/image/AdobeStock_357137685.jpeg" alt="Login-Bild">

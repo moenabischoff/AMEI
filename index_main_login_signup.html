@@ -15,27 +15,29 @@
 
     <div class="login">
         <div class="login-div">
-            <b class="login1">Login</b>
-            <div class="willkommen-zurck-bitte">Willkommen zurück! Bitte logge dich ein, um zu deinem Benutzerkonto zu gelangen.</div>
-    
-            <label class="e-mail" for="textfeld">Vorname</label>
-            <input class="login-div-child" type="text" id="Vorname" name="Vorname" placeholder="Vorname">
+            <b class="login1">Anmelden</b>
+            <div class="willkommen-zurck-bitte">Willkommen! Bitte fülle die Felder aus, um dein neues Benutzerkonto zu erstellen.</div>
+        
+            <form action="index_main_login_login.html">
+                <label class="e-mail" for="textfeld">Vorname</label>
+                <input class="login-div-child" type="text" id="Vorname" name="Vorname" required placeholder="Vorname">
 
-            <label class="e-mail" for="textfeld">Nachname</label>
-            <input class="login-div-child" type="text" id="Nachname" name="Nachname" placeholder="Nachname">
+                <label class="e-mail" for="textfeld">Nachname</label>
+                <input class="login-div-child" type="text" id="Nachname" name="Nachname" required placeholder="Nachname">
 
-            <label class="e-mail" for="textfeld">E-Mail</label>
-            <input class="login-div-child" type="email" id="e-mail" name="e-mail" placeholder="E-Mail">
-    
-            <label class="passwort" for="passwort">Passwort</label>
-            <input class="login-div-item" type="password" id="passwort" name="passwort" placeholder="Passwort">
-    
-            <a class="login_button" type="button" href="index_main_login_login.html">
-                Account erstellen
-            </a>
+                <label class="e-mail" for="textfeld">E-Mail</label>
+                <input class="login-div-child" type="email" id="e-mail" name="e-mail" required placeholder="E-Mail">
+                
+                <label class="passwort" for="passwort">Passwort</label>
+                <input class="login-div-item" type="password" id="password" name="password" required placeholder="Passwort">
+                <br>
+                <button type="submit" class="login_button"><a>Account erstellen</a></button>
+            </form>
+            <div class="login-image">
+                <img src="/image/AdobeStock_22256142.jpeg" alt="Login-Bild">
+            </div>
             </div>
         </div>
-    </div>
 
 </body>
 <body>
