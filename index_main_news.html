@@ -4,11 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <title>News Page</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_main_news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap">
+
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#"><img src="image/Logo_MWGF.png" alt=""></a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#ueberuns">Über Uns</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+
+      <!-- Button -->
+      <div class="nav-button">
+        <a href="#download" class="btn">App downloaden</a>
+      </div>
+
+      <!-- Burger Menu -->
+      <button class="burger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Sidebar -->
+    <aside class="mobile-nav">
+      <button class="close-btn" aria-label="Close navigation">
+        &times; <!-- Cross button -->
+      </button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#ueberuns">Über Uns</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </aside>
 </head>
+<script src="script.js"></script>
 <body>
     <div class="m-post-card-overlay">
         <div class="main_content">
@@ -24,11 +68,8 @@
                 <div class="a-author">
                     <img class="image-icon" alt="Author Image" src="image/News/question marks.png">
                     <div class="main_text">Lena Müller</div>
-                </div>
-                <div class="main_text">
-                    <ol class="dezember-2024">
-                        <li>Dezember, 2024</li>
-                    </ol>
+                    </div>
+                    <div class="main_text">12. Dezember, 2024</div>
                 </div>
             </div>
         </div>

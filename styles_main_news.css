@@ -20,6 +20,11 @@ body {
     font-family: 'Lora', serif;
     color: #ffffff;
     font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.main_title:hover {
+    color: #476a21; /* Change text color on hover */
 }
 
 .main_text {
@@ -35,12 +40,12 @@ body {
     left: 10px; /* Align content 10px from the left */
     color: #000; /* Optional: Text color */
     padding: 10px; /* Optional: Padding for text block */
-    border-radius: 5px; /* Optional: Rounded corners */
+    border-radius: 6px; /* Optional: Rounded corners */
 }
 
 .m-post-card-overlay {
     position: relative;
-    border-radius: 4px;
+    border-radius: 6px;
     height: 276px;
     overflow: hidden;
     background-image: url('image/News/Zimmer draussen.png');
@@ -87,8 +92,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
-    border: 2px solid #2f421c; /* Rahmen */
-    background-color: rgba(47, 66, 28, 0.05); /* Hintergrund */
+    border: 5px solid #2f421c00; /* Rahmen */
+    background-color: #2f421c; /* Hintergrund */
     box-sizing: border-box; /* Korrekte Berechnung */
 }
 
@@ -100,7 +105,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
-    border: 2px solid #2f421c; /* Fügen Sie den Border-Stil explizit hinzu */
 }
 
 .title {
@@ -108,7 +112,11 @@ body {
     position: relative;
     font-size: 18px;
     font-family: 'Lora', serif;
-    color: #181a2a;
+    color: #2f421c;
+}
+
+.title:hover {
+    color: #476a21;
 }
 
 .heading {
@@ -134,10 +142,8 @@ body {
 
 .a-author {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    gap: 8px;
 }
 
 .short-info {
@@ -210,13 +216,12 @@ body {
 a[href="index_main_news_story.html"] {
     display: block; /* Ensure the anchor tag is displayed as a block */
     text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Inherit the text color from the parent */
+    color: black; /* Inherit the text color from the parent */
     transition: color 0.3s ease; /* Add a transition effect for color */
 }
 
 
-
-
+/* Single news website style */
 .single_news-card-parent {
     width: 100%;
     position: relative;
@@ -373,9 +378,15 @@ a[href="index_main_news_story.html"] {
         height: 400px;
         margin-top:  60px;
     }
+
+    .single_news-card {
+        max-width: 834px; /* limits how big the news card can get on bigger screens */
+        margin: 0 auto; /* Center the card horizontally */
+    }
+
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .news-card-parent {
         flex-wrap: wrap; 
         flex-direction: row; 
@@ -395,7 +406,7 @@ a[href="index_main_news_story.html"] {
         height: 400px;
     }
 
-    .main_title { /* incase i have to change the size */
+    .main_title { /* just here in case i have to change the size */
         width: 720px;
         position: relative;
         font-size: 28px;
@@ -405,10 +416,11 @@ a[href="index_main_news_story.html"] {
         text-align: left;
         }
 
-    .main_text { /* incase i have to change the size */
+    .main_text { /* just here in case i have to change the size */
             font-size: 16px;
             font-family: 'Roboto', sans-serif;
             color: #ffffff;
             font-weight: 400;
         }
+
 }
