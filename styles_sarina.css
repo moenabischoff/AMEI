@@ -1,0 +1,166 @@
+:root{
+        --button-color: #2F421C;
+        --button-color-hover: #476A21;
+        --background-color: #F3F2F0;
+        --background-white: #FFFFFF;
+        --text-color: #2F421C;
+        --font-text: 'Roboto', sans-serif;
+        --font-title: 'lora', sans-serif;
+        --font-size: 28px;
+    }
+    
+
+body {
+    background-color: #F3F2F0;
+}
+
+h1{
+    color:var(--text-color);
+    font-family: var(--font-title);
+    text-align: center
+}
+
+p{
+    color: var(--text-color);
+    font-family: var(--font-text);
+}
+
+
+.wir-sind-amei-box{
+background-color: #FFFFFF;
+width: 80%;
+padding: 40px;
+border-radius: 32px;
+text-align: center;
+margin:auto;
+}
+
+/*---------------------------------------
+crew box               
+-----------------------------------------*/
+.box-section{
+    display: flex;
+}
+.crew-box{
+background-color: #FFFFFF;
+width: 350px;
+height: 550px;
+padding: 40px;
+margin: 20px;
+border-radius: 32px;
+text-align: center;
+margin:auto;
+}
+
+.crew-box-image{
+    width: 280px;
+    height: 300px;
+    border-radius: 18px;
+    align-content: center;
+    border-radius: 18px;
+}
+
+.crew-box-title{
+    color: var(--text-color);
+    font-size: 18px;
+    font-style: var(--font-title);
+    text-align: left;
+    padding-top: 40px;
+}
+
+.crew-box-bodytext{
+    color: var(--text-color);
+    size: 18px;
+    font-style: var(--font-text);
+    text-align: left;
+}
+
+/*---------------------------------------
+crew box less opacity               
+-----------------------------------------*/
+.crew-box-opacity{
+    background-color: var(--background-white);
+    width: 350px;
+    height: 550px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 32px;
+    text-align: center;
+    margin:auto;
+    opacity: 50%;
+    }
+    
+    .crew-box-image-opacity{
+        width: 280px;
+        height: 300px;
+        border-radius: 18px;
+        align-content: center;
+        border-radius: 18px;
+        opacity: 50%;
+    }
+    
+    .crew-box-title-opacity{
+        color: var(--text-color);
+        font-size: 18px;
+        font-style: var(--font-title);
+        text-align: left;
+        padding-top: 40px;
+        opacity: 50%;
+    }
+    
+    .crew-box-bodytext-opcaity{
+        color: var(--text-color);
+        size: 18px;
+        font-style: var(--font-text);
+        text-align: left;
+        opacity: 50%;
+    }
+
+
+/*---------------------------------------
+button crew box               
+-----------------------------------------*/
+
+.crew-box-button{
+background-color: #2F421C;
+width: 200px;
+height: 40px;
+border-radius: 32px;
+margin: auto;
+margin-top: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.crew-box-single-dots{
+height: 14px;
+width: 14px;
+background-color: var(--background-white);
+border-radius: 50%;
+margin: auto;
+margin-inline: 8px;
+}
+
+.crew-box-single-dots-hover{
+    height: 14px;
+    width: 14px;
+    background-color: var(--button-color-hover);
+    border-radius: 50%;
+    margin: auto;
+    margin-inline: 8px;
+    }
+
+span:hover {
+        height: 14px;
+        width: 14px;
+        background-color: var(--button-color-hover);
+        border-radius: 50%;
+        margin: auto;
+        margin-inline: 8px;
+}
+
+
+
