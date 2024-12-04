@@ -2,12 +2,45 @@
 style guide               
 -----------------------------------------*/
 :root {
-    --primary-color: #2f421c;
-    --secondary-color: #476a21;
-    --background-color: #fff;
-    --font-family: 'Roboto', sans-serif;
-    --border-radius: 32px;
-}
+    /* Colors */
+   --background-light-gray: #f3f2f0;
+   --text-color: #2f421c;
+   --button-color-hover: #476a21;
+   --color-white: #fff;
+   
+   /* Border radiuses */
+   --br-base: 16px;
+   --br-9xs: 4px;
+
+   /* fonts */
+  --body-text: Roboto;
+  --main-titles-h2: Lora;
+
+   /* font sizes */
+  --font-size-sm: 14px;
+  --body-text-size: 18px;
+  --main-titles-h2-size: 28px;
+
+  /* Spacing */
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --radius-round-medium: 16px;
+  --spacing-12: 12px;
+  --spacing-8: 8px;
+  --radius-round-subtle: 4px;
+  /* Gaps */
+  --gap-21xl: 40px;
+    /* Paddings */
+    --padding-61xl: 80px;
+    --padding-21xl: 40px;
+    /* Border radiuses */
+    --br-base: 16px;
+    --br-9xs: 4px;
+   
+   
+     }
 
 /*---------------------------------------
  crew section               
