@@ -79,7 +79,7 @@ margin:auto;
 crew box less opacity               
 -----------------------------------------*/
 .crew-box-opacity{
-    background-color: #FFFFFF;
+    background-color: var(--background-white);
     width: 350px;
     height: 550px;
     padding: 40px;
