@@ -122,7 +122,7 @@ button crew box
 -----------------------------------------*/
 
 .crew-box-button{
-background-color: #2F421C;
+background-color: var(--button-color);
 width: 200px;
 height: 40px;
 border-radius: 32px;
