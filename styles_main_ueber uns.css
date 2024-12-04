@@ -1,38 +1,49 @@
 /*---------------------------------------
-button ueber uns               
+style guide               
 -----------------------------------------*/
-.crew-box-single-dots-standard{
-    width: 11px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #fff;
-    height: 11px;
-}
-.crew-box-single-dots-hover{
-    width: 11px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #476a21;
-    height: 11px;
+:root {
+    --primary-color: #2f421c;
+    --secondary-color: #476a21;
+    --background-color: #fff;
+    --font-family: 'Roboto', sans-serif;
+    --border-radius: 32px;
 }
 
-.crew-box-single-dots-standard:hover{
-    width: 11px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #476a21;
-    height: 11px;
-}
-    
+/*---------------------------------------
+ crew section               
+-----------------------------------------*/
+
+
+/*---------------------------------------
+button crew box               
+-----------------------------------------*/
 .crew-box-single-dots {
-    width: 176px;
+    width: 100%;
     height: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between; /* Verteilung der Punkte mit gleichmäßigem Abstand */
     align-items: center;
-    justify-content: space-between;
-    z-index: 0;
+    gap: 10px; /* Abstand zwischen den Punkten */
 }
+
+.crew-box-single-dots-standard,
+.crew-box-single-dots-hover {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s; /* sanfter Übergang beim Hover */
+}
+
+.crew-box-single-dots-hover {
+    background-color: #476a21; /* Farbe für den aktiven Punkt */
+}
+
+.crew-box-single-dots-standard:hover {
+    background-color: #476a21; /* Hover-Farbe */
+}
+    
 
 /*---------------------------------------
 crew box               
@@ -64,7 +75,7 @@ crew box
 .crew-box-title {
     position: relative;
 }
-.cew-box-bodytext {
+.crew-box-bodytext {
     align-self: stretch;
     position: relative;
     font-family: Roboto;
@@ -119,48 +130,85 @@ crew box
     height: 737px;
 }
 
-/*---------------------------------------
-  Wir sind AMEI               
------------------------------------------*/
-.wir-sind-amei-text-title {
-    align-self: stretch;
-    position: relative;
-}
-
-.wir-sind-amei-text-bodytext {
-    align-self: stretch;
-    position: relative;
-    font-size: 16px;
-    font-family: Roboto;
-    color: #000;
-    margin: 0;
-}
-.wir-sind-amei-text {
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 40px;
-}
-.wir-sind-amei-box {
+.slide-left-mitarbeiter-card{    
     position: absolute;
-    top: 140px;
-    left: 20px;
+    top: 71px;
+    left: 0px;
     border-radius: 32px;
     background-color: #fff;
     width: 350px;
-    height: 680px;
+    height: 567px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 120px 74px;
+    justify-content: flex-start;
+    padding: 40px 56px;
     box-sizing: border-box;
+    gap: 24px;}
+
+.slide-right-mitarbeiter-card{    
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    border-radius: 32px;
+    background-color: #fff;
+    width: 350px;
+    height: 567px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 56px;
+    box-sizing: border-box;
+    gap: 24px;}
+
+
+/*---------------------------------------
+  Wir sind AMEI Box              
+-----------------------------------------*/
+.wir-sind-amei-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;  /* Zentriert den Container */
+}
+
+.wir-sind-amei-box {
+    background-color: #fff;
+    width: 100%;
+    max-width: 900px;  /* Maximale Breite, passt sich an */
+    padding: 80px 60px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    margin: 100px auto; /* Zentriert den Container */
+}
+
+/*---------------------------------------
+  Wir sind AMEI Text Box                
+-----------------------------------------*/
+.wir-sind-amei-text-title {
     font-size: 24px;
-    background-color: #fff
+    font-weight: bold;
+    text-align: center;  /* Zentrierte Ausrichtung */
+}
+
+.wir-sind-amei-text-bodytext {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #000;
+    margin: 0;
+    text-align: center; /* Zentrierte Ausrichtung */
 }
 
 /*---------------------------------------
@@ -235,3 +283,60 @@ body {
     line-height: normal;
 }
 
+
+/*---------------------------------------
+  Bildschirm Anpassung               
+-----------------------------------------*/
+/* Tablet-Größe (z. B. 768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .crew-box {
+      width: 600px;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .mitarbeiter-card-mobile {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .wir-sind-amei-box {
+      width: 700px;
+      padding: 80px 60px;
+    }
+  }
+  
+  /* Desktop-Größe (ab 1024px) */
+  @media (min-width: 1024px) {
+    .crew-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    .mitarbeiter-card-mobile {
+      width: 50%;
+      margin: 0 auto;
+    }
+  
+    .crew-box .slide-left-mitarbeiter-card,
+    .crew-box .slide-right-mitarbeiter-card {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30%;
+      opacity: 0.5;
+    }
+  
+    .crew-box .slide-left-mitarbeiter-card {
+      left: 0;
+    }
+  
+    .crew-box .slide-right-mitarbeiter-card {
+      right: 0;
+    }
+  }
