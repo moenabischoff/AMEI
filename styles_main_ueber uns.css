@@ -81,7 +81,7 @@ crew box
 background-color: var(--color-white);
 width: 100%; /* Box nimmt 100% des Containers ein */
 min-width: 280px; /* Maximale Breite bleibt erhalten */
-min-height: 300px;
+min-height: 600px;
 height: auto;
 padding: 40px;
 margin: 12px;
@@ -204,7 +204,7 @@ a:hover {
 }
 
 #crew-box-stopp {
-    scroll-margin-bottom: 500px; /* Passt die Scrollposition an */
+    scroll-margin-bottom: 200vh; /* Passt die Scrollposition an */
 }
 
 
@@ -213,6 +213,7 @@ a:hover {
 
     .crew-box{
         width: 70%;
+        min-height: 650px;
     }
     .crew-box-opacity{
         display: none;
@@ -244,6 +245,7 @@ a:hover {
         width: 100%;
         min-width: auto;
         max-width: 280px;
+        min-height: 500px;
     }
 
     .crew-box-opacity {
@@ -259,11 +261,11 @@ a:hover {
 
     .crew-box-button{
         height: 30px;
-        width: 150px;
+        width: 140px;
         border-radius: 12px;
     }
 
     .crew-box-single-dots, .crew-box-single-dots-hover {
-        height: 10px;
-        width: 10px;
+        height: 8px;
+        width: 8px;
     }
