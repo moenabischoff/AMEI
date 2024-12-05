@@ -1,6 +1,3 @@
-/*---------------------------------------
-style guide               
------------------------------------------*/
 :root {
     /* Colors */
    --background-light-gray: #f3f2f0;
@@ -20,6 +17,7 @@ style guide
   --font-size-sm: 14px;
   --body-text-size: 18px;
   --main-titles-h2-size: 28px;
+  --font-size-mobile: 12px;
 
   /* Spacing */
   --spacing-20: 20px;
@@ -42,334 +40,230 @@ style guide
    
      }
 
+
+body {
+    background-color: var(--background-light-gray);
+}
+
+h1{
+    color:var(--text-color);
+    font-style: var(--main-titles-h2) var(--main-titles-h2-size);
+    text-align: center
+}
+
+p{
+    color: var(--text-color);
+    font-style: var(--font-text) var(--body-text-size);
+    display: flex;
+}
+
+
+.wir-sind-amei-box{
+background-color: var(--color-white);
+width: 80%;
+padding: 40px;
+border-radius: var(--br-base);
+text-align: center;
+margin:auto;
+}
+
 /*---------------------------------------
- crew section               
+crew box               
 -----------------------------------------*/
+.box-section{
+    display: flex;
+    width: 70%;
+    justify-content: center; /* Platz zwischen den Boxen */
+    margin: auto;
+}
+
+.crew-box{
+background-color: var(--color-white);
+width: 100%; /* Box nimmt 100% des Containers ein */
+min-width: 280px; /* Maximale Breite bleibt erhalten */
+min-height: 300px;
+height: auto;
+padding: 40px;
+margin: 12px;
+border-radius: var(--br-base);
+text-align: center;
+box-sizing: border-box; /* Innenabstand wird berücksichtigt */
+gap: 40px;
+}
+
+.crew-box-image{
+    width: 100%;
+    height: auto;
+    display: block; /* Verhindert unnötige Inline-Abstände */
+    border-radius: var(--br-base);
+    align-content: center;
+}
+
+.crew-box-title{
+    color: var(--text-color);
+    font-size: 18px;
+    font-style: var(--main-titles-h2);
+    text-align: left;
+    padding-top: 40px;
+}
+
+.crew-box-bodytext{
+    color: var(--text-color);
+    size: var(--body-text-size);
+    font-style: var(--body-text);
+    text-align: left;
+}
+
+/*---------------------------------------
+crew box less opacity               
+-----------------------------------------*/
+.crew-box-opacity{
+    background-color: var(--color-white);
+    width: 100%; /* Box nimmt 100% des Containers ein */
+    min-width: 280px; /* Maximale Breite bleibt erhalten */
+    height: auto;
+    padding: 40px;
+    margin: 12px;
+    border-radius: var(--br-base);
+    text-align: center;
+    box-sizing: border-box; /* Innenabstand wird berücksichtigt */
+    gap: 40px;
+    opacity: 50%;
+    }
+    
+    .crew-box-image-opacity{
+        width: 100%;
+        height: auto;
+        display: block; /* Verhindert unnötige Inline-Abstände */
+        border-radius: var(--br-base);
+        align-content: center;
+        opacity: 50%;
+    }
+    
+    .crew-box-title-opacity{
+        color: var(--text-color);
+        font-size: 18px;
+        font-style: var(--main-titles-h2);
+        text-align: left;
+        padding-top: 40px;
+        opacity: 50%;
+    }
+    
+    .crew-box-bodytext-opacity{
+        color: var(--text-color);
+        size: var(--body-text-size);
+        font-style: var(--body-text);
+        text-align: left;
+        opacity: 50%;
+    }
 
 
 /*---------------------------------------
 button crew box               
 -----------------------------------------*/
-.crew-box-single-dots {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Verteilung der Punkte mit gleichmäßigem Abstand */
-    align-items: center;
-    gap: 10px; /* Abstand zwischen den Punkten */
+
+.crew-box-button{
+background-color: var(--text-color);
+width: 200px;
+height: 40px;
+border-radius: var(--br-base);
+margin: auto;
+margin-top: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 15px;
+padding-right: 15px;
 }
 
-.crew-box-single-dots-standard,
-.crew-box-single-dots-hover {
-    width: 11px;
-    height: 11px;
+.crew-box-single-dots{
+height: 14px;
+width: 14px;
+background-color: var(--color-white);
+border-radius: 50%;
+margin: auto;
+margin-inline: 8px;
+}
+
+.crew-box-single-dots-hover{
+    height: 14px;
+    width: 14px;
+    background-color: var(--button-color-hover);
     border-radius: 50%;
-    background-color: #fff;
-    transition: background-color 0.3s; /* sanfter Übergang beim Hover */
+    margin: auto;
+    margin-inline: 8px;
+    }
+
+a:hover {
+        height: 14px;
+        width: 14px;
+        background-color: var(--button-color-hover);
+        border-radius: 50%;
+        margin: auto;
+        margin-inline: 8px;
 }
 
-.crew-box-single-dots-hover {
-    background-color: #476a21; /* Farbe für den aktiven Punkt */
+#crew-box-stopp {
+    scroll-margin-bottom: 500px; /* Passt die Scrollposition an */
 }
 
-.crew-box-single-dots-standard:hover {
-    background-color: #476a21; /* Hover-Farbe */
+
+/* Tablet: Bis 834 */
+@media (max-width: 834px) {
+
+    .crew-box{
+        width: 70%;
+    }
+    .crew-box-opacity{
+        display: none;
+    }
+        
+   
+
 }
+
+/* Mobile: Bis 390px */
+@media (max-width: 390px) {
     
+    h1{
+        font-size: 24px;
+    }
 
-/*---------------------------------------
-crew box               
------------------------------------------*/
-.crew-box-button {
-    position: absolute;
-    top: 694px;
-    left: calc(50% - 119px);
-    border-radius: 32px;
-    background-color: #2f421c;
-    width: 238px;
-    height: 43px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 48px;
-    box-sizing: border-box;
-}
-.image-mitarbeiter-icon {
-    align-self: stretch;
-    border-radius: 4px;
-    max-width: 100%;
-    overflow: hidden;
-    height: 240px;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-.crew-box-title {
-    position: relative;
-}
-.crew-box-bodytext {
-    align-self: stretch;
-    position: relative;
-    font-family: Roboto;
-}
-.crew-box-text {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 8px;
-}
-.mitarbeiter-card-mobile {
-    position: absolute;
-    top: 71px;
-    left: 0px;
-    border-radius: 32px;
-    background-color: #fff;
-    width: 350px;
-    height: 567px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 40px 56px;
-    box-sizing: border-box;
-    gap: 24px;
-}
-.crew-box-title1 {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 175px);
-    font-size: 24px;
-    display: inline-block;
-    text-align: center;
-    width: 350px;
-    height: 36px;
-}
-.crew-box {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 350px;
-    height: 638px;
-}
-.crew-box-und-title {
-    position: absolute;
-    top: 900px;
-    left: 20px;
-    width: 350px;
-    height: 737px;
-}
+    .wir-sind-amei-box{
+        font-size: var(--font-size-mobile);
+    }
 
-.slide-left-mitarbeiter-card{    
-    position: absolute;
-    top: 71px;
-    left: 0px;
-    border-radius: 32px;
-    background-color: #fff;
-    width: 350px;
-    height: 567px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 40px 56px;
-    box-sizing: border-box;
-    gap: 24px;}
-
-.slide-right-mitarbeiter-card{    
-    position: absolute;
-    top: 71px;
-    left: 0px;
-    border-radius: 32px;
-    background-color: #fff;
-    width: 350px;
-    height: 567px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 40px 56px;
-    box-sizing: border-box;
-    gap: 24px;}
-
-
-/*---------------------------------------
-  Wir sind AMEI Box              
------------------------------------------*/
-.wir-sind-amei-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;  /* Zentriert den Container */
-}
-
-.wir-sind-amei-box {
-    background-color: #fff;
-    width: 100%;
-    max-width: 900px;  /* Maximale Breite, passt sich an */
-    padding: 80px 60px;
-    border-radius: 32px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    margin: 100px auto; /* Zentriert den Container */
-}
-
-/*---------------------------------------
-  Wir sind AMEI Text Box                
------------------------------------------*/
-.wir-sind-amei-text-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;  /* Zentrierte Ausrichtung */
-}
-
-.wir-sind-amei-text-bodytext {
-    font-size: 16px;
-    font-family: Roboto, sans-serif;
-    color: #000;
-    margin: 0;
-    text-align: center; /* Zentrierte Ausrichtung */
-}
-
-/*---------------------------------------
-  Navigation               
------------------------------------------*/
-
-.logo-icon {
-    position: absolute;
-    top: 15px;
-    left: 40px;
-    width: 70px;
-    height: 70px;
-}
-.navpoints {
-    position: absolute;
-    top: 38.5px;
-    left: calc(50% - 171px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-}
-.frame-icon {
-    width: 24px;
-    position: relative;
-    height: 24px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-.primary-button {
-    position: absolute;
-    top: 30px;
-    left: 1208px;
-    border-radius: 16px;
-    background-color: #2f421c;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    gap: 12px;
-    color: #f3f2f0;
-}
-
-.ueber-uns-mobile {
-    width: 100%;
-    position: relative;
-    background-color: #f3f2f0;
-    height: 1867px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 18px;
-    color: #2f421c;
-    font-family: Lora;
-}
-
-.navigation {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    box-shadow: 0px 2px 20px -2px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 16px 16px;
-    background-color: #fff;
-    width: 1440px;
-    height: 100px;
-    overflow: hidden;
-}
-
-body {
-    margin: 0;
-    line-height: normal;
-}
-
-
-/*---------------------------------------
-  Bildschirm Anpassung               
------------------------------------------*/
-/* Tablet-Größe (z. B. 768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+    .box-section{
+        display: flex;
+        width: auto;
+        justify-content: center; /* Platz zwischen den Boxen */
+        margin: auto;
+    }
+    
     .crew-box {
-      width: 600px;
-      height: auto;
-      margin: 0 auto;
+        width: 100%;
+        min-width: auto;
+        max-width: 280px;
     }
-  
-    .mitarbeiter-card-mobile {
-      width: 90%;
-      height: auto;
-      padding: 20px;
+
+    .crew-box-opacity {
+        display: none; /* Elemente ausblenden */
     }
-  
-    .wir-sind-amei-box {
-      width: 700px;
-      padding: 80px 60px;
+
+    .crew-box-title{
+        font-size: 14px;
     }
-  }
-  
-  /* Desktop-Größe (ab 1024px) */
-  @media (min-width: 1024px) {
-    .crew-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 900px;
-      margin: 0 auto;
-      position: relative;
+    .crew-box-bodytext{
+        font-size: var(--font-size-mobile);
     }
-  
-    .mitarbeiter-card-mobile {
-      width: 50%;
-      margin: 0 auto;
+
+    .crew-box-button{
+        height: 30px;
+        width: 150px;
+        border-radius: 12px;
     }
-  
-    .crew-box .slide-left-mitarbeiter-card,
-    .crew-box .slide-right-mitarbeiter-card {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 30%;
-      opacity: 0.5;
+
+    .crew-box-single-dots, .crew-box-single-dots-hover {
+        height: 10px;
+        width: 10px;
     }
-  
-    .crew-box .slide-left-mitarbeiter-card {
-      left: 0;
-    }
-  
-    .crew-box .slide-right-mitarbeiter-card {
-      right: 0;
-    }
-  }
