@@ -8,6 +8,8 @@ body {
 
 .text {
     position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .text-in-card {
@@ -16,8 +18,8 @@ body {
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 
@@ -106,6 +108,9 @@ body {
     margin-top: 20px;
     background-color: #f3f2f0;
     gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #f3f2f0;
 }
 
@@ -115,9 +120,10 @@ body {
     display: flex;
     max-width: 100%;
     overflow: hidden;
-    height: 326px;
     flex-shrink: 0;
     object-fit: cover;
+    justify-content: center;
+    align-items: center;
 }
 
 .frame {
@@ -143,7 +149,6 @@ body {
 }
 
 .mywgfriend-logo-icon {
-    width: 100%;
     position: relative;
     max-width: 100%;
     overflow: hidden;
@@ -154,12 +159,16 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 
