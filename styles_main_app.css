@@ -1,14 +1,19 @@
 body {
     margin: 0;
     line-height: normal;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text {
-    flex: 1;
     position: relative;
 }
 
 .text-in-card {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -17,7 +22,6 @@ body {
 }
 
 .h2-mobile {
-    width: 344px;
     height: 62px;
     display: flex;
     flex-direction: row;
@@ -53,8 +57,6 @@ body {
 }
 
 .lauftext-mobile {
-    width: 344px;
-    height: 79px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,12 +103,8 @@ body {
 }
 
 .downloads {
+    margin-top: 20px;
     background-color: #f3f2f0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 16px;
     color: #f3f2f0;
 }
@@ -123,7 +121,6 @@ body {
 }
 
 .frame {
-    width: 100%;
     position: relative;
     border-radius: 32px;
     background-color: #f3f2f0;
@@ -140,6 +137,9 @@ body {
     font-size: 18px;
     color: #000;
     font-family: Lora;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .mywgfriend-logo-icon {
@@ -149,4 +149,28 @@ body {
     overflow: hidden;
     height: 250px;
     flex-shrink: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
