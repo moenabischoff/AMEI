@@ -1,24 +1,152 @@
 body {
     margin: 0;
     line-height: normal;
-    }
+}
 
-.app-mobile {
+.text {
+    flex: 1;
+    position: relative;
+}
+
+.text-in-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.h2-mobile {
+    width: 344px;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #2f421c;
+}
+
+.subtitle-mobile {
+    width: 344px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #476a21;
+}
+
+.subtitle-mobile-2 {
+    width: 344px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+
+.text-hightlight {
+    color: #476a21;
+}
+
+.lauftext-mobile {
+    width: 344px;
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #000;
+    font-family: Roboto;
+}
+
+.button-text {
+    position: relative;
+}
+
+.frame-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.primary-button-app-store {
+    width: 169px;
+    border-radius: 16px;
+    background-color: #2f421c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+.primary-button-google-play {
+    border-radius: 16px;
+    background-color: #2f421c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    gap: 12px;
+}
+
+.downloads {
+    background-color: #f3f2f0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    color: #f3f2f0;
+}
+
+.image {
+    align-self: stretch;
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    height: 326px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.frame {
     width: 100%;
     position: relative;
-    background-color: #fff;
-    border: 1px solid #fff;
+    border-radius: 32px;
+    background-color: #f3f2f0;
+    border: 1px solid rgba(0, 0, 0, 0);
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0px 20px;
-    gap: 40px;
+    padding: 32px 12px;
+    gap: 20px;
     text-align: left;
     font-size: 18px;
-    color: #2f421c;
-    font-family: Roboto;
-    }
-    
+    color: #000;
+    font-family: Lora;
+}
+
+.mywgfriend-logo-icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 250px;
+    flex-shrink: 0;
+}
