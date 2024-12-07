@@ -4,21 +4,16 @@
     width: 100%;
     display: flex;
     overflow: hidden;
-    height: 844px;
-    flex-shrink: 0;
     object-fit: cover;
-    z-index: 0;
 }
 .adobestock-633681305-mobile-1-icon {
     width: 100%;
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    height: 844px;
-    flex-shrink: 0;
+    min-height: 844px;
     object-fit: cover;
     display: flex;
-    z-index: 1;
 }
 .amei {
     width: 344px;
@@ -81,21 +76,29 @@
     height: 37px;
     flex-shrink: 0;
 }
+.text-in-card {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .fliesstext1{
     margin: 20px;
 }
 .fliesstext1-container {
-    width: 100%;
+    max-width: auto; /* Länge von grauer Box, wird auf ganze Länge mins Margin */
     margin: 20px;
     position: relative;
     font-family: Roboto;
     display: inline-block;
-    height: flex;
     flex-shrink: 0;
 }
 
 .primary-button {
-    width: felx;
     border-radius: 16px;
     background-color: #2f421c;
     height: 39px;
@@ -113,7 +116,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px 33px;
-    text-align: left;
+    text-align: center;
     color: #f3f2f0;
 }
 .button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
@@ -122,65 +125,52 @@
     text-decoration: none; /* keine Unterstreichung */
 }
 .box-1-ueber-uns {
-    align-self: stretch;
     width: auto;
     display: flex;
     border-radius: 20px;
     background-color: #f3f2f0;
     overflow: hidden;
-    flex-shrink: 0;
     /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 37px 1px;
     margin: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
-    z-index: 1;
     font-size: 16px;
     color: #000;
 }
 .action-shot-2-mobile-1-icon {
     width: 100%;
     position: relative;
-    height: 844px;
+    min-height: 844px;
+    max-height: 910px;
     object-fit: cover;
     z-index: 0;
 }
 .frame-icon {
     width: 24px;
-    position: relative;
     height: 24px;
-    overflow: hidden;
-    flex-shrink: 0;
 }
 .primary-button1 {
-    align-self: stretch;
     border-radius: 16px;
     background-color: #476a21;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
     gap: 12px;
 }
 .primary-button-container {
-    width: 209px;
-    margin: 0 !important;
     position: absolute;
-    top: 737px;
-
+    top: 720px;
     overflow: hidden;
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 17px 0px;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
-    z-index: 1;
     text-align: center;
     color: #f3f2f0;
 }
@@ -191,8 +181,6 @@
     top: 520px;
     font-family: Roboto;
     display: inline-block;
-    height: auto;
-    z-index: 2;
 }
 .finde-deine-perfekte {
     width: 319px;
@@ -203,24 +191,20 @@
     font-size: 28px;
     display: inline-block;
     height: 72px;
-    z-index: 3;
 }
 .box-2-download {
+    align-self: stretch;
     width: auto;
     border-radius: 20px;
-    background-color: #f3f2f0;
-    height: flex;
     overflow: hidden;
-    flex-shrink: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: center;
     position: relative;
     margin: 20px;
+    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
-    z-index: 2;
-    font-size: 18px;
+    font-size: 16px;
 }
 .handgroup-1-icon {
     width: 350px;
@@ -236,12 +220,11 @@
     flex-shrink: 0;
 }
 .persnlichkeitstest-finde-mit-container {
-    width: 319px;
+    width: auto;
     position: relative;
     font-size: 18px;
     font-family: Roboto;
     display: inline-block;
-    height: 189px;
     flex-shrink: 0;
 }
 .primary-button2 {
@@ -268,7 +251,8 @@
     color: #f3f2f0;
 }
 .box-3-app {
-    width: 350px;
+    align-self: stretch;
+    width: auto;
     border-radius: 20px;
     background-color: #f3f2f0;
     height: flex;
@@ -281,6 +265,7 @@
     padding: 41px 0px;
     box-sizing: border-box;
     gap: 10px;
+    margin: 20px;
     z-index: 3;
     font-size: 28px;
     color: #000;
@@ -435,29 +420,16 @@
     height: 16px;
     overflow: hidden;
 }
-.mobile-navigation {
-    width: 390px;
-    position: absolute;
-    margin: 0 !important;
-    top: 0px;
-    left: 0px;
-    box-shadow: 0px 2px 20px -2px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 16px 16px;
-    background-color: #fff;
-    height: 60px;
-    z-index: 1;
-}
-.homepage-mobile {
+.frame {
     width: 100%;
     position: relative;
     background-color: #fff;
-    height: 5453px;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 259px 0px;
     box-sizing: border-box;
     gap: 10px;
     text-align: center;
@@ -465,33 +437,11 @@
     color: #fff;
     font-family: Lora;
 }
-/* Grössere Bildschirme (z.B. Desktop) */
-@media (min-width: 1200px) {
-    .homepage-mobile {
-        font-size: 120px; /* Grössere Schriftgrösse */
-        padding: 300px 0px; /* Mehr Abstand */
-        gap: 20px;
-    }
-}
-/* Mittlere Bildschirme (z. B. Tablets) */
-@media (max-width: 1199px) and (min-width: 768px) {
-    .homepage-mobile {
-        font-size: 80px; /* Kleinere Schriftgrösse */
-        padding: 200px 0px; /* Weniger Abstand */
-        gap: 15px;
-    }
-}
-/* Kleine Bildschirme (z. B. Smartphones) */
-@media (max-width: 767px) {
-    .homepage-mobile {
-        font-size: 50px; /* Noch kleinere Schriftgrösse */
-        padding: 100px 0px; /* Reduzierter Abstand */
-        gap: 10px;
-        height: auto; /* Automatische Höhe für besseren Inhaltfluss */
-    }
-}
 body {
     margin: 0;
     line-height: normal;
-    }
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
     
