@@ -1,12 +1,16 @@
-:root {
-    /* Colors */
-   --background-light-gray: #f3f2f0;
-   --text-color: #2f421c;
-   --button-color-hover: #476a21;
-   
-   /* Border radiuses */
-   --br-base: 16px;
-   --br-9xs: 4px;
+:root{
+    --button-color: #2F421C;
+    --button-color-hover: #476A21;
+    --background-color: #F3F2F0;
+    --background-white: #FFFFFF;
+    --text-color: #2F421C;
+    --text-color-hover: #476a21;
+    --off-text-color: #97989f;
+    --white-text-color: #FFFFFF;
+    --font-text: 'Roboto', sans-serif;
+    --font-title: 'lora', sans-serif;
+    --font-size: 28px;
+
      }
 
 body {
@@ -17,20 +21,20 @@ body {
 
 .main_title {
     font-size: 24px;
-    font-family: 'Lora', serif;
-    color: #ffffff;
+    font-family: var(--font-title);
+    color: var(--white-text-color);
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
 .main_title:hover {
-    color: #476a21; /* Change text color on hover */
+    color: var(--text-color-hover); /* Change text color on hover */
 }
 
 .main_text {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    font-family:var(--font-text);
+    color:var(--white-text-color);
     font-weight: 400;
 }
 
@@ -38,7 +42,6 @@ body {
     position: absolute; /* Allows precise positioning */
     bottom: 10px; /* Align content 10px from the bottom */
     left: 10px; /* Align content 10px from the left */
-    color: #000; /* Optional: Text color */
     padding: 10px; /* Optional: Padding for text block */
     border-radius: 6px; /* Optional: Rounded corners */
 }
@@ -52,13 +55,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    text-align: left;
-    font-size: 16px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
+
     margin-top:  20px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -92,14 +89,14 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
-    border: 5px solid #2f421c00; /* Rahmen */
-    background-color: #2f421c; /* Hintergrund */
+    border: 5px solid var(--button-color); /* Rahmen */
+    background-color: var(--button-color); /* Hintergrund */
     box-sizing: border-box; /* Korrekte Berechnung */
 }
 
 .a-badge {
     border-radius: 6px;
-    background-color: rgba(47, 66, 28, 0.05);
+    border: 1px var(--button-color) solid;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -111,12 +108,12 @@ body {
     align-self: stretch;
     position: relative;
     font-size: 18px;
-    font-family: 'Lora', serif;
-    color: #2f421c;
+    font-family:var(--font-title);
+    color:var(--text-color);
 }
 
 .title:hover {
-    color: #476a21;
+    color: var(--text-color-hover);
 }
 
 .heading {
@@ -153,8 +150,8 @@ body {
     justify-content: flex-start;
     gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
     font-size: 16px;
-    color: #97989f;
-    font-family: 'Roboto', sans-serif;
+    color: var(--off-text-color);
+    font-family: var(--font-text);
 }
 
 .content {
@@ -170,8 +167,8 @@ body {
 .news-card {
     align-self: stretch;
     border-radius: 16px;
-    background-color: #fff;
-    border: 1px solid #e8e8ea;
+    background-color: var(--background-white);
+    border: 1px solid var(--off-text-color);
     box-sizing: border-box;
     min-height: 409px;
     overflow: hidden;
@@ -186,7 +183,7 @@ body {
 }
 
 .news-card:hover {
-    background-color: #f0f0f0; /* Change background on hover */
+    background-color: var(--background-color); /* Change background on hover */
     transition: transform 0.3s ease, background-color 0.3s ease;
     transform: scale(1.01);
 }
@@ -208,15 +205,15 @@ body {
     gap: 54px;
     text-align: left;
     font-size: 14px;
-    color: #2f421c;
-    font-family: 'Work Sans', sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-title);
 }
 
 /* Target the anchor tag with the specific href attribute */
 a[href="index_main_news_story.html"] {
     display: block; /* Ensure the anchor tag is displayed as a block */
     text-decoration: none; /* Remove underline from the link */
-    color: black; /* Inherit the text color from the parent */
+    color: var(--text-color); /* Inherit the text color from the parent */
     transition: color 0.3s ease; /* Add a transition effect for color */
 }
 
@@ -234,15 +231,15 @@ a[href="index_main_news_story.html"] {
     gap: 54px;
     text-align: left;
     font-size: 14px;
-    color: #2f421c;
-    font-family: 'Work Sans', sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-title);
 }
 
 .single_news-card {
     align-self: stretch;
     border-radius: 16px;
-    background-color: #fff;
-    border: 1px solid #e8e8ea;
+    background-color:var(--background-white);
+    border: 1px solid var(--background-color);
     box-sizing: border-box;
     min-height: 409px;
     overflow: hidden;
@@ -287,21 +284,20 @@ a[href="index_main_news_story.html"] {
 
 .single_news-a-badge {
     border-radius: 6px;
-    background-color: rgba(47, 66, 28, 0.05);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
-    border: 2px solid #2f421c; /* Fügen Sie den Border-Stil explizit hinzu */
+    border: 1px solid var(--button-color); /* Fügen Sie den Border-Stil explizit hinzu */
 }
 
 .single_news-title {
     align-self: stretch;
     position: relative;
     font-size: 18px;
-    font-family: 'Lora', serif;
-    color: #181a2a;
+    font-family: var(--font-title);
+    color: var(--button-color);
 }
 
 .single_news-short-info {
@@ -311,8 +307,8 @@ a[href="index_main_news_story.html"] {
     justify-content: flex-start;
     gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
     font-size: 16px;
-    color: #97989f;
-    font-family: 'Roboto', sans-serif;
+    color: var(--off-text-color);
+    font-family: var(--font-text);
 }
 
 .single_news-a-author {
@@ -336,13 +332,13 @@ a[href="index_main_news_story.html"] {
 }
 
 .single_news-button {
-    background-color: #2f421c;
-    color: #fff;
+    background-color: var(--button-color);
+    color:var(--background-white);
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-text);
     font-size: 14px;
     margin-left: 8px; /* Add some space between the author and the button */
     align-self: center;
@@ -350,13 +346,13 @@ a[href="index_main_news_story.html"] {
 }
 
 .single_news-button:hover {
-    background-color: #3a5a2c;
+    background-color: var(--button-color-hover);
 }
 
 .single_news_text {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    color: #181a2a;
+    font-family: var(--font-text);
+    color:var(--text-color);
     font-weight: 400;
 }
 
@@ -411,15 +407,15 @@ a[href="index_main_news_story.html"] {
         position: relative;
         font-size: 28px;
         display: inline-block;
-        font-family: Lora;
-        color: #fff;
+        font-family: var(--font-title);
+        color:var(--background-white);
         text-align: left;
         }
 
     .main_text { /* just here in case i have to change the size */
             font-size: 16px;
-            font-family: 'Roboto', sans-serif;
-            color: #ffffff;
+            font-family: var(--font-text);
+            color: var(--background-white);
             font-weight: 400;
         }
 
