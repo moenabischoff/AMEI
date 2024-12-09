@@ -1,12 +1,78 @@
-.adobestock-633681305-mobile-2-icon {
-    align-self: stretch;
+:root {
+    /* Colors */
+   --background-white: #fff; 
+   --background-light-gray: #f3f2f0;
+
+   --text-color: #2f421c;
+   --button-color-hover: #476a21;
+   --button-color: #2f421c;
+   --button-text-color: #f3f2f0;
+
+  
+
+   /* fonts */
+  --body-text: Roboto;
+  --titles: Lora;
+
+   /* font sizes */
+   --Desktop-H1-64: 64px;
+   --Desktop-H2-28: 28px;
+   --Desktop-Subtitles-18: 18px;
+   --Desktop-Body-18: 18px;
+   --Desktop-Body-sm-16: 16px;
+   
+   --Mobile-H1-40: 40px;
+   --Mobile-H2-24: 24px;
+   --Mobile-Subtitles-16: 16px;
+   --Mobile-Body-16: 16px;
+   --Mobile-Body-sm-14: 14px;
+
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px; 
+  --spacing-120: 120px;
+  
+  /*Radius*/
+  --radius-round-subtle: 4px;
+  --radius-round-medium: 16px;
+  --radius-round-strong: 32px;
+  
+
+
+   
+     }
+     
+   
+   * {
+       margin: 0;
+       padding: 0;
+       line-height: normal;
+   
+      
+   }
+   
+   body{
+       min-height: 100vh;
+   }
+  
+  header {
     position: relative;
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    object-fit: cover;
-}
-.adobestock-633681305-mobile-1-icon {
+  }
+
+
+
+.startbild {
     width: 100vw; /* Vollbildweite */
     position: relative;
     overflow: hidden;
@@ -19,8 +85,7 @@
     position: relative;
     display: inline-block;
     height: 128px;
-    flex-shrink: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
 .fremde-werden-zu {
     width: 389px;
@@ -28,8 +93,7 @@
     font-size: 24px;
     display: inline-block;
     height: 36px;
-    flex-shrink: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
 .title {
     margin: 0 !important;
@@ -42,10 +106,8 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    z-index: 2;
 }
-.title-background {
-    
+.homescreen {
     border-radius: 0px 0px 20px 20px;
     height: 844px;
     overflow: hidden;
@@ -56,7 +118,6 @@
     justify-content: center;
     position: relative;
     gap: 10px;
-    z-index: 0;
 }
 .allegra {
     width: 349px;
@@ -64,7 +125,6 @@
     font-size: 40px;
     display: inline-block;
     height: 40px;
-    flex-shrink: 0;
 }
 .wir-sind-amei {
     width: 350px;
@@ -72,17 +132,14 @@
     font-size: 24px;
     display: inline-block;
     height: 37px;
-    flex-shrink: 0;
 }
 .text-in-card {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 20px;
     max-width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
 }
 .fliesstext1{
     margin: 20px;
@@ -96,9 +153,12 @@
     flex-shrink: 0;
 }
 
-.primary-button {
-    border-radius: 16px;
-    background-color: #2f421c;
+
+/*--------Buttons Landingpage---------*/
+
+.button-mehr-ueber-uns {
+    border-radius: 5px;
+    background-color: var(--button-color);
     height: 39px;
     display: flex;
     flex-direction: row;
@@ -107,21 +167,74 @@
     padding: 8px 16px;
     box-sizing: border-box;
 }
-.primary-button-wrapper {
+.button1 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 33px;
+    padding: 10px 20px;
     text-align: center;
-    color: #f3f2f0;
 }
+.button1 :hover {
+    background-color: var(--button-color-hover);
+  }
 .button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
     position: relative;
-    color: #f3f2f0; 
+    color: var(--button-text-color); ; 
     text-decoration: none; /* keine Unterstreichung */
 }
+.button-download-app {
+    border-radius: 5px;
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 10px; /* Lückenweite zwischen Wort und Bild im Button */
+}
+.button2 {
+    position: absolute;
+    top: 85%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--button-text-color)
+}
+.button2 :hover {
+    background-color: var(--button-color-hover);
+}
+  .button-mehr-infos {
+    align-self: stretch;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+}
+.button3 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    color: var(--button-text-color);
+}
+.button3 :hover {
+    background-color: var(--button-color-hover);
+}
+
+
 .box-1-ueber-uns {
     width: auto;
     display: flex;
@@ -136,42 +249,29 @@
     margin: 20px;
     box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
-    font-size: 16px;
+    font-size: var(--Desktop-Body-18);
     color: #000;
 }
-.action-shot-2-mobile-1-icon {
+.background-image {
     width: 100%;
-    min-height: 844px;
-    object-fit: cover;
+    height: 75vh;
+    background-image: url('image/Landingpage/action-shot_2_mobile.png');
+    background-size: cover; /* Bild proportional skalieren */
+    background-position: center;
+}
+/* Ab einer Breite von 834px anderes Bild */
+@media (min-width: 834px) {
+    .background-image {
+        background-image: url('image/Landingpage/action-shot_2.png');
+    }
 }
 .frame-icon {
     width: 24px;
     height: 24px;
 }
-.primary-button1 {
-    border-radius: 16px;
-    background-color: #476a21;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    gap: 12px;
-}
-.primary-button-container {
-    position: absolute;
-    top: 85%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    text-align: center;
-    color: #f3f2f0;
-}
-.unsere-app-my-container {
+.textbox-download {
     width: auto;
-    position: absolute;
+    position: relative;
     margin: 20px;
     top: 65%;
     font-family: Roboto;
@@ -189,23 +289,26 @@
     margin: 20px;
     box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
-    font-size: 16px;
+    font-size: var(--Desktop-Body-18);
+    }
+.ueberschrift-download {
+    position: relative; 
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: var(--Desktop-H2-28);
+    top: 60%; /* Zentriert vertikal */
+    text-align: center; /* Text zentriert im Overlay */
+    justify-content: center;
 }
+
 .handgroup-1-icon {
     width: 350px;
     position: relative;
     height: 482px;
     object-fit: cover;
 }
-.ueberschrift1 {
-    width: auto;
-    position: absolute; /* Text wird relativ zum Bild positioniert */
-    margin: 20px;
-    font-size: 28px;
-    top: 60%; /* Zentriert vertikal */
-    text-align: center; /* Text zentriert im Overlay */
-}
-.ueberschrift2 {
+
+.ueberschrift-app {
     width: auto;
     position: relative;
     display: inline-block;
@@ -217,29 +320,6 @@
     font-size: 16px;
     font-family: Roboto;
     display: inline-block;
-}
-.primary-button2 {
-    align-self: stretch;
-    border-radius: 16px;
-    background-color: #2f421c;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-}
-.primary-button-frame {
-    width: flex;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 19px 21px;
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 16px;
-    color: #f3f2f0;
 }
 .box-3-app {
     align-self: stretch;
@@ -260,16 +340,6 @@
     z-index: 3;
     font-size: 28px;
     color: #000;
-}
-.news-card-child {
-    align-self: stretch;
-    position: relative;
-    border-radius: 4px;
-    max-width: 100%;
-    overflow: hidden;
-    height: 240px;
-    flex-shrink: 0;
-    object-fit: cover;
 }
 .text {
     position: relative;
@@ -317,23 +387,6 @@
     justify-content: flex-start;
     padding: 8px;
     gap: 20px;
-}
-.news-card {
-    width: flex;
-    align-self: stretch;
-    border-radius: 16px;
-    background-color: #fff;
-    border: 1px solid #e8e8ea;
-    box-sizing: border-box;
-    height: 474px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    gap: 16px;
 }
 .box-4-news {
     border-radius: 20px;
@@ -425,63 +478,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-:root {
-    /* Colors */
-   --background-light-gray: #f3f2f0;
-   --text-color: #2f421c;
-   --button-color-hover: #476a21;
-   --color-white: #fff;
-   
-   /* Border radiuses */
-   --br-base: 16px;
-   --br-9xs: 4px;
-
-   /* fonts */
-  --body-text: Roboto;
-  --main-titles-h2: Lora;
-
-   /* font sizes */
-  --font-size-sm: 14px;
-  --body-text-size: 18px;
-  --main-titles-h2-size: 28px;
-
-  /* Spacing */
-  --spacing-20: 20px;
-  --spacing-32: 32px;
-  --spacing-40: 40px;
-  --spacing-80: 80px;
-  --radius-round-medium: 16px;
-  --spacing-12: 12px;
-  --spacing-8: 8px;
-  --radius-round-subtle: 4px;
-  /* Gaps */
-  --gap-21xl: 40px;
-    /* Paddings */
-    --padding-61xl: 80px;
-    --padding-21xl: 40px;
-    /* Border radiuses */
-    --br-base: 16px;
-    --br-9xs: 4px;
-   
-   
-     }
-     
-   
-   * {
-       margin: 0;
-       padding: 0;
-       line-height: normal;
-   
-      
-   }
-   
-   body{
-       min-height: 100vh;
-   }
-  
-  header {
-    position: relative;
-  }
   
   /* ------------------------------------------Navbar--------------------------------------------- */
   .navbar {
