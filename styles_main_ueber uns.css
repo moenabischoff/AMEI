@@ -1,44 +1,53 @@
 :root {
     /* Colors */
+   --background-white: #fff; 
    --background-light-gray: #f3f2f0;
+
    --text-color: #2f421c;
    --button-color-hover: #476a21;
-   --color-white: #fff;
-   
-   /* Border radiuses */
-   --br-base: 16px;
-   --br-9xs: 4px;
+   --button-color: #2f421c;
+   --button-text-color: #f3f2f0;
+
+  
 
    /* fonts */
   --body-text: Roboto;
-  --main-titles-h2: Lora;
+  --titles: Lora;
 
    /* font sizes */
-  --font-size-sm: 14px;
-  --body-text-size: 18px;
-  --main-titles-h2-size: 28px;
-  --font-size-mobile: 12px;
+   --Desktop-H1-64: 64px;
+   --Desktop-H2-28: 28px;
+   --Desktop-Subtitles-18: 18px;
+   --Desktop-Body-18: 18px;
+   --Desktop-Body-sm-16: 16px;
+   
+   --Mobile-H1-40: 40px;
+   --Mobile-H2-24: 24px;
+   --Mobile-Subtitles-16: 16px;
+   --Mobile-Body-16: 16px;
+   --Mobile-Body-sm-14: 14px;
+
 
   /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
   --spacing-20: 20px;
+  --spacing-24: 24px;
   --spacing-32: 32px;
   --spacing-40: 40px;
-  --spacing-80: 80px;
-  --radius-round-medium: 16px;
-  --spacing-12: 12px;
-  --spacing-8: 8px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px; 
+  --spacing-120: 120px;
+  
+  /*Radius*/
   --radius-round-subtle: 4px;
-  /* Gaps */
-  --gap-21xl: 40px;
-    /* Paddings */
-    --padding-61xl: 80px;
-    --padding-21xl: 40px;
-    /* Border radiuses */
-    --br-base: 16px;
-    --br-9xs: 4px;
-   
-   
-     }
+  --radius-round-medium: 16px;
+  --radius-round-strong: 32px; 
+}
 
 
 body {
@@ -47,22 +56,27 @@ body {
 
 h1{
     color:var(--text-color);
-    font-style: var(--main-titles-h2) var(--main-titles-h2-size);
+    font-style: var(--Desktop-H1-64);
     text-align: center
+}
+
+h2{
+    size: var(--Desktop-Subtitles-18);
+    color: var(--text-color);
 }
 
 p{
     color: var(--text-color);
-    font-style: var(--font-text) var(--body-text-size);
+    font-style: var(--Desktop-Body-sm-16);
     display: flex;
 }
 
 
 .wir-sind-amei-box{
-background-color: var(--color-white);
+background-color: var(--background-white);
 width: 80%;
 padding: 40px;
-border-radius: var(--br-base);
+border-radius: var(--radius-round-strong);
 text-align: center;
 margin:auto;
 }
@@ -78,39 +92,35 @@ crew box
 }
 
 .crew-box{
-background-color: var(--color-white);
-width: 100%; /* Box nimmt 100% des Containers ein */
-min-width: 280px; /* Maximale Breite bleibt erhalten */
-min-height: 600px;
-height: auto;
-padding: 40px;
-margin: 12px;
-border-radius: var(--br-base);
-text-align: center;
-box-sizing: border-box; /* Innenabstand wird berücksichtigt */
-gap: 40px;
+    background-color: var(--background-white);
+    width: 100%; /* Box nimmt 100% des Containers ein */
+    min-width: 280px; /* Maximale Breite bleibt erhalten */
+    min-height: 600px;
+    height: auto;
+    padding: 40px;
+    margin: 12px;
+    border-radius: var(--radius-round-strong);
+    text-align: center;
+    box-sizing: border-box; /* Innenabstand wird berücksichtigt */
+    gap: 40px;
 }
 
 .crew-box-image{
     width: 100%;
     height: auto;
     display: block; /* Verhindert unnötige Inline-Abstände */
-    border-radius: var(--br-base);
+    border-radius: var(--radius-round-strong);
     align-content: center;
 }
 
 .crew-box-title{
-    color: var(--text-color);
-    font-size: 18px;
-    font-style: var(--main-titles-h2);
     text-align: left;
     padding-top: 40px;
 }
 
 .crew-box-bodytext{
     color: var(--text-color);
-    size: var(--body-text-size);
-    font-style: var(--body-text);
+    size: var(--Desktop-Body-sm-16);
     text-align: left;
 }
 
@@ -118,13 +128,13 @@ gap: 40px;
 crew box less opacity               
 -----------------------------------------*/
 .crew-box-opacity{
-    background-color: var(--color-white);
+    background-color: var(--background-white);
     width: 100%; /* Box nimmt 100% des Containers ein */
     min-width: 280px; /* Maximale Breite bleibt erhalten */
     height: auto;
     padding: 40px;
     margin: 12px;
-    border-radius: var(--br-base);
+    border-radius: var(--radius-round-strong);
     text-align: center;
     box-sizing: border-box; /* Innenabstand wird berücksichtigt */
     gap: 40px;
@@ -135,15 +145,12 @@ crew box less opacity
         width: 100%;
         height: auto;
         display: block; /* Verhindert unnötige Inline-Abstände */
-        border-radius: var(--br-base);
+        border-radius: var(--radius-round-strong);
         align-content: center;
         opacity: 50%;
     }
     
     .crew-box-title-opacity{
-        color: var(--text-color);
-        font-size: 18px;
-        font-style: var(--main-titles-h2);
         text-align: left;
         padding-top: 40px;
         opacity: 50%;
@@ -151,8 +158,7 @@ crew box less opacity
     
     .crew-box-bodytext-opacity{
         color: var(--text-color);
-        size: var(--body-text-size);
-        font-style: var(--body-text);
+        size: var(--Desktop-Body-sm-16);
         text-align: left;
         opacity: 50%;
     }
@@ -166,28 +172,28 @@ button crew box
 background-color: var(--text-color);
 width: 200px;
 height: 40px;
-border-radius: var(--br-base);
+border-radius: var(--radius-round-strong);
 margin: auto;
 margin-top: 40px;
 display: flex;
 align-items: center;
 justify-content: center;
-padding-left: 15px;
-padding-right: 15px;
+padding-left: 16px;
+padding-right: 16px;
 }
 
 .crew-box-single-dots{
-height: 14px;
-width: 14px;
-background-color: var(--color-white);
+height: 16px;
+width: 16px;
+background-color: var(--background-white);
 border-radius: 50%;
 margin: auto;
 margin-inline: 8px;
 }
 
 .crew-box-single-dots-hover{
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
     background-color: var(--button-color-hover);
     border-radius: 50%;
     margin: auto;
@@ -195,8 +201,8 @@ margin-inline: 8px;
     }
 
 a:hover {
-        height: 14px;
-        width: 14px;
+        height: 16px;
+        width: 16px;
         background-color: var(--button-color-hover);
         border-radius: 50%;
         margin: auto;
@@ -227,11 +233,15 @@ a:hover {
 @media (max-width: 390px) {
     
     h1{
-        font-size: 24px;
+        font-size: var(--Mobile-H2-24);
+    }
+
+    h2{
+        font-size: var(--Mobile-Subtitles-16);
     }
 
     .wir-sind-amei-box{
-        font-size: var(--font-size-mobile);
+        font-size: var(--Mobile-Body-sm-14);
     }
 
     .box-section{
@@ -253,19 +263,21 @@ a:hover {
     }
 
     .crew-box-title{
-        font-size: 14px;
+        font-size: var(--Mobile-Subtitles-16);
     }
     .crew-box-bodytext{
-        font-size: var(--font-size-mobile);
+        font-size: var(--Mobile-Body-sm-14);
     }
 
     .crew-box-button{
         height: 30px;
         width: 140px;
-        border-radius: 12px;
+        border-radius: var(--radius-round-strong);
     }
 
-    .crew-box-single-dots, .crew-box-single-dots-hover {
-        height: 8px;
-        width: 8px;
+    .crew-box-single-dots, .crew-box-single-dots-hover{
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 6px;
+        margin-right: 6px;
     }
