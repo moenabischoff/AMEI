@@ -1,9 +1,13 @@
 :root {
     /* Colors */
+   --background-white: #fff; 
    --background-light-gray: #f3f2f0;
+
    --text-color: #2f421c;
    --button-color-hover: #476a21;
-   --color-white: #fff;
+   --button-color: #2f421c;
+   --button-text-color: #f3f2f0;
+
    
    /* Border radiuses */
    --br-base: 16px;
@@ -14,28 +18,41 @@
   --main-titles-h2: Lora;
 
    /* font sizes */
-  --font-size-sm: 14px;
-  --body-text-size: 18px;
-  --main-titles-h2-size: 28px;
+   --Desktop-H1-64: 64px;
+   --Desktop-H2-28: 28px;
+   --Desktop-Subtitles-18: 18px;
+   --Desktop-Body-18: 18px;
+   --Desktop-Body-sm-16: 16px;
+   
+   --Mobile-H1-40: 40px;
+   --Mobile-H2-24: 24px;
+   --Mobile-Subtitles-16: 16px;
+   --Mobile-Body-16: 16px;
+   --Mobile-Body-sm-14: 14px;
 
+   
   /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
   --spacing-20: 20px;
+  --spacing-24: 24px;
   --spacing-32: 32px;
   --spacing-40: 40px;
-  --spacing-80: 80px;
-  --radius-round-medium: 16px;
-  --spacing-12: 12px;
-  --spacing-8: 8px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px; 
+  --spacing-120: 120px;
+  
+  /*Radius*/
   --radius-round-subtle: 4px;
-  /* Gaps */
-  --gap-21xl: 40px;
-    /* Paddings */
-    --padding-61xl: 80px;
-    --padding-21xl: 40px;
-    /* Border radiuses */
-    --br-base: 16px;
-    --br-9xs: 4px;
-   
+  --radius-round-medium: 16px;
+  --radius-round-strong: 32px;
+  
+
+
    
      }
      
@@ -226,7 +243,7 @@
       align-items: center;
       width: 90%; 
       max-width: 500px;
-      border: 2px solid var(--color-white) ;
+      border: 2px solid var(--background-white) ;
       border-radius: 8px; 
       overflow: hidden;
     }
@@ -234,7 +251,7 @@
     .input-with-button input {
       flex: 1; 
       padding: 10px 12px;
-      border: 2px solid var(--color-white) ; 
+      border: 2px solid var(--background-white) ; 
       outline: none;
       font-size: 16px;
     }
@@ -246,7 +263,7 @@
     .input-with-button button {
       padding: 10px 20px; 
       background-color: var(--text-color); 
-      color: var(--color-white); 
+      color: var(--background-white); 
       border: none; 
       cursor: pointer; 
       font-size: 16px;
@@ -273,7 +290,7 @@
     align-items: center;
     justify-content: space-between;
     padding: var(--spacing-40) var(--spacing-80);
-    color: var(--color-white);
+    color: var(--background-white);
     font-family: var(--main-titles-h2);
     }
     .footer-nav-links {
@@ -348,7 +365,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: var(--spacing-40);
-    font-size: var(--body-text-size);
+    font-size: var(--Desktop-Body-18);
     font-family: var(--body-text);
     }
 
@@ -392,7 +409,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: var(--spacing-20);
-    font-size: var(--font-size-sm);
+    font-size: var(--Desktop-Body-sm-16);
     font-family: var(--main-titles-h2);
     text-decoration: none;
     color: var(--text-color);
@@ -408,11 +425,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: var(--spacing-80) var(--padding-21xl);
+    padding: var(--spacing-80) var(--spacing-40);
     box-sizing: border-box;
     gap: var(--spacing-40);
     text-align: left;
-    font-size: var(--main-titles-h2-size);
+    font-size: var(--Desktop-H2-28);
     color: var(--text-color);
     font-family: var(--body-text);
     }
