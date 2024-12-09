@@ -465,7 +465,7 @@
       }
     
       .nichts-mehr-verpassen-container {
-        font-size: 18px;
+        font-size: var(--Mobile-Body-16);
         width: 100%;
         padding: 16px;
         margin: 20px;
@@ -474,19 +474,19 @@
 
       .footer-links {
         gap: var(--spacing-32);
-        font-size: 14px;
+        font-size: var(--Mobile-Body-sm-14);
         }
 
         .input-with-button button {
-          font-size: 14px;
+          font-size:var(--Mobile-Body-sm-14);
         }
 
         .input-with-button input {
-          font-size: 14px;
+          font-size: var(--Mobile-Body-sm-14);
         }
 
         .footer-impressum {
-          font-size: 14px;
+          font-size: var(--Mobile-Body-sm-14);
           font-family: var(--titles);
           }
     }
