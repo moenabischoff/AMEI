@@ -43,17 +43,6 @@ body {
     color: #476a21;
 }
 
-.subtitle-mobile-2 {
-    width: 344px;
-    height: 23px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-}
-
-
 .text-hightlight {
     color: #476a21;
 }
