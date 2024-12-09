@@ -8,14 +8,11 @@
    --button-color: #2f421c;
    --button-text-color: #f3f2f0;
 
-   
-   /* Border radiuses */
-   --br-base: 16px;
-   --br-9xs: 4px;
+  
 
    /* fonts */
   --body-text: Roboto;
-  --main-titles-h2: Lora;
+  --titles: Lora;
 
    /* font sizes */
    --Desktop-H1-64: 64px;
@@ -30,7 +27,7 @@
    --Mobile-Body-16: 16px;
    --Mobile-Body-sm-14: 14px;
 
-   
+
   /* Spacing */
   --spacing-4: 4px;
   --spacing-8: 8px;
@@ -103,7 +100,7 @@
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
-    font-family: var(--main-titles-h2);
+    font-family: var(--titles);
     transition: color 0.3s;
   }
   
@@ -291,7 +288,7 @@
     justify-content: space-between;
     padding: var(--spacing-40) var(--spacing-80);
     color: var(--background-white);
-    font-family: var(--main-titles-h2);
+    font-family: var(--titles);
     }
     .footer-nav-links {
     position: relative;
@@ -410,7 +407,7 @@
     justify-content: space-between;
     margin-bottom: var(--spacing-20);
     font-size: var(--Desktop-Body-sm-16);
-    font-family: var(--main-titles-h2);
+    font-family: var(--titles);
     text-decoration: none;
     color: var(--text-color);
     }
@@ -490,6 +487,6 @@
 
         .footer-impressum {
           font-size: 14px;
-          font-family: var(--main-titles-h2);
+          font-family: var(--titles);
           }
     }
