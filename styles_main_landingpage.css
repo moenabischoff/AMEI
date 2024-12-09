@@ -34,7 +34,7 @@
 .title {
     margin: 0 !important;
     position: absolute;
-    top: 314px;
+    top: 35%;
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
@@ -425,85 +425,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-.news-card-parent {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 24px 21px;
-    box-sizing: border-box;
-    gap: 54px;
-    text-align: left;
-    font-size: 14px;
-    color: #2f421c;
-    font-family: 'Work Sans', sans-serif;
-}
-.news-card {
-    align-self: stretch;
-    border-radius: 16px;
-    background-color: #fff;
-    border: 1px solid #e8e8ea;
-    box-sizing: border-box;
-    min-height: 409px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    gap: 16px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-.news-card-child {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    border-radius: 4px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 200px;
-    object-fit: cover;
-}
-.heading {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-}
-.a-badge {
-    border-radius: 6px;
-    background-color: rgba(47, 66, 28, 0.05);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 4px 10px;
-}
-.title-news {
-    align-self: stretch;
-    position: relative;
-    font-size: 18px;
-    font-family: 'Lora', serif;
-    color: #2f421c;
-}
-.short-info-news {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
-    font-size: 16px;
-    color: #97989f;
-    font-family: 'Roboto', sans-serif;
-}
-
-
 :root {
     /* Colors */
    --background-light-gray: #f3f2f0;
