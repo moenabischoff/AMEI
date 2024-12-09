@@ -9,36 +9,80 @@
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500&display=swap" />
-  		
+  	
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#"><img src="image/Logo_MWGF.png" alt=""></a>
+        </div>
+  
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#app">App</a></li>
+          <li><a href="#ueberuns">Über Uns</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+  
+        <!-- Button -->
+        <div class="nav-button">
+          <a href="#download" class="btn">App downloaden</a>
+        </div>
+  
+        <!-- Burger Menu -->
+        <button class="burger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+  
+      <!-- Mobile Navigation Sidebar -->
+      <aside class="mobile-nav">
+        <button class="close-btn" aria-label="Close navigation">
+          &times; <!-- Cross button -->
+        </button>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#app">App</a></li>
+          <li><a href="#ueberuns">Über Uns</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </aside>
+
 </head>
 <body>
+    
   	
-  	<div class="homepage-mobile">
+  	<div class="frame">
     		<div class="title-background-parent">
                 <!--Startbild-->
       			<div class="title-background">
-        				<img class="adobestock-633681305-mobile-1-icon" alt="Lachende Freundegruppe" src="image/Landingpage/AdobeStock_633681305_mobile.png">
+        				<img class="adobestock-633681305-mobile-1-icon" alt="Lachende Freundegruppe" src="image/Landingpage/AdobeStock_633681305.jpeg">
         				
         				<div class="title">
           					<b class="amei">AMEI</b>
           					<b class="fremde-werden-zu">Fremde werden zu Freunden.</b>
-                            <a href="#zielbereich">
-                            <img alt="weisser Pfeil" src="image/Landingpage/Arrow 2.png">
+                            <a href="#zielbereich">  <!--Verlinkung zum Zielbereich mit # erstellt-->
+                            <img alt="weisser Pfeil" src="image/Landingpage/Arrow 2.png" width="80%">
                             </a>
         				</div>
                         
       			</div>
                 <!--Ende Startbild-->
                 <!--Box Über Uns-->
-                <div id="zielbereich">
+                <div id="zielbereich"> <!--Hier wird der Zielbereich bestimmt für den Pfeil-->
       			<div class="box-1-ueber-uns">
         				<b class="allegra">Allegra.</b>
         				<b class="wir-sind-amei">Wir sind AMEI</b>
-        				<div class="fliesstext1-container">
-          					<p class="fliesstext1">Hey, Fremde! Oder sollten wir sagen... zukünftige Freunde? Wir sind AMEI, das Start-up, das die WG-Suche revolutioniert. </p>
-          					<br>
+                        <div class="text-in-card">
+        				    <div class="fliesstext1-container">
+          					<p class="fliesstext1">Hey, Fremde! Oder sollten wir sagen... zukünftige Freunde? <br>Wir sind AMEI, das Start-up, das die WG-Suche revolutioniert. </p>
           					<p class="fliesstext1">Mit AMEI wollen wir die WG-Suche revolutionieren und eine Plattform schaffen, auf der echte Gemeinschaften entstehen können. Unsere Mission? Fremde zu Freunden machen und dafür sorgen, dass das Zusammenleben nicht nur funktioniert, sondern auch Spass macht!</p>
-        				</div>
+        				    </div>
+                        </div>
         				<div class="primary-button-wrapper">
           					<div class="primary-button">
             						<b class="button-text"><a href="index_main_ueber uns_1_sarina.html">Mehr über uns</a></b> 
@@ -50,31 +94,32 @@
                 <!--Box Download-->
       			<div class="box-2-download">
         				<img class="action-shot-2-mobile-1-icon" alt="Actionshot App" src="image/Landingpage/action-shot_2_mobile.png">
-        				
-        				<div class="primary-button-container">
-          					<div class="primary-button1">
-                                <b class="button-text"><a href="https://www.apple.com/chde/app-store/">Download App</a></b> 
-            					<a href="https://www.apple.com/chde/app-store/">
-                                    <img class="frame-icon" alt="" src="image/Landingpage/Frame.svg">
-            					</a>
-          					</div>
-        				</div>
-        				<div class="unsere-app-my-container">
-          					<p class="fliesstext1">Unsere App «my WG friend» verbindet dich mit passenden Mitbewohner*innen – intuitiv, persönlich und sicher. «Fremde werden zu Freunden» war nie so einfach. </p>
-          					<br>
-          					<p class="fliesstext1">Probier’s jetzt aus!</p>
-        				</div>
+                        
+                        <b class="ueberschrift1">Finde deine perfekte WG – schnell & einfach!</b>
+        				    <div class="unsere-app-my-container">
+          					    <p class="fliesstext1">Unsere App «my WG friend» verbindet dich mit passenden Mitbewohner*innen – intuitiv, persönlich und sicher.<br> «Fremde werden zu Freunden» war nie so einfach. </p>
+                                <p class="fliesstext1">Probier’s jetzt aus!</p>
+        				    </div>
+
+                            <div class="primary-button-container">
+                                <div class="primary-button1">
+                                  <b class="button-text"><a href="https://www.apple.com/chde/app-store/">Download App</a></b> 
+                                  <a href="https://www.apple.com/chde/app-store/">
+                                      <img class="frame-icon" alt="" src="image/Landingpage/Frame.svg">
+                                  </a>
+                                </div>
+                          </div>
+                           
       			</div>
                 <!--Ende Box Download-->
                 <!--Box App-->
       			<div class="box-3-app">
         				<img class="handgroup-1-icon" alt="" src="image/Landingpage/handygroup.png">
         				
-        				<b class="deine-wg-suche-neu">Deine WG-Suche, neu definiert!</b>
+        				<b class="ueberschrift2">Deine WG-Suche, neu definiert!</b>
         				<div class="persnlichkeitstest-finde-mit-container">
           					<p class="fliesstext1">✔️ Persönlichkeitstest: Finde Mitbewohner*innen, die wirklich zu dir passen.</p>
           					<p class="fliesstext1">✔️ Smart-Filter: Suche nach Budget, Interessen und mehr – blitzschnell!</p>
-          					<br>
           					<p class="fliesstext1">Jetzt ausprobieren und deine Traum-WG entdecken!</p>
         				</div>
         				<div class="primary-button-frame">
@@ -85,60 +130,76 @@
       			</div>
                  <!--Ende Box App-->
                  <!--Box News-->
-      			<div class="box-4-news">
-        				<div class="news-card">
-                            <a href="index_main_news.html">
-          					<img class="news-card-child" alt="Zimmer 1" src="image/News/room 1.png">
-                            </a>
-
-          					<div class="content">
-            						<div class="heading">
-              							<div class="a-badge">
-                								<div class="text">Homestory</div>
-              							</div>
-              							<b class="title1">So wohnen Lisa, Maximilian und Sarah seit 10 Monaten in ihrer WG</b>
-            						</div>
-            						<div class="short-info">
-              							<div class="button-text">12. Dezember, 2024</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="news-card">
-          					<a href="index_main_news.html">
-          					<img class="news-card-child" alt="Zimmer 2" src="image/News/room 2.png">
-                            </a>
-          					
-          					<div class="content">
-            						<div class="heading">
-              							<div class="a-badge">
-                								<div class="text">Homestory</div>
-              							</div>
-              							<b class="title1">So wohnen Lisa, Maximilian und Sarah seit 10 Monaten in ihrer WG</b>
-            						</div>
-            						<div class="short-info">
-              							<div class="button-text">12. Dezember, 2024</div>
-            						</div>
-          					</div>
-        				</div>
+                 <div class="news-card-parent">
+                    <div class="news-card">
+                        <img class="news-card-child" alt="" src="image/News/room 1.png">
+                        <div class="content">
+                            <div class="heading">
+                                <div class="a-badge">
+                                    <div class="text">Homestory</div>
+                                </div>
+                                <a href="index_main_news_story.html">
+                                    <b class="title-news">So wohnen Lisa, Maximilian und Sarah seit 10 Monaten in ihrer WG</b>
+                               </a>
+                            </div>
+                            <div class="short-info-news">
+                                <div class="a-author">
+                                    <img class="image-icon" alt="" src="image/News/question marks.png">
+                                    <div class="author">Tom Gadient</div>
+                                </div>
+                                <div class="author">12. Dezember, 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img class="news-card-child" alt="" src="image/News/room 2.png">
+                        <div class="content">
+                            <div class="heading">
+                                <div class="a-badge">
+                                    <div class="text">Homestory</div>
+                                </div>
+                                <a href="index_main_news_story.html">
+                                    <b class="title-news">So wohnen Lisa, Maximilian und Sarah seit 10 Monaten in ihrer WG</b>
+                                </a>
+                            </div>
+                            <div class="short-info-news">
+                                <div class="a-author">
+                                    <img class="image-icon" alt="" src="image/News/question marks.png">
+                                    <div class="author">Tom Gadient</div>
+                                </div>
+                                <div class="author">12. Dezember, 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img class="news-card-child" alt="" src="image/News/room 2.png">
+                        <div class="content">
+                            <div class="heading">
+                                <div class="a-badge">
+                                    <div class="text">Homestory</div>
+                                </div>
+                                <a href="index_main_news_story.html">
+                                    <b class="title-news">So wohnen Lisa, Maximilian und Sarah seit 10 Monaten in ihrer WG</b>
+                                </a>
+                            </div>
+                            <div class="short-info-news">
+                                <div class="a-author">
+                                    <img class="image-icon" alt="" src="image/News/question marks.png">
+                                    <div class="author">Tom Gadient</div>
+                                </div>
+                                <div class="author">12. Dezember, 2024</div>
+                            </div>
+                        </div>
+                    </div>
       			</div>
                 <!--Ende Box News-->
       			<img class="frame-child" alt="" src="image/Landingpage/Arrow 2.png">
       			
-      			<div class="box-5-sponsoring">
-        				<img class="logos-1-icon" alt="" src="image/Landingpage/logos.png">
-        				
-      			</div>
     		</div>
-    		<div class="mobile-navigation">
-      			<img class="logo-icon" alt="" src="image/Logo_MWGF.png">
-      			
-      			<img class="frame-icon1" alt="" src="image/menu_24dp_2F421C_FILL0_wght400_GRAD0_opsz24.svg">
-      			
-    		</div>
+            
+    		
   	</div>
-  	
-  	
-  	
+	
   	
 </body>
 </html>
