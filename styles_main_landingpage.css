@@ -207,6 +207,30 @@ header {
 .button3 :hover {
     background-color: var(--button-color-hover);
 }
+.button-news {
+    border-radius: 5px;
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 10px; /* Lückenweite zwischen Wort und Bild im Button */
+}
+.button4 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--button-text-color)
+}
+.button4 :hover {
+    background-color: var(--button-color-hover);
+}
 
 
 /*------Box Ueber uns------*/
@@ -288,7 +312,7 @@ header {
 @media (min-width: 1200px) {
     .textbox-download {
         text-align: center; 
-        margin-top: 15%;
+        margin-top: 13%;
         margin-left: 250px; /* Abstand vom linken Rand */
         max-width: 450px; /* definiert max. Breite von Textblock */
     }
@@ -374,14 +398,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('image/Landingpage/event-photo.jpeg');
+    background-image: url('image/Landingpage/wohnzimmer.jpeg');
     background-size: cover; /* Bild proportional skalieren */
     background-position: center;
     min-height: 700px; /* damit bei mobile-view nicht zu sehr skaliert wird */
 }
 .textbox-news {
     text-align: center; /* Zentrierter Text */
-    margin-top: 20vh;
+    margin-top: 10vh;
     max-width: 800px;
 }
 .ueberschrift-news {
