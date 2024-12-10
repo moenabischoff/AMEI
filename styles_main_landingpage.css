@@ -242,6 +242,7 @@ header {
     box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
     font-size: var(--Desktop-Body-18);
+    font-family: var(--titles);
     color: var(--text-color);
 }
 
@@ -251,7 +252,7 @@ header {
     background-image: url('image/Landingpage/action-shot_2_mobile.png');
     background-size: cover; /* Bild proportional skalieren */
     background-position: center;
-    min-height: 800px; /* damit bei mobile-view nicht zu sehr skaliert wird */
+    min-height:700px; /* damit bei mobile-view nicht zu sehr skaliert wird */
 }
 /* Ab einer Breite von 1200px anderes Bild */
 @media (min-width: 1200px) {
@@ -266,7 +267,7 @@ header {
 }
 .box-2-download {
     align-self: stretch;
-    width: auto;
+
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -280,7 +281,7 @@ header {
     }
 .textbox-download {
     justify-content: flex-end;
-    margin-top: 85%;
+    margin-top: 100%;
     margin-bottom: 40px;
 }
 /* Ab einer Bildschirmbreite von 1200px */
@@ -370,14 +371,18 @@ header {
 }
 .background-image2 {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('image/Landingpage/event-photo.jpeg');
     background-size: cover; /* Bild proportional skalieren */
     background-position: center;
-    min-height: 800px; /* damit bei mobile-view nicht zu sehr skaliert wird */
+    min-height: 700px; /* damit bei mobile-view nicht zu sehr skaliert wird */
 }
 .textbox-news {
     text-align: center; /* Zentrierter Text */
-    margin-top: 12vh;
+    margin-top: 20vh;
+    max-width: 800px;
 }
 .ueberschrift-news {
     position: relative;
@@ -488,7 +493,7 @@ body {
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
-    font-family: var(--main-titles-h2);
+    font-family: var(--titles);
     transition: color 0.3s;
   }
   
