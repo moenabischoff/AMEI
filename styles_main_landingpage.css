@@ -75,9 +75,15 @@ header {
     font-size: var(--body-text-size);
 }
 .fliesstext-download{
+    margin: 0px 20px 20px 20px;
+    font-family: var(--body-text);
+    font-size: var(--body-text-size);
+}
+.fliesstext-news{
     margin: 20px;
     font-family: var(--body-text);
     font-size: var(--body-text-size);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -236,7 +242,7 @@ header {
     box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
     font-size: var(--Desktop-Body-18);
-    color: #000;
+    color: var(--text-color);
 }
 
 /*------Box Download------*/
@@ -264,8 +270,8 @@ header {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     position: relative;
     margin: 20px;
     box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
@@ -273,15 +279,15 @@ header {
     font-size: var(--Desktop-Body-18);
     }
 .textbox-download {
-    text-align: center; /* Zentrierter Text */
-    /*margin-top: 60vh;*/
+    justify-content: flex-end;
+    margin-top: 85%;
     margin-bottom: 40px;
 }
 /* Ab einer Bildschirmbreite von 1200px */
 @media (min-width: 1200px) {
-    .textbox-download1 {
+    .textbox-download {
         text-align: center; 
-        margin-top: 16%;
+        margin-top: 15%;
         margin-left: 250px; /* Abstand vom linken Rand */
         max-width: 450px; /* definiert max. Breite von Textblock */
     }
@@ -297,23 +303,21 @@ header {
     position: relative;
     margin: 20px;
     font-size: var(--Desktop-H2-28);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.55);
 }
 
 
 /*------Box App------*/
-.handgroup-1-icon {
+/*.handygroup-bild {
     width: 350px;
     position: relative;
-    height: 482px;
     object-fit: cover;
-}
+}*/
 
 .ueberschrift-app {
     font-size: var(--Desktop-H2-28);
     display: inline-block;
-}
-.textbox-app {
-
+    margin: 0px 20px;
 }
 .fliesstext-app {
     position: relative;
@@ -326,7 +330,6 @@ header {
     width: auto;
     border-radius: 20px;
     background-color: var(--background-light-gray);
-    height: flex;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -337,33 +340,53 @@ header {
     gap: 10px;
     margin: 20px;
     font-size: 28px;
-    color: #000;
+    color: var(--text-color);
 }
 .text {
     position: relative;
     line-height: 20px;
     font-weight: 500;
 }
-
-.box-4-news {
-    border-radius: 20px;
-    background-color: #f3f2f0;
-    height: 1033px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 33px 15px;
-    box-sizing: border-box;
-    gap: 10px;
-    z-index: 4;
-    text-align: left;
-    font-size: 14px;
-    color: #2f421c;
-    font-family: 'Work Sans';
+.textbox-app {
+   position: relative;
+   display: flex;
+   flex-direction: column; 
 }
+
+/*------Box News------*/
+.box-4-news {
+    align-self: stretch;
+    width: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
+    gap: 10px;
+    font-size: var(--Desktop-Body-18);
+}
+.background-image2 {
+    width: 100%;
+    background-image: url('image/Landingpage/event-photo.jpeg');
+    background-size: cover; /* Bild proportional skalieren */
+    background-position: center;
+    min-height: 800px; /* damit bei mobile-view nicht zu sehr skaliert wird */
+}
+.textbox-news {
+    text-align: center; /* Zentrierter Text */
+    margin-top: 12vh;
+}
+.ueberschrift-news {
+    position: relative;
+    margin: 20px;
+    font-size: var(--Desktop-H2-28);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
+}
+
+
 .frame-child {
     width: 0px;
     position: absolute;
@@ -388,7 +411,7 @@ header {
     align-self: stretch;
     top: 0px;
     left: 0px;
-    height: 5453px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
