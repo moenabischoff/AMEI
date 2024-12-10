@@ -3,15 +3,61 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>News Page</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_main_news.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap">
+
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#"><img src="image/Logo_MWGF.png" alt=""></a>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#ueberuns">Über Uns</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+
+      <!-- Button -->
+      <div class="nav-button">
+        <a href="#download" class="btn">App downloaden</a>
+      </div>
+
+      <!-- Burger Menu -->
+      <button class="burger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Sidebar -->
+    <aside class="mobile-nav">
+      <button class="close-btn" aria-label="Close navigation">
+        &times; <!-- Cross button -->
+      </button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#ueberuns">Über Uns</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </aside>
 </head>
+<script src="script.js"></script>
+<body>
 <body>
     <div class="single_news-card-parent">
         <div class="single_news-card">
-            <img class="single_news-card-child" alt="" src="image/News/room 1.png">
+            <img class="single_news-card-child" alt="" src="image/News/main news picture.png">
             <div class="single_news-content">
                 <div class="single_news-heading">
                     <div class="single_news-a-badge">
@@ -33,5 +79,44 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-newsletter-box">
+            <b class="nichts-mehr-verpassen-container">
+            <p class="nichts-mehr-verpassen">Nichts mehr verpassen und <br> Newsletter abbonieren</p>
+            
+            </b>
+            <div class="input-with-button">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button type="submit">Subscribe</button>
+              </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="footer-links">
+            <div class="links">
+            <div class="footer-nav-links"><a href="#">App</a></div>
+            <div class="footer-nav-links"><a href="#">Über Uns</a></div>
+            <div class="footer-nav-links"><a href="#">News</a></div>
+            <div class="footer-nav-links"><a href="#">Login</a></div>
+            </div>
+
+            <div class="social-media-icons">
+            <img class="facebook-black-icon" alt="" src="image/facebook-black.svg">
+            <img class="vimeo-black-icon" alt="" src="image/vimeo-black.svg">
+            <img class="twitter-black-icon" alt="" src="image/twitter-black.svg">
+            <img class="youtube-black-icon" alt="" src="image/youtube-black.svg">
+            </div>
+            </div>
+
+            <img class="footer-child" alt="" src="/image/Line 2.svg">
+            <div class="footer-impressum">
+            <div class="rights-reserved">© 2024 AMEI. All rights reserved.</div>
+            <div class="terms-of-service">Impressum Datenschutzerklärung</div>
+            </div>
+            </div>
+            
+    </footer>
 </body>
 </html>

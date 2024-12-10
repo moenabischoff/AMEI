@@ -51,7 +51,7 @@ body {
     border-radius: 6px;
     height: 276px;
     overflow: hidden;
-    background-image: url('image/News/Zimmer draussen.png');
+    background-image: url('image/News/main\ news\ picture.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -239,7 +239,7 @@ a[href="index_main_news_story.html"] {
     align-self: stretch;
     border-radius: 16px;
     background-color:var(--background-white);
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--off-text-color);
     box-sizing: border-box;
     min-height: 409px;
     overflow: hidden;
