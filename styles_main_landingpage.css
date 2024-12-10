@@ -83,7 +83,7 @@ header {
     margin: 20px;
     font-family: var(--body-text);
     font-size: var(--body-text-size);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
 
 
@@ -333,12 +333,6 @@ header {
 
 
 /*------Box App------*/
-/*.handygroup-bild {
-    width: 350px;
-    position: relative;
-    object-fit: cover;
-}*/
-
 .ueberschrift-app {
     font-size: var(--Desktop-H2-28);
     display: inline-block;
@@ -378,6 +372,7 @@ header {
    flex-direction: column; 
 }
 
+
 /*------Box News------*/
 .box-4-news {
     align-self: stretch;
@@ -414,6 +409,47 @@ header {
     font-size: var(--Desktop-H2-28);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
+
+
+/*------Box Sponsoren------*/
+.box-5-sponsoren {
+    align-self: stretch;
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--background-light-gray);
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 41px 0px;
+    margin: 20px;
+    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
+    gap: 10px;
+    font-size: var(--Desktop-Body-18);
+    font-family: var(--titles);
+    color: var(--text-color);
+
+}
+.sponsor-container {
+    display: flex; 
+    flex-wrap: wrap; /* Elemente umbrechen, wenn kein Platz mehr ist */
+    justify-content: space-around; /* Platz zwischen Logos gleichmässig verteilen */
+    align-items: center; 
+    gap: 50px; 
+    padding: 20px; 
+  }
+@media (max-width: 500px) {
+    .sponsor-container {
+      flex-direction: column; /* Elemente untereinander anordnen */
+      align-items: center; 
+    }
+}
+  .sponsor-logo {
+    max-width: 100px;
+    min-width: none; 
+    height: auto; 
+  }
+
 
 
 .frame-child {
