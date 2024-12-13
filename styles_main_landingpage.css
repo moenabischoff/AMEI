@@ -353,7 +353,7 @@ body {
     justify-content: flex-start;
     gap: 10px;
 }
-.frame {
+.frame-landingpage {
     width: 100%;
     position: relative;
     background-color: var(--background-white);
