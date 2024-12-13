@@ -96,7 +96,7 @@ crew box
     background-color: var(--background-white);
     width: 100%; /* Box nimmt 100% des Containers ein */
     min-width: 280px; /* Maximale Breite bleibt erhalten */
-    min-height: 600px;
+    min-height: 650px; /* Höhe bleibt erhalten beim Seiten wechseln */
     height: auto;
     padding: 40px;
     margin: 12px;
@@ -185,7 +185,7 @@ padding-right: 16px;
 height: 16px;
 width: 16px;
 background-color: var(--background-white);
-border-radius: 50%;
+border-radius: 50%; /* Kreis entsteht */
 margin: auto;
 margin-inline: 8px;
 }
@@ -209,7 +209,7 @@ a:hover {
 }
 
 #crew-box-stopp {
-    scroll-margin-bottom: 200vh; /* Passt die Scrollposition an */
+    scroll-margin-bottom: 200vh; /* Passt die Scrollposition beim Wechsel der seite an */
 }
 
 
