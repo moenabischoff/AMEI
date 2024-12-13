@@ -1,95 +1,59 @@
 :root {
     /* Colors */
-   --background-white: #fff; 
-   --background-light-gray: #f3f2f0;
+    --background-white: #fff;
+    --background-light-gray: #f3f2f0;
+    --text-color: #2f421c;
+    --button-color-hover: #476a21;
+    --button-color: #2f421c;
+    --button-text-color: #f3f2f0;
 
-   --text-color: #2f421c;
-   --button-color-hover: #476a21;
-   --button-color: #2f421c;
-   --button-text-color: #f3f2f0;
+    /* Fonts */
+    --body-text: Roboto;
+    --titles: Lora;
 
-   /* fonts */
-  --body-text: Roboto;
-  --titles: Lora;
+    /* Font sizes */
+    --Desktop-H1-64: 64px;
+    --Desktop-H2-28: 28px;
+    --Desktop-Body-18: 18px;
+    --Mobile-H1-40: 40px;
+    --Mobile-H2-24: 24px;
+    --Mobile-Body-16: 16px;
 
-   /* font sizes */
-   --Desktop-H1-64: 64px;
-   --Desktop-H2-28: 28px;
-   --Desktop-Subtitles-18: 18px;
-   --Desktop-Body-18: 18px;
-   --Desktop-Body-sm-16: 16px;
-   
-   --Mobile-H1-40: 40px;
-   --Mobile-H2-24: 24px;
-   --Mobile-Subtitles-16: 16px;
-   --Mobile-Body-16: 16px;
-   --Mobile-Body-sm-14: 14px;
-
-  /* Spacing */
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-32: 32px;
-  --spacing-40: 40px;
-  --spacing-48: 48px;
-  --spacing-56: 56px;
-  --spacing-64: 64px;
-  --spacing-80: 80px; 
-  --spacing-120: 120px;
-  
-  /*Radius*/
-  --radius-round-subtle: 4px;
-  --radius-round-medium: 16px;
-  --radius-round-strong: 32px; 
-     }
-     
-   
-   * {
-       margin: 0;
-       padding: 0;
-       line-height: normal;  
-   }
-  
-header {
+    /* Spacing */
+    --spacing-20: 20px;
+    --spacing-40: 40px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    box-sizing: border-box; /* Hilfreich für einheitliche Layouts */
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+}
+.header {
     position: relative;
   }
-  .fliesstext1{
+/* Definition Fliesstext */
+.fliesstext {
     margin: var(--spacing-20);
     font-family: var(--body-text);
     font-size: var(--Mobile-Body-16);
 }
-@media (max-width: 389px) {
-    .fliesstext1 {
-        font-size: var(--Desktop-Body-18);
-        }
-    }
-.fliesstext-download{
-    margin: 0px 20px 20px 20px;
-    font-family: var(--body-text);
-    font-size: var(--Mobile-Body-16);
-}
-@media (max-width: 389px) {
-    .fliesstext-download {
-        font-size: var(--Desktop-Body-18);
-        }
-    }
-.fliesstext-news{
-    margin: var(--spacing-20);
-    font-family: var(--body-text);
-    font-size: var(--Mobile-Body-16);
+.shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
-@media (max-width: 389px) {
-    .fliesstext-news {
-        font-size: var(--Desktop-Body-18);
+/* Anpassung Schriftgrösse ab 389px Bildschirm */
+    @media (max-width: 389px) {
+        .fliesstext {
+            font-size: var(--Desktop-Body-18);
         }
     }
 
-
-/*--------Homescreen-------*/
+/*--------Homescreen Landingpage-------*/
 .startbild {
     width: 100vw; /* Vollbildweite */
     position: relative;
@@ -110,6 +74,7 @@ header {
     display: inline-block;
     text-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, 0.40);
 }
+
 .pfeil {
     margin-top: 20px;
 }
@@ -135,80 +100,10 @@ header {
     position: relative;
 }
 
-
 /*--------Buttons Landingpage---------*/
-.button-mehr-ueber-uns {
-    border-radius: 5px;
-    background-color: var(--button-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-.button1 {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    text-align: center;
-}
-.button1 :hover {
-    background-color: var(--button-color-hover);
-  }
-.button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
-    position: relative;
-    color: var(--button-text-color); 
-    text-decoration: none; /* keine Unterstreichung */
-}
-.button-download-app {
-    border-radius: 5px;
-    background-color: var(--button-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    gap: 10px; /* Lückenweite zwischen Wort und Bild im Button */
-}
-.button2 {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 10px 20px;
-    text-align: center;
-}
-.button2 :hover {
-    background-color: var(--button-color-hover);
-}
-.button-mehr-infos {
-    border-radius: 5px;
-    background-color: var(--button-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-}
-.button3 {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.button3 :hover {
-    background-color: var(--button-color-hover);
-}
+.button-mehr-ueber-uns,
+.button-download-app,
+.button-mehr-infos,
 .button-news {
     border-radius: 5px;
     background-color: var(--button-color);
@@ -216,44 +111,44 @@ header {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
+}
+.button-download-app {
     gap: 10px; /* Lückenweite zwischen Wort und Bild im Button */
 }
-.button4 {
-    position: relative;
+.button-common {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
 }
-.button4 :hover {
+.button-common :hover {
     background-color: var(--button-color-hover);
 }
-
-
-/*------Box Ueber uns------*/
-.allegra {
+.button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
     position: relative;
+    color: var(--button-text-color); 
+    text-decoration: none; /* keine Unterstreichung */
+}
+
+/*------Box Ueber uns Langingpage------*/
+.heading {
+    position: relative;
+    display: inline-block;
     font-size: var(--Mobile-H1-40);
-    display: inline-block;
 }
-@media (max-width: 389px) {
-    .allegra {
-        font-size: var(--Desktop-H1-64);
-        }
-}
-.wir-sind-amei {
-    position: relative;
+.heading-h2 {
     font-size: var(--Mobile-H2-24);
-    display: inline-block;
 }
 @media (max-width: 389px) {
-    .wir-sind-amei  {
+    .heading {
+        font-size: var(--Desktop-H1-64);
+    }
+    .heading-h2 {
         font-size: var(--Desktop-H2-28);
-        }
+    }
 }
 .textbox-ueber-uns {
     margin: 30px 180px 30px 180px; /*Textbox Seitenabstände, damit Text nicht zu sehr auseinander gezogen wird*/
@@ -280,7 +175,7 @@ header {
     color: var(--text-color);
 }
 
-/*------Box Download------*/
+/*------Box Download Landingpage------*/
 .background-image {
     width: 100%;
     background-image: url('image/Landingpage/action-shot_2_mobile.png');
@@ -327,9 +222,6 @@ header {
     .ueberschrift-download {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
     }
-    .fliesstext-download {
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
-    }  
     
 }
 .ueberschrift-download {
@@ -339,8 +231,7 @@ header {
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.55);
 }
 
-
-/*------Box App------*/
+/*------Box App Langingpage------*/
 .ueberschrift-app {
     font-size: var(--Desktop-H2-28);
     display: inline-block;
@@ -374,8 +265,7 @@ header {
    flex-direction: column; 
 }
 
-
-/*------Box News------*/
+/*------Box News Langingpage------*/
 .box-4-news {
     align-self: stretch;
     width: auto;
@@ -411,8 +301,7 @@ header {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
 
-
-/*------Box Sponsoren------*/
+/*------Box Sponsoren Landingpage------*/
 .box-5-sponsoren {
     align-self: stretch;
     display: flex;
@@ -429,7 +318,6 @@ header {
     font-size: var(--Desktop-Body-18);
     font-family: var(--titles);
     color: var(--text-color);
-
 }
 .sponsor-container {
     display: flex; 
@@ -451,7 +339,7 @@ header {
     height: auto; 
   }
 
-/*------Gerüst------*/
+/*------Gerüst Landingpage------*/
 .title-background-parent {
     margin: 0 !important;
     /*position: absolute;*/
@@ -481,431 +369,3 @@ header {
     color: white;
     font-family: var(--titles);
 }
-body {
-    margin: 0;
-    line-height: normal;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100vh;
-}
-  
-  /* ------------------------------------------Navbar--------------------------------------------- */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
-    border-bottom-left-radius: 16px; 
-    border-bottom-right-radius: 16px;
-    background-color: var(--background-light-gray);
-    color: var(--text-color);
-  }
-  
-  .logo a img {
-    width: 40px; 
-  height: auto; 
-  display: block; 
-  max-width: 100%; 
-}
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: var(--titles);
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: var(--button-color-hover);
-    text-decoration: underline;
-    text-underline-offset: 6px;
-  }
-  
-  .nav-button .btn {
-    padding: 10px 20px;
-    background-color: var(--text-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-button .btn:hover {
-    background-color: var(--button-color-hover);
-  }
-  
-  /* Burger Menu */
-  .burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .burger span {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color);
-    border-radius: 5px;
-    transition: transform 0.3s;
-  }
-  
-  /* Mobile Navigation Sidebar */
-  .mobile-nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-light-gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
-    transition: right 0.3s ease-in-out;
-  }
-  
-  .mobile-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .mobile-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 20px;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s;
-  }
-  
-  .mobile-nav a:hover {
-    background-color: white;
-  }
-  
-  /* Close Button */
-  .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    background: none;
-    border: none;
-    font-size: 40px;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .close-btn:hover {
-    transform: scale(1.2); 
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .nav-button {
-      display: none;
-    }
-  
-    .burger {
-      display: flex;
-    }
-  }
-  
-  /* Active Mobile Navigation */
-  .mobile-nav.active {
-    right: 0;
-  }
-
-  
-  /* ------------------------------------------Footer--------------------------------------------- */
-
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-light-gray);
-    z-index: 999; 
-    border-radius: 16px 16px 0 0;
-  }
-
-  .nichts-mehr-verpassen {
-    margin: 0;
-    }
-    .nichts-mehr-verpassen-container {
-    width: 429px;
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-    }
-    .input-with-button {
-      display: flex; 
-      align-items: center;
-      width: 90%; 
-      max-width: 500px;
-      border: 2px solid var(--color-white) ;
-      border-radius: 8px; 
-      overflow: hidden;
-    }
-    
-    .input-with-button input {
-      flex: 1; 
-      padding: 10px 12px;
-      border: 2px solid var(--color-white) ; 
-      outline: none;
-      font-size: 16px;
-    }
-    
-    .input-with-button input::placeholder {
-      color: #888; 
-    }
-    
-    .input-with-button button {
-      padding: 10px 20px; 
-      background-color: var(--text-color); 
-      color: var(--color-white); 
-      border: none; 
-      cursor: pointer; 
-      font-size: 16px;
-      font-family: var(--body-text);
-      transition: background-color 0.3s;
-    }
-    
-    .input-with-button button:hover {
-      background-color: var(--button-color-hover);
-    }
-    
-    .input-with-button button:active {
-      background-color: #053f16; 
-    }
-    
-    .footer-newsletter-box {
-    align-self: stretch;
-    box-shadow: 0px 8px 20px 2px rgba(0, 0, 0, 0.25);
-    border-radius: var(--radius-round-medium);
-    background-color: var(--text-color);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--spacing-40) var(--spacing-80);
-    color: var(--color-white);
-    font-family: var(--main-titles-h2);
-    }
-    .footer-nav-links {
-    position: relative;
-    }
-    .links {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--spacing-32);
-    }
-    .facebook-black-icon {
-    position: absolute;
-    height: 100%;
-    width: 11.11%;
-    top: 0%;
-    right: 88.89%;
-    bottom: 0%;
-    left: 0%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    }
-    .vimeo-black-icon {
-    position: absolute;
-    height: 87.5%;
-    width: 11.11%;
-    top: 8.33%;
-    right: 29.63%;
-    bottom: 4.17%;
-    left: 59.26%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    }
-    .twitter-black-icon {
-    position: absolute;
-    height: 83.33%;
-    width: 11.11%;
-    top: 8.33%;
-    right: 59.26%;
-    bottom: 8.33%;
-    left: 29.63%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    }
-    .youtube-black-icon {
-    position: absolute;
-    height: 70.83%;
-    width: 11.11%;
-    top: 16.67%;
-    right: 0%;
-    bottom: 12.5%;
-    left: 88.89%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
-    }
-    .social-media-icons {
-    width: 216px;
-    position: relative;
-    height: 24px;
-    }
-    .footer-links {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--spacing-40);
-    font-size: var(--body-text-size);
-    font-family: var(--body-text);
-    }
-
-    .footer-links a {
-      text-decoration: none; 
-      color: var(--text-color); 
-      font-weight: 500; 
-      transition: color 0.3s ease;
-    }
-    
-    .footer-links a:hover {
-      color: var(--button-color-hover); 
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    
-    .footer-child {
-    width: 100%;
-    margin: var(--spacing-20);
-    }
-    .rights-reserved {
-    width: 220px;
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-    opacity: 0.75;
-    mix-blend-mode: normal;
-    }
-    .terms-of-service {
-    width: 242.7px;
-    position: relative;
-    white-space: pre-wrap;
-    display: inline-block;
-    opacity: 0.75;
-    flex-shrink: 0;
-   
-    }
-    .footer-impressum {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-20);
-    font-size: var(--font-size-sm);
-    font-family: var(--main-titles-h2);
-    text-decoration: none;
-    color: var(--text-color);
-    }
-
-    .footer {
-    width: var(--size-desktop-size);
-    position: relative;
-    border-radius: var(--radius-round-medium) var(--radius-round-medium) 0px 0px;
-    background-color: var(--background-light-gray);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--spacing-80) var(--padding-21xl);
-    box-sizing: border-box;
-    gap: var(--spacing-40);
-    text-align: left;
-    font-size: var(--main-titles-h2-size);
-    color: var(--text-color);
-    font-family: var(--body-text);
-    }
-
-
-    /* ------------Footer Breakpoint Tablet (1080px)---------------*/
-
-    @media (max-width: 1080px) {
-      .footer-newsletter-box {
-        flex-direction: column; 
-        align-items: center; 
-        gap: var(--spacing-20); 
-        padding: var(--spacing-20);
-      }
-    
-      .nichts-mehr-verpassen-container {
-        width: 100%;
-        margin: 20px;
-        text-align: center; /* Optional: zentriere den Text */
-      }
-    
-      .input-with-button {
-        width: 80%;
-        margin-bottom: 20px;
-      }
-    }
-
-    /* ------------Footer Breakpoint Mobile (595px) ---------------*/
-
-    @media (max-width: 595px) {
-      .footer-newsletter-box {
-        flex-direction: column; 
-        align-items: center; 
-        gap: var(--spacing-20); 
-        padding: var(--spacing-20);
-      }
-    
-      .nichts-mehr-verpassen-container {
-        font-size: 18px;
-        width: 100%;
-        padding: 16px;
-        margin: 20px;
-        text-align: center;
-      }
-
-      .footer-links {
-        gap: var(--spacing-32);
-        font-size: 14px;
-        }
-
-        .input-with-button button {
-          font-size: 14px;
-        }
-
-        .input-with-button input {
-          font-size: 14px;
-        }
-
-        .footer-impressum {
-          font-size: 14px;
-          font-family: var(--main-titles-h2);
-          }
-    }
