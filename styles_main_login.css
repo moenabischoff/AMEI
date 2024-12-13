@@ -1,142 +1,162 @@
+:root {
+    /* Colors */
+   --background-white: #fff; 
+   --background-light-gray: #f3f2f0;
 
-.login-div{
-    margin: 40px;
-    padding: 20px;
-    border-radius: 16px;
-    background-color: #F3F2F0;
+   --text-color: #2f421c;
+   --button-color-hover: #476a21;
+   --button-color: #2f421c;
+   --button-text-color: #f3f2f0;
+
+  
+
+   /* fonts */
+  --body-text: Roboto;
+  --titles: Lora;
+
+   /* font sizes */
+   --Desktop-H1-64: 64px;
+   --Desktop-H2-28: 28px;
+   --Desktop-Subtitles-18: 18px;
+   --Desktop-Body-18: 18px;
+   --Desktop-Body-sm-16: 16px;
+   
+   --Mobile-H1-40: 40px;
+   --Mobile-H2-24: 24px;
+   --Mobile-Subtitles-16: 16px;
+   --Mobile-Body-16: 16px;
+   --Mobile-Body-sm-14: 14px;
+
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px; 
+  --spacing-120: 120px;
+  
+  /*Radius*/
+  --radius-round-subtle: 4px;
+  --radius-round-medium: 16px;
+  --radius-round-strong: 32px; 
+}
+
+
+body {
+    background-color: var(--background-white);
+}
+
+h1{
+    color:var(--text-color);
+    font-style: var(--Desktop-H1-64);
+    text-align: center
+}
+
+h2{
+    size: var(--Desktop-Subtitles-18);
+    color: var(--text-color);
+}
+
+p{
+    color: var(--text-color);
+    font-style: var(--Desktop-Body-18);
+    display: flex;
+}
+
+/* Beschreibung ganzer Block */
+.login-alles{
+    margin: var(--spacing-40);
+    padding: var(--spacing-20);
+    border-radius: var(--radius-round-medium);
+    background-color: var(--background-light-gray);
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacing-20);
     align-items: left;
 }
 
+/* ausfüllbare Liste */
 form {
-    border-radius: 16px;
-    background-color: #F3F2F0;
+    border-radius: var(--radius-round-medium);
+    background-color: var(--background-light-gray);
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacing-20);
     align-items: left;
 }
 
-.login1 {
-    font-size: 40px;
+/* titel */
+.login-titel {
+    font-size: var(--Desktop-H1-64);
     font-weight: bold;
-    color: #2f421c;
-    font-family: Lora;
+    color: var(--button-color);
+    font-family: var(--titles);
 }
 
-.willkommen-zurck-bitte {
-    font-size: 16px;
-    font-family: Roboto;
-    color: #2f421c;
+/* text oben */
+.fliesstext_login {
+    font-size: var(--Mobile-Body-16);
+    font-family: var(--body-text);
+    color: var(--button-color);
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: var(--spacing-20);
 }
 
+/* text in den blöcken */
 .e-mail,
 .passwort {
-    font-size: 16px;
+    font-size: var(--Mobile-Body-16);
     font-weight: bold;
-    font-family: Lora;
-    color: #2f421c;
+    font-family: var(--titles);
+    color: var(--button-color);
     width: 100%;
     text-align: left;
 }
 
-.login-div-child,
-.login-div-item {
+/* styling der blöcke */
+.login-bloecke{
     width: 100%;
-    padding: 20px;
-    border-radius: 16px;
+    padding: var(--spacing-20);
+    border-radius: var(--radius-round-medium);
     border: 2px solid transparent;
-    background-color: #FFFFFF;
-    font-size: 14px;
+    background-color: var(--background-white);
+    font-size: var(--Mobile-Body-sm-14);
     box-sizing: border-box;
 }
+.login-bloecke:focus {
+    outline: 0px;
+    border: 2px solid var(--button-color);
+}
 
+/* remember me text und checkbox */
 .remember-me {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 14px;
-    color: #666;
+    font-size: var(--Mobile-Body-sm-14);
+    color: var(--button-color);
 }
-
-.passwort-vergessen {
-    font-size: 14px;
-    color: #b4da7c;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    font-family: Roboto;
-    font-weight: bold;
-}
-.passwort-text {
-    font-size: 14px;
-    color: #b4da7c;
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    font-family: Roboto;
-    font-weight: bold;
-}
-
-.passwort-vergessen:hover,
-.passwort-text:hover {
-    color: #2f421c;
-}
-
-.login_button {
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    background-color: #2f421c;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: Lora;
-    box-sizing: border-box;
-}
-
-.login_button:hover {
-    background-color: #1e2d14;
-}
-
-.kein-account-sign-container {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 10px;
-    font-family: Roboto;
-}
-
-.sign-up1 {
-    color: #b4da7c;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.sign-up1:hover {
-    color: #2f421c;
-}
-
-.container {
+.container-remember-me {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    font-family: Roboto;
-    font-size: 14px;
+    font-family: var(--body-text);
+    font-size: var(--Mobile-Body-sm-14);
   }
 
-.container input {
+.container-remember-me input {
     opacity: 0;
     cursor: pointer;
     height: 0;
@@ -147,19 +167,19 @@ form {
   .checkmark {
     display: inline-block;
     position: relative; 
-    height: 20px;
-    width: 20px;
-    border-radius: 8px;
-    background-color: #eee;
+    height: var(--spacing-20);
+    width: var(--spacing-20);
+    border-radius: var(--radius-round-subtle);
+    background-color: var(--background-white);
     transition: background-color 0.3s;
   }
   
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
+  .container-remember-me input ~ .checkmark:hover {
+    background-color: var(--background-white);
   }
   
-  .container input:checked ~ .checkmark {
-    background-color: #2f421c;
+  .container-remember-me input:checked ~ .checkmark {
+    background-color: var(--button-color);
   }
   .checkmark:after {
     content: "";
@@ -169,284 +189,116 @@ form {
     top: 3px;
     width: 3px;
     height: 8px;
-    border: solid white;
+    border: solid var(--background-white);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
   }
-  .container input:checked ~ .checkmark:after {
+  .container-remember-me input:checked ~ .checkmark:after {
     display: block;
   }
-  .container .checkmark:after {
+  .container-remember-me .checkmark:after {
     left: 7px;
     top: 3px;
     width: 3px;
     height: 8px;
-    border: solid white;
+    border: solid var(--background-white);
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .login-image img {
+
+/* passwort vergessen text */
+.passwort-vergessen {
+    font-size: var(--Mobile-Body-sm-14);
+    color: var(--button-color-hover);
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-family: var(--body-text);
+    font-weight: bold;
+}
+.passwort-text {
+    font-size: var(--Mobile-Body-sm-14);
+    color: var(--button-color-hover);
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-family: var(--body-text);
+    font-weight: bold;
+}
+
+.passwort-vergessen:hover,
+.passwort-text:hover {
+    color: var(--button-color);
+}
+
+/* Login Button */
+.login_button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-color);
+    color: var(--background-white);
+    border: none;
+    border-radius: var(--radius-round-medium);
+    font-size: var(--Mobile-Body-16);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--titles);
+    box-sizing: border-box;
+}
+
+.login_button:hover {
+    background-color: var(--button-color-hover);
+}
+
+/* kein Account und Sign up Text */
+.kein-account-sign-container {
+    font-size: var(--Mobile-Body-sm-14);
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--body-text);
+}
+
+/* text links */
+.link {
+    color: var(--button-color-hover);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: var(--button-color);
+}
+
+/* Bild */
+.login-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: var(--radius-round-medium);
 }
-.login-div-child:focus,
-.login-div-item:focus {
-    outline: 0px;
-    border: 2px solid #2f421c;
-}
+
 .image {
-    border-radius: 16px;
+    border-radius: var(--radius-round-medium);
     width: 370px;
     height: 335px;
 }
-.home {
-    text-decoration: none;
-    color: inherit;
-    font-family: Roboto;
-}
 
-.home:hover {
-    text-decoration: underline;
-    color: #2f421c;
-}
-/*
-.login1 {
-    position: absolute;
-    top: 18px;
-    left: 14px;
-    font-size: 40px;
-    display: inline-block;
-    width: 180px;
-}
-.willkommen-zurck-bitte {
-    position: absolute;
-    top: 84px;
-    left: 14px;
-    font-family: Roboto;
-    display: inline-block;
-    width: 321px;
-    height: 44px;
-}
-.e-mail {
-    position: absolute;
-    top: 154px;
-    left: 14px;
-    display: inline-block;
-    width: 658px;
-}
-.passwort {
-    position: absolute;
-    top: 253px;
-    left: 15px;
-    display: inline-block;
-    width: 658px;
-}
-.login-div-child {
-    position: absolute;
-    top: 187px;
-    left: 14px;
-    border-radius: 16px;
-    background-color: #fff;
-    width: 85%;
-    height: 50px;
-    font-family: Roboto;
-    border: 0cap;
-    padding-left: 20px;
+@media only screen and (min-width: 768px) {
+    .login-titel {
+        font-size: var(--Desktop-H1-64);
+    }
+    .h2 {
+        font-size: var(--Desktop-H2-28);
+    }
 
-}
+    .e-mail, .passwort, .login_button, .passwort-text, .willkommen-zurck-bitte {
+        font-size: var(--Desktop-Body-18);
+    }
 
-.login-div-item {
-    position: absolute;
-    top: 286px;
-    left: 14px;
-    border-radius: 16px;
-    background-color: #fff;
-    width: 85%;
-    height: 50px;
-    font-family: Roboto;
-    font-style: po;
-    border: 0cap;
-    padding-left: 20px;
+    a, p {
+        font-size: var(--Desktop-Body-sm-16);
+    }
 }
-.remember-me1 {
-    position: absolute;
-    top: 0px;
-    left: 29px;
-}
-
-.passwort-vergessen {
-    position: absolute;
-    top: 485px;
-    left: 97px;
-    font-family: Roboto;
-    color: #b4da7c;
-}
-.kein-account {
-    color: #b4da7c;
-}
-.span {
-    color: #2f421c;
-}
-
-.sign-up1 {
-    text-decoration: underline;
-}
-.sign-up1 a:hover {
-   color: #b4da7c;
-
-}
-.kein-account-sign-container {
-    position: absolute;
-    top: 653px;
-    left: 95px;
-    font-family: Roboto;
-}
-.login_button {
-    text-align: center;
-    font-size: 16px;
-    font-family: Lora;
-    display: inline-block;
-    position: absolute;
-    border-radius: 16px;
-    color: #2f421c;
-    width: 70%;
-    height: 40px;
-    cursor: pointer;
-}
-.login2 {
-    position: absolute;
-    top: 13px;
-    left: 38px;
-    display: inline-block;
-    width: 234px;
-    height: 24px;
-}
-.login-button-parent {
-    position: absolute;
-    top: 422px;
-    left: 15px;
-    width: 320px;
-    height: 50px;
-    text-align: center;
-    color: #f3f2f0;
-}
-.login-div {
-    position: absolute;
-    top: 107px;
-    left: 20px;
-    border-radius: 16px;
-    background-color: #f3f2f0;
-    width: 350px;
-    height: 685px;
-    overflow: hidden;
-}
-.adobestock-357137685-1-icon {
-    position: absolute;
-    top: 811px;
-    left: 20px;
-    border-radius: 16px 0px 0px 16px;
-    width: 370px;
-    height: 335px;
-    object-fit: cover;
-} 
-.login {
-    width: 90%;
-    background-color: #fff;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-} */
-
-/*
-body {
-    margin: 0;
-    line-height: normal;
-}
-.loginfeld_email {
-    position: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    background-color: #fff;
-    width: 80%;
-    height: 50px;
-    font-family: Roboto;
-    border: 0cap;
-    padding-left: 20px;
-    margin-top: 10px;
-}
-.loginfeld_passwort {
-    position: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    background-color: #fff;
-    width: 80%;
-    height: 50px;
-    font-family: Roboto;
-    border: 0cap;
-    padding-left: 20px;
-    margin-top: 10px;
-}
-.login {
-    margin: 20px;
-    padding: 20px;
-    width: 60%;
-    position: relative;
-    background-color: #e8e8e8;
-    border-radius: 16px;
-    text-align: left;
-    
-}
-.logintext {
-    margin: 20px;
-    padding: 20px;
-    font-size: 40px;
-    color: #2f421c;
-    font-family: Lora;
-}
-.beschreibung {
-    font-family: Lora;
-    font-size: 16px;
-    padding-bottom: 20px;
-    width: 100%;
-}
-.loginfeld {
-    margin: 40px;
-    width: 100%;
-}
-.willkommen {
-    margin: 40px;
-    width: 100%;
-    font-family: Roboto;
-    font-size: 16px;
-}
-
-    /* CODE VON FIGMA
-
-        <div class="login">
-  	    <div>
-            <h1 class="logintext">Login</h1>
-        </div>
-        <div class="willkommen">
-            <b class="willkommen_text">Willkommen zurück! Bitte log dich ein um zu deinem Account zu gelangen.</b>
-        </div>
-        <div class="loginfeld">
-            <b class="beschreibung">E-Mail</b>
-            <div>
-                <input class="loginfeld_email" type="text" id="textfeld" name="email" placeholder="E-Mail">
-            </div>
-        </div>
-        <div class="loginfeld">
-            <b class="beschreibung">Passwort</b>
-            <div>
-                <input class="loginfeld_passwort" type="password" name="passwort" placeholder="Passwort">
-            </div>
-        </div>
-    </div>
-*/
