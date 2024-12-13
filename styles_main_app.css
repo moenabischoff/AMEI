@@ -1,150 +1,144 @@
+:root {
+    /* Colors */
+    --background-white: #fff;
+    --background-light-gray: #f3f2f0;
+
+    --text-color: #2f421c;
+    --button-color-hover: #476a21;
+    --button-color: #2f421c;
+    --button-text-color: #f3f2f0;
+
+    /* fonts */
+    --body-text: Roboto;
+    --titles: Lora;
+
+    /* font sizes */
+    --Desktop-H1-64: 64px;
+    --Desktop-H2-28: 28px;
+    --Desktop-Subtitles-18: 18px;
+    --Desktop-Body-18: 18px;
+    --Desktop-Body-sm-16: 16px;
+
+    --Mobile-H1-40: 40px;
+    --Mobile-H2-24: 24px;
+    --Mobile-Subtitles-16: 16px;
+    --Mobile-Body-16: 16px;
+    --Mobile-Body-sm-14: 14px;
+
+    /*Radius*/
+    --radius-round-subtle: 4px;
+    --radius-round-medium: 16px;
+    --radius-round-strong: 32px;
+
+    /* Spacing */
+    --spacing-20: 20px;
+}
+
+/*Mobile Version*/
+
+/* Body Style */
 body {
-    margin: 0;
+    margin: 0 auto; /*top & bottom = 0, right & left = auto*/
     line-height: normal;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.text {
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+/* Text Styles */
 
 .text-in-card {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%; /*top & bottom = 0px, right & left = 10%*/
     max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 12px;
 }
 
-.h2-mobile {
-    height: 62px;
+
+.h2, .subtitle, .lauftext {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    color: #2f421c;
+    margin: var(--spacing-20) 0; /*top & bottom = 20px, right & left = 0*/
 }
 
-.subtitle-mobile {
-    width: 344px;
-    height: 23px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #476a21;
+.h2 {
+    font: var(--titles);
+    font-size: var(--Mobile-H2-24);
+    color: var(--button-color-hover);
+    font-weight: bold;
+}
+
+.subtitle {
+    font: var(--titles);
+    font-size: var(--Mobile-Subtitles-16);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.lauftext {
+    font-size: var(--Mobile-Body-sm-14);
+    color: var(--text-color);
+    font: var(--body-text);
 }
 
 .text-hightlight {
-    color: #476a21;
+    color: var(--button-color-hover);
 }
 
-.lauftext-mobile {
+/* Buttons */
+.primary-button {
+    border-radius: var(--radius-round-medium);
+    background-color: var(--button-color);
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    color: #000;
-    font-family: Roboto;
-}
-
-.button-text {
-    position: relative;
-}
-
-.frame-icon {
-    width: 24px;
-    position: relative;
-    height: 24px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.primary-button-app-store {
-    width: 169px;
-    border-radius: 16px;
-    background-color: #2f421c;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    box-sizing: border-box;
-    gap: 12px;
-}
-
-.primary-button-google-play {
-    border-radius: 16px;
-    background-color: #2f421c;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
     gap: 12px;
+}
+
+.button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
+    position: relative;
+    color: var(--button-text-color);
+    text-decoration: none; /* keine Unterstreichung */
 }
 
 .downloads {
-    margin-top: 20px;
-    background-color: #f3f2f0;
+    margin-top: var(--spacing-20);
     gap: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f3f2f0;
 }
 
+/* Frame Styles */
 .image {
-    align-self: stretch;
-    position: relative;
     display: flex;
     max-width: 100%;
-    overflow: hidden;
-    flex-shrink: 0;
     object-fit: cover;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: var(--spacing-20);
 }
 
 .frame {
-    position: relative;
-    border-radius: 32px;
-    background-color: #f3f2f0;
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-sizing: border-box;
-    overflow: hidden;
+    border-radius: var(--radius-round-strong);
+    background-color: var(--background-light-gray);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     padding: 32px 12px;
     gap: 20px;
-    text-align: left;
-    font-size: 18px;
-    color: #000;
-    font-family: Lora;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: var(--spacing-20);
+    margin-left: var(--spacing-20);
+    margin-right: var(--spacing-20);
 }
 
 .mywgfriend-logo-icon {
-    position: relative;
     max-width: 100%;
-    overflow: hidden;
     height: 250px;
     flex-shrink: 0;
 }
 
+/* Grid */
 .grid-container {
     display: grid;
     grid-template-columns: auto;
@@ -152,23 +146,32 @@ body {
     align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .grid-container-2 {
     display: grid;
     grid-template-columns: auto;
 }
 
+
+/* Version: Tablet & Desktop sind gleich */
+    /* Media Queries */
 @media only screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
     .grid-container-2 {
-        display: grid;
         grid-template-columns: auto auto auto;
+    }
+
+    .h2 {
+        font-size: var(--Desktop-H2-28);
+    }
+
+    .subtitle {
+        font-size: var(--Desktop-Subtitles-18);
+    }
+
+    .lauftext {
+        font-size: var(--Desktop-Body-sm-16);
     }
 }
