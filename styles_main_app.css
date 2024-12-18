@@ -130,6 +130,7 @@ body {
     margin-bottom: var(--spacing-20);
     margin-left: var(--spacing-20);
     margin-right: var(--spacing-20);
+    margin-top: var(--spacing-20);
 }
 
 .mywgfriend-logo-icon {

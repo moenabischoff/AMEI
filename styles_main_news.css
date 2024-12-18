@@ -1,16 +1,61 @@
-:root{
-    --button-color: #2F421C;
-    --button-color-hover: #476A21;
-    --background-color: #F3F2F0;
-    --background-white: #FFFFFF;
-    --text-color: #2F421C;
-    --text-color-hover: #476a21;
-    --off-text-color: #97989f;
-    --white-text-color: #FFFFFF;
-    --font-text: 'Roboto', sans-serif;
-    --font-title: 'lora', sans-serif;
-    --font-size: 28px;
 
+:root{
+
+        /* Colors */
+   --background-white: #fff; 
+   --background-light-gray: #f3f2f0;
+
+
+   --text-color: #2f421c;
+   --button-color-hover: #476a21;
+   --button-color: #2f421c;
+   --button-text-color: #f3f2f0;
+   --off-text-color: #97989f;
+   --white-text-color: #FFFFFF;
+
+  
+
+   /* fonts */
+  --body-text: Roboto;
+  --titles: Lora;
+
+   /* font sizes */
+   --Desktop-H1-64: 64px;
+   --Desktop-H2-28: 28px;
+   --Desktop-Subtitles-18: 18px;
+   --Desktop-Body-18: 18px;
+   --Desktop-Body-sm-16: 16px;
+   
+   --Mobile-H1-40: 40px;
+   --Mobile-H2-24: 24px;
+   --Mobile-Subtitles-16: 16px;
+   --Mobile-Body-16: 16px;
+   --Mobile-Body-sm-14: 14px;
+
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px; 
+  --spacing-120: 120px;
+  
+  /*Radius*/
+  --radius-round-subtle: 4px;
+  --radius-round-medium: 16px;
+  --radius-round-strong: 32px;
+  
+
+
+   
      }
 
 body {
@@ -28,7 +73,7 @@ body {
 }
 
 .main_title:hover {
-    color: var(--text-color-hover); /* Change text color on hover */
+    color: var(--text-color-hover);
 }
 
 .main_text {
@@ -39,11 +84,11 @@ body {
 }
 
 .main_content {
-    position: absolute; /* Allows precise positioning */
-    bottom: 10px; /* Align content 10px from the bottom */
-    left: 10px; /* Align content 10px from the left */
-    padding: 10px; /* Optional: Padding for text block */
-    border-radius: 6px; /* Optional: Rounded corners */
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
+    padding: 10px; 
+    border-radius: 6px; 
 }
 
 .m-post-card-overlay {
@@ -54,9 +99,8 @@ body {
     background-image: url('image/News/main\ news\ picture.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
 
-    margin-top:  20px;
+    margin-top: var(--spacing-20);
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -113,7 +157,7 @@ body {
 }
 
 .title:hover {
-    color: var(--text-color-hover);
+    color: var(--button-color-hover);
 }
 
 .heading {
@@ -270,7 +314,7 @@ a[href="index_main_news_story.html"] {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 8px;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    gap: 8px; 
 }
 
 .single_news-heading {
@@ -289,7 +333,7 @@ a[href="index_main_news_story.html"] {
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
-    border: 1px solid var(--button-color); /* Fügen Sie den Border-Stil explizit hinzu */
+    border: 1px solid var(--button-color);
 }
 
 .single_news-title {
@@ -305,7 +349,7 @@ a[href="index_main_news_story.html"] {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    gap: 8px; 
     font-size: 16px;
     color: var(--off-text-color);
     font-family: var(--font-text);
@@ -316,7 +360,7 @@ a[href="index_main_news_story.html"] {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    gap: 8px; 
 }
 
 .single_news-image-icon {
@@ -354,6 +398,7 @@ a[href="index_main_news_story.html"] {
     font-family: var(--font-text);
     color:var(--text-color);
     font-weight: 400;
+    padding-top: var(--spacing-20);
 }
 
 
@@ -372,7 +417,7 @@ a[href="index_main_news_story.html"] {
     }
     .m-post-card-overlay {
         height: 400px;
-        margin-top:  60px;
+        margin-top:  var(--spacing-20);
     }
 
     .single_news-card {
@@ -398,7 +443,7 @@ a[href="index_main_news_story.html"] {
     .m-post-card-overlay {
         margin-right: 40px;
         margin-left: 40px;
-        margin-top:  60px;
+        margin-top:  var(--spacing-20);
         height: 400px;
     }
 
