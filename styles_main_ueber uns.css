@@ -102,7 +102,7 @@ crew box
     margin: 12px;
     border-radius: var(--radius-round-strong);
     text-align: center;
-    box-sizing: border-box; /* Innenabstand wird berücksichtigt */
+    box-sizing: border-box; /* Element bleibt genau so groß, wie in width und height definiert, und der Inhalt passt sich entsprechend an. */
     gap: 40px;
 }
 
@@ -280,3 +280,4 @@ a:hover {
         margin-left: 6px;
         margin-right: 6px;
     }
+}
