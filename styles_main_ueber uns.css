@@ -203,7 +203,7 @@ margin-inline: 8px;
     }
 
 #crew-box-stopp {
-    scroll-margin-bottom: 200vh; /* Passt die Scrollposition beim Wechsel der seite an */
+    scroll-margin-bottom: 200; /* Passt die Scrollposition beim Wechsel der seite an */
     }
 
 
