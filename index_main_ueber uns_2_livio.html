@@ -1,17 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ueber uns</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>News Page</title>
 
-    <link rel="stylesheet"  href="styles_main_ueber uns.css"/>
-    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_main_ueber uns.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap">
+
     <!--Favicon (Symbol in Registerkarte)-->
     <link rel="icon" href="image/Logo_MWGF.png" type="image/png">
     <link rel="apple-touch-icon" href="image/Logo_MWGF.png">
 
-  </head>
+   <!-------------------------------------------------Navigation------------------------------------------------->
 
+   <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index_main_landingpage.html"><img src="image/Logo_MWGF.png" alt=""></a>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="index_main_landingpage.html">Home</a></li>
+      <li><a href="index_main_app.html">App</a></li>
+      <li><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></li>
+      <li><a href="index_main_news.html">News</a></li>
+      <li><a href="index_main_login.html">Login</a></li>
+    </ul>
+
+    <!-- Button -->
+    <div class="nav-button">
+      <a href="#download" class="btn">App downloaden</a>
+    </div>
+
+    <!-- Burger Menu -->
+    <button class="burger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation Sidebar -->
+  <aside class="mobile-nav">
+    <button class="close-btn" aria-label="Close navigation">
+      &times; <!-- Cross button -->
+    </button>
+    <ul>
+      <li><a href="index_main_landingpage.html">Home</a></li>
+      <li><a href="index_main_app.html">App</a></li>
+      <li><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></li>
+      <li><a href="index_main_news.html">News</a></li>
+      <li><a href="index_main_login.html">Login</a></li>
+    </ul>
+  </aside>
+</header>
+
+<script src="script.js"></script>
+</body>
+
+    <!-------------------------------------------------Ende Navigation------------------------------------------------->
 <body>
 <div class="wir-sind-amei-box">
     <h1> Wir sind AMEI</h1>
@@ -92,5 +144,47 @@
 
 
 <br>
+
+    <!-------------------------------------------------Footer------------------------------------------------->
+
+    <footer>
+      <div class="footer">
+          <div class="footer-newsletter-box">
+              <b class="nichts-mehr-verpassen-container">
+                  <p class="nichts-mehr-verpassen">Nichts mehr verpassen und <br> Newsletter abonnieren</p>
+              </b>
+              <div class="input-with-button">
+                  <input type="email" placeholder="Enter your email" aria-label="Email address">
+                  <button type="submit">Subscribe</button>
+              </div>
+          </div>
+  
+          <div class="footer-links">
+              <div class="links">
+                  <div class="footer-nav-links"><a href="index_main_app.html">App</a></div>
+                  <div class="footer-nav-links"><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></div>
+                  <div class="footer-nav-links"><a href="index_main_news.html">News</a></div>
+                  <div class="footer-nav-links"><a href="index_main_login.html">Login</a></div>
+              </div>
+  
+              <div class="social-media-icons">
+                  <img class="facebook-black-icon" alt="Facebook" src="image/facebook-black.svg">
+                  <img class="vimeo-black-icon" alt="Vimeo" src="image/vimeo-black.svg">
+                  <img class="twitter-black-icon" alt="Twitter" src="image/twitter-black.svg">
+                  <img class="youtube-black-icon" alt="YouTube" src="image/youtube-black.svg">
+              </div>
+          </div>
+  
+          <img class="footer-child" alt="Line" src="/image/Line 2.svg">
+          <div class="footer-impressum">
+              <div class="rights-reserved">© 2024 AMEI. All rights reserved.</div>
+              <div class="terms-of-service">Impressum Datenschutzerklärung</div>
+          </div>
+      </div>
+  </footer>
+  
+  <!-------------------------------------------------Ende Footer------------------------------------------------->
+
 </body>
+
 </html>

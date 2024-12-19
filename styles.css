@@ -85,9 +85,9 @@
   
   .logo a img {
     width: 40px; 
-  height: auto; 
-  display: block; 
-  max-width: 100%; 
+    height: auto; 
+    display: block; 
+    max-width: 100%; 
 }
   
   .nav-links {
@@ -154,6 +154,7 @@
     justify-content: center;
     box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
     transition: right 0.3s ease-in-out;
+    z-index: 1000;
   }
   
   .mobile-nav ul {
@@ -169,6 +170,7 @@
     display: block;
     text-align: center;
     transition: background-color 0.3s;
+
   }
   
   .mobile-nav a:hover {
@@ -186,6 +188,7 @@
     color: var(--text-color);
     cursor: pointer;
     transition: transform 0.2s;
+
   }
   
   .close-btn:hover {
@@ -217,17 +220,20 @@
 
 
   footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: var(--background-light-gray);
     z-index: 999; 
     border-radius: 16px 16px 0 0;
+    margin-top: 200px;
   }
 
   .nichts-mehr-verpassen {
     margin: 0;
+    color: var(--background-white);
+    font: var(--Desktop-H1-64);
     }
     .nichts-mehr-verpassen-container {
     width: 429px;
@@ -383,34 +389,6 @@
     width: 100%;
     margin: var(--spacing-20);
     }
-    .rights-reserved {
-    width: 220px;
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-    opacity: 0.75;
-    mix-blend-mode: normal;
-    }
-    .terms-of-service {
-    width: 242.7px;
-    position: relative;
-    white-space: pre-wrap;
-    display: inline-block;
-    opacity: 0.75;
-    flex-shrink: 0;
-   
-    }
-    .footer-impressum {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-20);
-    font-size: var(--Desktop-Body-sm-16);
-    font-family: var(--titles);
-    text-decoration: none;
-    color: var(--text-color);
-    }
 
     .footer {
     width: var(--size-desktop-size);
@@ -420,7 +398,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
     padding: var(--spacing-80) var(--spacing-40);
     box-sizing: border-box;
@@ -430,6 +407,34 @@
     color: var(--text-color);
     font-family: var(--body-text);
     }
+
+    .footer-impressum {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--spacing-20);
+      font-size: var(--Desktop-Body-sm-16);
+      font-family: var(--titles);
+      text-decoration: none;
+      color: var(--text-color);
+      }
+      .rights-reserved {
+      width: 220px;
+      position: relative;
+      display: inline-block;
+      flex-shrink: 0;
+      opacity: 0.75;
+      mix-blend-mode: normal;
+      }
+      .terms-of-service {
+      width: 242.7px;
+      position: relative;
+      white-space: pre-wrap;
+      display: inline-block;
+      opacity: 0.75;
+      flex-shrink: 0;
+     }
 
 
     /* ------------Footer Breakpoint Tablet (1080px)---------------*/
