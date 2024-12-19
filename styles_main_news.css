@@ -63,7 +63,7 @@ body {
 }
 
 .main_title {
-    font-size: 24px;
+    font-size:var(--Mobile-H2-24);
     font-family: var(--font-title);
     color: var(--white-text-color);
     font-weight: 700;
@@ -75,7 +75,7 @@ body {
 }
 
 .main_text {
-    font-size: 16px;
+    font-size:var(--Mobile-Body-16);
     font-family:var(--font-text);
     color:var(--white-text-color);
     font-weight: 400;
@@ -83,15 +83,14 @@ body {
 
 .main_content {
     position: absolute; 
-    bottom: 10px; 
-    left: 10px; 
-    padding: 10px; 
-    border-radius: 6px; 
+    bottom: var(--spacing-16); 
+    left: var(--spacing-16);  
+    padding: var(--spacing-16); 
 }
 
 .m-post-card-overlay {
     position: relative;
-    border-radius: 6px;
+    border-radius: var(--radius-round-medium);
     height: 276px;
     overflow: hidden;
     background-image: url('image/News/main\ news\ picture.png');
@@ -111,7 +110,6 @@ body {
     align-self: stretch;
     flex: 1;
     position: relative;
-    border-radius: 4px;
     max-width: 100%;
     overflow: hidden;
     max-height: 200px;
@@ -131,9 +129,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4px 10px;
-    border: 5px solid var(--button-color); /* Rahmen */
-    background-color: var(--button-color); /* Hintergrund */
-    box-sizing: border-box; /* Korrekte Berechnung */
+    border: 5px solid var(--button-color); 
+    background-color: var(--button-color); 
+    box-sizing: border-box; 
 }
 
 .a-badge {
@@ -149,7 +147,7 @@ body {
 .title {
     align-self: stretch;
     position: relative;
-    font-size: 18px;
+    font-size: var(--Desktop-Subtitles-18);
     font-family:var(--font-title);
     color:var(--text-color);
 }
@@ -190,8 +188,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
-    font-size: 16px;
+    gap: 8px; 
+    font-size: var(--Mobile-Subtitles-16);
     color: var(--off-text-color);
     font-family: var(--font-text);
 }
@@ -203,7 +201,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 8px;
-    gap: 8px; /* Verringern Sie den Abstand zwischen den Elementen */
+    gap: 8px; 
 }
 
 .news-card {
@@ -225,14 +223,14 @@ body {
 }
 
 .news-card:hover {
-    background-color: var(--background-color); /* Change background on hover */
+    background-color: var(--background-color);
     transition: transform 0.3s ease, background-color 0.3s ease;
     transform: scale(1.01);
 }
 
 .news-card-parent .news-card-child:hover,
 .news-card-parent .content a:hover {
-    pointer-events: auto; /* Retain interactivity for children */
+    pointer-events: auto; 
 }
 
 .news-card-parent {
@@ -246,21 +244,22 @@ body {
     box-sizing: border-box;
     gap: 54px;
     text-align: left;
-    font-size: 14px;
+    font-size: var(--Mobile-Subtitles-14);
     color: var(--text-color);
     font-family: var(--font-title);
 }
 
-/* Target the anchor tag with the specific href attribute */
+
 a[href="index_main_news_story.html"] {
-    display: block; /* Ensure the anchor tag is displayed as a block */
-    text-decoration: none; /* Remove underline from the link */
-    color: var(--text-color); /* Inherit the text color from the parent */
-    transition: color 0.3s ease; /* Add a transition effect for color */
+    display: block; 
+    text-decoration: none; 
+    color: var(--text-color); 
+    transition: color 0.3s ease; 
 }
 
 
 /* Single news website style */
+
 .single_news-card-parent {
     width: 100%;
     position: relative;
@@ -299,8 +298,8 @@ a[href="index_main_news_story.html"] {
     flex: 1;
     position: relative;
     border-radius: 4px;
-    max-width: 100%; /* Ensure the image does not exceed 100px in width */
-    max-height: 200px; /* Ensure the image does not exceed 100px in height */
+    max-width: 100%; 
+    max-height: 200px; 
     overflow: hidden;
     object-fit: cover;
 }
@@ -337,7 +336,7 @@ a[href="index_main_news_story.html"] {
 .single_news-title {
     align-self: stretch;
     position: relative;
-    font-size: 18px;
+    font-size: var(--Desktop-Body-18);
     font-family: var(--font-title);
     color: var(--button-color);
 }
@@ -348,7 +347,7 @@ a[href="index_main_news_story.html"] {
     align-items: center;
     justify-content: flex-start;
     gap: 8px; 
-    font-size: 16px;
+    font-size: var(--Mobile-Subtitles-16);
     color: var(--off-text-color);
     font-family: var(--font-text);
 }
@@ -382,7 +381,7 @@ a[href="index_main_news_story.html"] {
     cursor: pointer;
     font-family: var(--font-text);
     font-size: 14px;
-    margin-left: 8px; /* Add some space between the author and the button */
+    margin-left: 8px;
     align-self: center;
     text-decoration: none;
 }
@@ -400,7 +399,7 @@ a[href="index_main_news_story.html"] {
 }
 
 
-/* Media query for screens larger than 834px */
+
 @media (min-width: 834px) {
     .news-card-parent {
         flex-wrap: wrap; /* Allow wrapping of flex items */
@@ -414,6 +413,7 @@ a[href="index_main_news_story.html"] {
         width: calc(50% - 16px); /* Ensure two cards fit in one row with gap */
     }
     .m-post-card-overlay {
+        
         height: 400px;
         margin-top:  var(--spacing-20);
     }
@@ -446,9 +446,10 @@ a[href="index_main_news_story.html"] {
     }
 
     .main_title { /* just here in case i have to change the size */
+        font-size: var(--Mobile-H1-40);
         width: 720px;
         position: relative;
-        font-size: 28px;
+
         display: inline-block;
         font-family: var(--font-title);
         color:var(--background-white);
@@ -456,7 +457,7 @@ a[href="index_main_news_story.html"] {
         }
 
     .main_text { /* just here in case i have to change the size */
-            font-size: 16px;
+            font-size: var(--Mobile-Subtitles-16);
             font-family: var(--font-text);
             color: var(--background-white);
             font-weight: 400;
