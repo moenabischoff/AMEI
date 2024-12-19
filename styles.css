@@ -389,34 +389,6 @@
     width: 100%;
     margin: var(--spacing-20);
     }
-    .rights-reserved {
-    width: 220px;
-    position: relative;
-    display: inline-block;
-    flex-shrink: 0;
-    opacity: 0.75;
-    mix-blend-mode: normal;
-    }
-    .terms-of-service {
-    width: 242.7px;
-    position: relative;
-    white-space: pre-wrap;
-    display: inline-block;
-    opacity: 0.75;
-    flex-shrink: 0;
-   
-    }
-    .footer-impressum {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-20);
-    font-size: var(--Desktop-Body-sm-16);
-    font-family: var(--titles);
-    text-decoration: none;
-    color: var(--text-color);
-    }
 
     .footer {
     width: var(--size-desktop-size);
@@ -426,7 +398,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
     padding: var(--spacing-80) var(--spacing-40);
     box-sizing: border-box;
@@ -436,6 +407,34 @@
     color: var(--text-color);
     font-family: var(--body-text);
     }
+
+    .footer-impressum {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--spacing-20);
+      font-size: var(--Desktop-Body-sm-16);
+      font-family: var(--titles);
+      text-decoration: none;
+      color: var(--text-color);
+      }
+      .rights-reserved {
+      width: 220px;
+      position: relative;
+      display: inline-block;
+      flex-shrink: 0;
+      opacity: 0.75;
+      mix-blend-mode: normal;
+      }
+      .terms-of-service {
+      width: 242.7px;
+      position: relative;
+      white-space: pre-wrap;
+      display: inline-block;
+      opacity: 0.75;
+      flex-shrink: 0;
+     }
 
 
     /* ------------Footer Breakpoint Tablet (1080px)---------------*/
