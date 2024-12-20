@@ -1,52 +1,52 @@
 :root {
     /* Colors */
-   --background-white: #fff; 
-   --background-light-gray: #f3f2f0;
+    --background-white: #fff;
+    --background-light-gray: #f3f2f0;
 
-   --text-color: #2f421c;
-   --button-color-hover: #476a21;
-   --button-color: #2f421c;
-   --button-text-color: #f3f2f0;
-
-  
-
-   /* fonts */
-  --body-text: Roboto;
-  --titles: Lora;
-
-   /* font sizes */
-   --Desktop-H1-64: 64px;
-   --Desktop-H2-28: 28px;
-   --Desktop-Subtitles-18: 18px;
-   --Desktop-Body-18: 18px;
-   --Desktop-Body-sm-16: 16px;
-   
-   --Mobile-H1-40: 40px;
-   --Mobile-H2-24: 24px;
-   --Mobile-Subtitles-16: 16px;
-   --Mobile-Body-16: 16px;
-   --Mobile-Body-sm-14: 14px;
+    --text-color: #2f421c;
+    --button-color-hover: #476a21;
+    --button-color: #2f421c;
+    --button-text-color: #f3f2f0;
 
 
-  /* Spacing */
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-32: 32px;
-  --spacing-40: 40px;
-  --spacing-48: 48px;
-  --spacing-56: 56px;
-  --spacing-64: 64px;
-  --spacing-80: 80px; 
-  --spacing-120: 120px;
-  
-  /*Radius*/
-  --radius-round-subtle: 4px;
-  --radius-round-medium: 16px;
-  --radius-round-strong: 32px; 
+
+    /* fonts */
+    --body-text: Roboto;
+    --titles: Lora;
+
+    /* font sizes */
+    --Desktop-H1-64: 64px;
+    --Desktop-H2-28: 28px;
+    --Desktop-Subtitles-18: 18px;
+    --Desktop-Body-18: 18px;
+    --Desktop-Body-sm-16: 16px;
+
+    --Mobile-H1-40: 40px;
+    --Mobile-H2-24: 24px;
+    --Mobile-Subtitles-16: 16px;
+    --Mobile-Body-16: 16px;
+    --Mobile-Body-sm-14: 14px;
+
+
+    /* Spacing */
+    --spacing-4: 4px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-40: 40px;
+    --spacing-48: 48px;
+    --spacing-56: 56px;
+    --spacing-64: 64px;
+    --spacing-80: 80px;
+    --spacing-120: 120px;
+
+    /*Radius*/
+    --radius-round-subtle: 4px;
+    --radius-round-medium: 16px;
+    --radius-round-strong: 32px;
 }
 
 
@@ -54,25 +54,25 @@ body {
     background-color: var(--background-white);
 }
 
-h1{
-    color:var(--text-color);
+h1 {
+    color: var(--text-color);
     font-style: var(--Desktop-H1-64);
     text-align: center
 }
 
-h2{
+h2 {
     size: var(--Desktop-Subtitles-18);
     color: var(--text-color);
 }
 
-p{
+p {
     color: var(--text-color);
     font-style: var(--Desktop-Body-18);
     display: flex;
 }
 
 /* Beschreibung ganzer Block */
-.login-alles{
+.login-alles {
     margin: var(--spacing-40);
     padding: var(--spacing-20);
     border-radius: var(--radius-round-medium);
@@ -124,7 +124,7 @@ form {
 }
 
 /* styling der blöcke */
-.login-bloecke{
+.login-bloecke {
     width: 100%;
     padding: var(--spacing-20);
     border-radius: var(--radius-round-medium);
@@ -133,6 +133,7 @@ form {
     font-size: var(--Mobile-Body-sm-14);
     box-sizing: border-box;
 }
+
 .login-bloecke:focus {
     outline: 0px;
     border: 2px solid var(--button-color);
@@ -147,6 +148,7 @@ form {
     font-size: var(--Mobile-Body-sm-14);
     color: var(--button-color);
 }
+
 .container-remember-me {
     display: flex;
     align-items: center;
@@ -154,7 +156,7 @@ form {
     cursor: pointer;
     font-family: var(--body-text);
     font-size: var(--Mobile-Body-sm-14);
-  }
+}
 
 .container-remember-me input {
     opacity: 0;
@@ -162,26 +164,27 @@ form {
     height: 0;
     width: 0;
     position: absolute;
-  }
-  
-  .checkmark {
+}
+
+.checkmark {
     display: inline-block;
-    position: relative; 
+    position: relative;
     height: var(--spacing-20);
     width: var(--spacing-20);
     border-radius: var(--radius-round-subtle);
     background-color: var(--background-white);
     transition: background-color 0.3s;
-  }
-  
-  .container-remember-me input ~ .checkmark:hover {
+}
+
+.container-remember-me input~.checkmark:hover {
     background-color: var(--background-white);
-  }
-  
-  .container-remember-me input:checked ~ .checkmark {
+}
+
+.container-remember-me input:checked~.checkmark {
     background-color: var(--button-color);
-  }
-  .checkmark:after {
+}
+
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -192,11 +195,13 @@ form {
     border: solid var(--background-white);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-  }
-  .container-remember-me input:checked ~ .checkmark:after {
+}
+
+.container-remember-me input:checked~.checkmark:after {
     display: block;
-  }
-  .container-remember-me .checkmark:after {
+}
+
+.container-remember-me .checkmark:after {
     left: 7px;
     top: 3px;
     width: 3px;
@@ -206,7 +211,7 @@ form {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
 /* passwort vergessen text */
 .passwort-vergessen {
@@ -218,6 +223,7 @@ form {
     font-family: var(--body-text);
     font-weight: bold;
 }
+
 .passwort-text {
     font-size: var(--Mobile-Body-sm-14);
     color: var(--button-color-hover);
@@ -290,15 +296,21 @@ form {
     .login-titel {
         font-size: var(--Desktop-H2-28);
     }
+
     .h2 {
         font-size: var(--Desktop-H2-28);
     }
 
-    .e-mail, .passwort, .login_button, .passwort-text, .willkommen-zurck-bitte {
+    .e-mail,
+    .passwort,
+    .login_button,
+    .passwort-text,
+    .willkommen-zurck-bitte {
         font-size: var(--Desktop-Body-18);
     }
 
-    a, p {
+    a,
+    p {
         font-size: var(--Desktop-Body-sm-16);
     }
 }
