@@ -507,8 +507,24 @@ footer {
     font-family: var(--titles);
   }
   
+  .input-with-button {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-8); /* Abstand zwischen Input und Button */
+  }
+
+  .input-with-button input {
+    flex: 1;
+    font-size: var(--Mobile-Body-16);
+    padding: 10px 8px;
+  }
+
   .input-with-button button {
-    display: none;
+    font-size: var(--Mobile-Body-sm-14);
+    padding: 8px 12px;
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
   }
 
   .footer-impressum {
@@ -517,4 +533,24 @@ footer {
   align-items: center;
   }
 
+}
+
+/* Footer Breakpoint für 390px */
+@media (max-width: 390px) {
+  .input-with-button {
+    flex-direction: column; /* Button unterhalb des Inputs */
+    gap: var(--spacing-8);
+  }
+
+  .input-with-button button {
+    width: 100%; /* Button auf volle Breite */
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .input-with-button input {
+    width: 100%;
+    margin-left: 12px;
+  }
 }
