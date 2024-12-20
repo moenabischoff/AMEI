@@ -1,231 +1,239 @@
 <!DOCTYPE html> <!--leere Page mit html5 abfüllen-->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Vorbereitung für kleine/grosse Bildschirme-->
-    <title>Homepage AMEI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Vorbereitung für kleine/grosse Bildschirme-->
+  <title>Homepage AMEI</title>
 
-    <!-- Favicon (Symbol in Registerkarte) -->
-    <link rel="icon" href="image/Logo_MWGF.png" type="image/png">
-    <!-- für iOS-Geräte -->
-    <link rel="apple-touch-icon" href="image/Logo_MWGF.png">
+  <!-- Favicon (Symbol in Registerkarte) -->
+  <link rel="icon" href="image/Logo_MWGF.png" type="image/png">
+  <!-- für iOS-Geräte -->
+  <link rel="apple-touch-icon" href="image/Logo_MWGF.png">
 
-    <link rel="stylesheet" href="styles_main_landingpage.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500&display=swap" />
-  	<!-------------------------------------------------Navigation------------------------------------------------->
+  <link rel="stylesheet" href="styles_main_landingpage.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500&display=swap" />
+  <!-------------------------------------------------Navigation------------------------------------------------->
 
-    <nav class="navbar">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index_main_landingpage.html"><img src="image/Logo_MWGF.png" alt=""></a>
-      </div>
-  
-      <!-- Navigation Links -->
-      <ul class="nav-links">
-        <li><a href="index_main_landingpage.html">Home</a></li>
-        <li><a href="index_main_app.html">App</a></li>
-        <li><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></li>
-        <li><a href="index_main_news.html">News</a></li>
-        <li><a href="index_main_login.html">Login</a></li>
-      </ul>
-  
-      <!-- Button -->
-      <div class="nav-button">
-        <a href="#download" class="btn">App downloaden</a>
-      </div>
-  
-      <!-- Burger Menu -->
-      <button class="burger" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  
-    <!-- Mobile Navigation Sidebar -->
-    <aside class="mobile-nav">
-      <button class="close-btn" aria-label="Close navigation">
-        &times; <!-- Cross button -->
-      </button>
-      <ul>
-        <li><a href="index_main_landingpage.html">Home</a></li>
-        <li><a href="index_main_app.html">App</a></li>
-        <li><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></li>
-        <li><a href="index_main_news.html">News</a></li>
-        <li><a href="index_main_login.html">Login</a></li>
-      </ul>
-    </aside>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index_main_landingpage.html"><img src="image/Logo_MWGF.png" alt=""></a>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="index_main_landingpage.html">Home</a></li>
+      <li><a href="index_main_app.html">App</a></li>
+      <li><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></li>
+      <li><a href="index_main_news.html">News</a></li>
+      <li><a href="index_main_login.html">Login</a></li>
+    </ul>
+
+    <!-- Button -->
+    <div class="nav-button">
+      <a href="#download" class="btn">App downloaden</a>
+    </div>
+
+    <!-- Burger Menu -->
+    <button class="burger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation Sidebar -->
+  <aside class="mobile-nav">
+    <button class="close-btn" aria-label="Close navigation">
+      &times; <!-- Cross button -->
+    </button>
+    <ul>
+      <li><a href="index_main_landingpage.html">Home</a></li>
+      <li><a href="index_main_app.html">App</a></li>
+      <li><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></li>
+      <li><a href="index_main_news.html">News</a></li>
+      <li><a href="index_main_login.html">Login</a></li>
+    </ul>
+  </aside>
   </header>
-  
+
   <script src="script.js"></script>
   </body>
-    <!-------------------------------------------------Ende Navigation------------------------------------------------->
-    
-  	<div class="frame-landingpage">
-    		<div class="title-background-parent">
+  <!-------------------------------------------------Ende Navigation------------------------------------------------->
 
-                <!--AMEI Homescreen-->
-      			<div class="homescreen">
-        			<picture>
-                        <!-- Bild für Bildschirme ab 834px -->
-                        <source srcset="image/Landingpage/AdobeStock_633681305.jpeg" media="(min-width: 834px)">
-                        <!-- Standardbild für kleinere Bildschirme -->
-                        <img class="startbild" src="image/Landingpage/AdobeStock_633681305_mobile.png" alt="Lachende Freundegruppe">
-                    </picture>	
-        				
-        				<div class="title">
-          					<div class="amei">AMEI</div>
-          					<div class="slogan">Fremde werden zu Freunden.</div>
-                            <a href="#zielbereich">  <!--Verlinkung vom Pfeil zum Zielbereich mit # erstellt-->
-                            <img class="pfeil" alt="weisser Pfeil" src="image/Landingpage/Arrow 2.png" width="80%">
-                            </a>
-        				</div>
-                        
-      			</div>
-                <!--Ende AMEI Homescreen-->
+  <div class="frame-landingpage">
+    <div class="title-background-parent">
 
-                <!--Box Über Uns-->
-                <div id="zielbereich"> <!--Hier wird der Zielbereich bestimmt für den Pfeil-->
-      			<div class="box-1-ueber-uns">
-                    <div class="textbox-ueber-uns">
-        				<b class="heading">Allegra.</b>
-                        <br>
-        				<b class="heading-h2">Wir sind AMEI</b>
-          					<p class="fliesstext">Hey, Fremde! Oder sollten wir sagen... zukünftige Freunde? <br>Wir sind AMEI, das Start-up, das die WG-Suche revolutioniert. </p>
-          					<p class="fliesstext">Mit AMEI wollen wir die WG-Suche revolutionieren und eine Plattform schaffen, auf der echte Gemeinschaften entstehen können. Unsere Mission? Fremde zu Freunden machen und dafür sorgen, dass das Zusammenleben nicht nur funktioniert, sondern auch Spass macht!</p>
-        				<div class="button-common">
-          					<div class="button-mehr-ueber-uns">
-            						<b class="button-text"><a href="index_main_ueber uns_1_sarina.html">Mehr über uns</a></b> 
-          					</div>
-        				</div>
-                    </div>
-      			</div>
-                </div>
-                <!--Ende Box Über Uns-->
+      <!--AMEI Homescreen-->
+      <div class="homescreen">
+        <picture>
+          <!-- Bild für Bildschirme ab 834px -->
+          <source srcset="image/Landingpage/AdobeStock_633681305.jpeg" media="(min-width: 834px)">
+          <!-- Standardbild für kleinere Bildschirme -->
+          <img class="startbild" src="image/Landingpage/AdobeStock_633681305_mobile.png" alt="Lachende Freundegruppe">
+        </picture>
 
-                <!--Box Download-->
-      			<div class="box-2-download">
-                    <div class="background-image"> <!--Hintergrundbild wird via CSS eingebunden-->
-                            
-                        <div class="textbox-download">
-                        <div class="ueberschrift-download">Finde deine perfekte WG – schnell & einfach!</div>
-          					    <p class="fliesstext shadow">Unsere App «my WG friend» verbindet dich mit passenden Mitbewohner*innen – intuitiv, persönlich und sicher. «Fremde werden zu Freunden» war nie so einfach. </p>
-                                <p class="fliesstext shadow">Probier’s jetzt aus!</p>
+        <div class="title">
+          <div class="amei">AMEI</div>
+          <div class="slogan">Fremde werden zu Freunden.</div>
+          <a href="#zielbereich"> <!--Verlinkung vom Pfeil zum Zielbereich mit # erstellt-->
+            <img class="pfeil" alt="weisser Pfeil" src="image/Landingpage/Arrow 2.png" width="80%">
+          </a>
+        </div>
 
-                            <div class="button-common">
-                                <div class="button-download-app">
-                                  <b class="button-text"><a href="https://play.google.com/store/games?hl=de_CH&pli=1">Download App</a></b> 
-                                  <a href="https://play.google.com/store/games?hl=de_CH&pli=1">
-                                      <img class="frame-icon" alt="" src="image/Landingpage/Frame.svg">
-                                  </a>
-                                </div>
-                            </div>
-
-                        </div>  
-                    </div>      
-      			</div>
-                <!--Ende Box Download-->
-
-                <!--Box App-->
-      			<div class="box-3-app">
-                    <picture>
-                        <!-- Bild für Bildschirme ab 1000px -->
-                        <source srcset="image/Landingpage/handygroup-quer.png" width="50%" media="(min-width: 1000px)">
-                        <!-- Standardbild für kleinere Bildschirme -->
-                        <img src="image/Landingpage/handygroup.png" alt="Smartphone Gruppe" width="66%">
-                    </picture>
-
-        			<div class="textbox-app">
-        				<div class="ueberschrift-app">Deine WG-Suche, neu definiert!</div>
-        				<div class="fliesstext-app">
-          					<p class="fliesstext">✔️ Persönlichkeitstest: Finde Mitbewohner*innen, die wirklich zu dir passen.</p>
-          					<p class="fliesstext">✔️ Smart-Filter: Suche nach Budget, Interessen und mehr – blitzschnell!</p>
-          					<p class="fliesstext">Jetzt ausprobieren und deine Traum-WG entdecken!</p>
-        				</div>
-        				<div class="button-common">
-          					<div class="button-mehr-infos">
-                                <b class="button-text"><a href="index_main_app.html">Mehr Infos</a></b>
-          					</div>
-        				</div>
-                    </div>
-
-      			</div>
-                <!--Ende Box App-->
-
-                <!--Box News-->
-                <div class="box-4-news">
-                    <div class="background-image2"> <!--Hintergrundbild wird via CSS eingebunden-->
-                            
-                        <div class="textbox-news">
-                        <div class="ueberschrift-news">WG-Stories, Lifehacks & Events – Dein WG-Guide</div>
-          					    <p class="fliesstext shadow">Entdecke inspirierende WG-Geschichten, hilfreiche Tipps und Tricks für den Alltag, sowie die neuesten Updates zu spannenden Events und Veranstaltungen – alles an einem Ort! </p>
-                            <div class="button-common">
-                                <div class="button-news">
-                                  <b class="button-text"><a href="index_main_news.html">Mehr dazu</a></b> 
-                                </div>
-                            </div>
-
-                        </div>  
-                    </div>      
-      			</div> 
-                <!--Ende Box News-->
-
-                 <!--Box Sponsoren-->
-                 <div class="box-5-sponsoren">
-                    <div class="sponsor-container">
-                        <img src="image/Landingpage/Adidas.png" alt="Sponsor 1" class="sponsor-logo">
-                        <img src="image/Landingpage/raifeisen.png" alt="Sponsor 2" class="sponsor-logo">
-                        <img src="image/Landingpage/lindt.png" alt="Sponsor 3" class="sponsor-logo">
-                        <img src="image/Landingpage/el-tony.png" alt="Sponsor 4" class="sponsor-logo">
-                        <img src="image/Landingpage/salt.png" alt="Sponsor 5" class="sponsor-logo">
-                      </div>
-                 </div>
-                 <!--Ende Box Sponsoren-->	
-    		</div>		
-  	</div>
-	
-    <!-------------------------------------------------Footer------------------------------------------------->
-
-    <footer>
-      <div class="footer">
-          <div class="footer-newsletter-box">
-              <b class="nichts-mehr-verpassen-container">
-                  <p class="nichts-mehr-verpassen">Nichts mehr verpassen und <br> Newsletter abonnieren</p>
-              </b>
-              <div class="input-with-button">
-                  <input type="email" placeholder="Enter your email" aria-label="Email address">
-                  <button type="submit">Subscribe</button>
-              </div>
-          </div>
-  
-          <div class="footer-links">
-              <div class="links">
-                  <div class="footer-nav-links"><a href="index_main_app.html">App</a></div>
-                  <div class="footer-nav-links"><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></div>
-                  <div class="footer-nav-links"><a href="index_main_news.html">News</a></div>
-                  <div class="footer-nav-links"><a href="index_main_login.html">Login</a></div>
-              </div>
-  
-              <div class="social-media-icons">
-                  <img class="facebook-black-icon" alt="Facebook" src="image/facebook-black.svg">
-                  <img class="vimeo-black-icon" alt="Vimeo" src="image/vimeo-black.svg">
-                  <img class="twitter-black-icon" alt="Twitter" src="image/twitter-black.svg">
-                  <img class="youtube-black-icon" alt="YouTube" src="image/youtube-black.svg">
-              </div>
-          </div>
-  
-          <img class="footer-child" alt="Line" src="/image/Line 2.svg">
-          <div class="footer-impressum">
-              <div class="rights-reserved">© 2024 AMEI. All rights reserved.</div>
-              <div class="terms-of-service">Impressum Datenschutzerklärung</div>
-          </div>
       </div>
+      <!--Ende AMEI Homescreen-->
+
+      <!--Box Über Uns-->
+      <div id="zielbereich"> <!--Hier wird der Zielbereich bestimmt für den Pfeil-->
+        <div class="box-1-ueber-uns">
+          <div class="textbox-ueber-uns">
+            <b class="heading">Allegra.</b>
+            <br>
+            <b class="heading-h2">Wir sind AMEI</b>
+            <p class="fliesstext">Hey, Fremde! Oder sollten wir sagen... zukünftige Freunde? <br>Wir sind AMEI, das
+              Start-up, das die WG-Suche revolutioniert. </p>
+            <p class="fliesstext">Mit AMEI wollen wir die WG-Suche revolutionieren und eine Plattform schaffen, auf der
+              echte Gemeinschaften entstehen können. Unsere Mission? Fremde zu Freunden machen und dafür sorgen, dass
+              das Zusammenleben nicht nur funktioniert, sondern auch Spass macht!</p>
+            <div class="button-common">
+              <div class="button-mehr-ueber-uns">
+                <b class="button-text"><a href="index_main_ueber uns_1_sarina.html">Mehr über uns</a></b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Ende Box Über Uns-->
+
+      <!--Box Download-->
+      <div class="box-2-download">
+        <div class="background-image"> <!--Hintergrundbild wird via CSS eingebunden-->
+
+          <div class="textbox-download">
+            <div class="ueberschrift-download">Finde deine perfekte WG – schnell & einfach!</div>
+            <p class="fliesstext shadow">Unsere App «my WG friend» verbindet dich mit passenden Mitbewohner*innen –
+              intuitiv, persönlich und sicher. «Fremde werden zu Freunden» war nie so einfach. </p>
+            <p class="fliesstext shadow">Probier’s jetzt aus!</p>
+
+            <div class="button-common">
+              <div class="button-download-app">
+                <b class="button-text"><a href="https://play.google.com/store/games?hl=de_CH&pli=1">Download App</a></b>
+                <a href="https://play.google.com/store/games?hl=de_CH&pli=1">
+                  <img class="frame-icon" alt="" src="image/Landingpage/Frame.svg">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--Ende Box Download-->
+
+      <!--Box App-->
+      <div class="box-3-app">
+        <picture>
+          <!-- Bild für Bildschirme ab 1000px -->
+          <source srcset="image/Landingpage/handygroup-quer.png" width="50%" media="(min-width: 1000px)">
+          <!-- Standardbild für kleinere Bildschirme -->
+          <img src="image/Landingpage/handygroup.png" alt="Smartphone Gruppe" width="66%">
+        </picture>
+
+        <div class="textbox-app">
+          <div class="ueberschrift-app">Deine WG-Suche, neu definiert!</div>
+          <div class="fliesstext-app">
+            <p class="fliesstext">✔️ Persönlichkeitstest: Finde Mitbewohner*innen, die wirklich zu dir passen.</p>
+            <p class="fliesstext">✔️ Smart-Filter: Suche nach Budget, Interessen und mehr – blitzschnell!</p>
+            <p class="fliesstext">Jetzt ausprobieren und deine Traum-WG entdecken!</p>
+          </div>
+          <div class="button-common">
+            <div class="button-mehr-infos">
+              <b class="button-text"><a href="index_main_app.html">Mehr Infos</a></b>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--Ende Box App-->
+
+      <!--Box News-->
+      <div class="box-4-news">
+        <div class="background-image2"> <!--Hintergrundbild wird via CSS eingebunden-->
+
+          <div class="textbox-news">
+            <div class="ueberschrift-news">WG-Stories, Lifehacks & Events – Dein WG-Guide</div>
+            <p class="fliesstext shadow">Entdecke inspirierende WG-Geschichten, hilfreiche Tipps und Tricks für den
+              Alltag, sowie die neuesten Updates zu spannenden Events und Veranstaltungen – alles an einem Ort! </p>
+            <div class="button-common">
+              <div class="button-news">
+                <b class="button-text"><a href="index_main_news.html">Mehr dazu</a></b>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--Ende Box News-->
+
+      <!--Box Sponsoren-->
+      <div class="box-5-sponsoren">
+        <div class="sponsor-container">
+          <img src="image/Landingpage/Adidas.png" alt="Sponsor 1" class="sponsor-logo">
+          <img src="image/Landingpage/raifeisen.png" alt="Sponsor 2" class="sponsor-logo">
+          <img src="image/Landingpage/lindt.png" alt="Sponsor 3" class="sponsor-logo">
+          <img src="image/Landingpage/el-tony.png" alt="Sponsor 4" class="sponsor-logo">
+          <img src="image/Landingpage/salt.png" alt="Sponsor 5" class="sponsor-logo">
+        </div>
+      </div>
+      <!--Ende Box Sponsoren-->
+    </div>
+  </div>
+
+  <!-------------------------------------------------Footer------------------------------------------------->
+
+  <footer>
+    <div class="footer">
+      <div class="footer-newsletter-box">
+        <b class="nichts-mehr-verpassen-container">
+          <p class="nichts-mehr-verpassen">Nichts mehr verpassen und <br> Newsletter abonnieren</p>
+        </b>
+        <div class="input-with-button">
+          <input type="email" placeholder="Enter your email" aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="links">
+          <div class="footer-nav-links"><a href="index_main_app.html">App</a></div>
+          <div class="footer-nav-links"><a href="index_main_ueber uns_1_sarina.html">Über Uns</a></div>
+          <div class="footer-nav-links"><a href="index_main_news.html">News</a></div>
+          <div class="footer-nav-links"><a href="index_main_login.html">Login</a></div>
+        </div>
+
+        <div class="social-media-icons">
+          <img class="facebook-black-icon" alt="Facebook" src="image/facebook-black.svg">
+          <img class="vimeo-black-icon" alt="Vimeo" src="image/vimeo-black.svg">
+          <img class="twitter-black-icon" alt="Twitter" src="image/twitter-black.svg">
+          <img class="youtube-black-icon" alt="YouTube" src="image/youtube-black.svg">
+        </div>
+      </div>
+
+      <img class="footer-child" alt="Line" src="/image/Line 2.svg">
+      <div class="footer-impressum">
+        <div class="rights-reserved">© 2024 AMEI. All rights reserved.</div>
+        <div class="terms-of-service">Impressum Datenschutzerklärung</div>
+      </div>
+    </div>
   </footer>
-  
+
   <!-------------------------------------------------Ende Footer------------------------------------------------->
 
-</body>
+  </body>
+
 </html>

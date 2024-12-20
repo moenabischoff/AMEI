@@ -97,7 +97,7 @@ form {
 
 /* titel */
 .login-titel {
-    font-size: var(--Desktop-H1-64);
+    font-size: var(--Desktop-H2-28);
     font-weight: bold;
     color: var(--button-color);
     font-family: var(--titles);
@@ -288,7 +288,7 @@ form {
 
 @media only screen and (min-width: 768px) {
     .login-titel {
-        font-size: var(--Desktop-H1-64);
+        font-size: var(--Desktop-H2-28);
     }
     .h2 {
         font-size: var(--Desktop-H2-28);
