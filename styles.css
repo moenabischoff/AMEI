@@ -445,7 +445,6 @@ footer {
   white-space: pre-wrap;
   display: inline-block;
   opacity: 0.75;
-  flex-shrink: 0;
 }
 
 
@@ -507,4 +506,15 @@ footer {
     font-size: var(--Mobile-Body-sm-14);
     font-family: var(--titles);
   }
+  
+  .input-with-button button {
+    display: none;
+  }
+
+  .footer-impressum {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+
 }
