@@ -224,8 +224,16 @@ button crew box
 }
 
 
-/* Tablet: Bis 834 */
-@media (max-width: 834px) {
+/* Tablet: Bis 945 */
+@media (max-width: 945px) {
+
+    h1 {
+        font-size: var(--Mobile-H1-40);
+    }
+
+    h2 {
+        font-size: var(--Mobile-H2-24);
+    }
 
     .crew-box {
         width: 70%;
