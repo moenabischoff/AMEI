@@ -1,52 +1,52 @@
 :root {
     /* Colors */
-   --background-white: #fff; 
-   --background-light-gray: #f3f2f0;
+    --background-white: #fff;
+    --background-light-gray: #f3f2f0;
 
-   --text-color: #2f421c;
-   --button-color-hover: #476a21;
-   --button-color: #2f421c;
-   --button-text-color: #f3f2f0;
-
-  
-
-   /* fonts */
-  --body-text: Roboto;
-  --titles: Lora;
-
-   /* font sizes */
-   --Desktop-H1-64: 64px;
-   --Desktop-H2-28: 28px;
-   --Desktop-Subtitles-18: 18px;
-   --Desktop-Body-18: 18px;
-   --Desktop-Body-sm-16: 16px;
-   
-   --Mobile-H1-40: 40px;
-   --Mobile-H2-24: 24px;
-   --Mobile-Subtitles-16: 16px;
-   --Mobile-Body-16: 16px;
-   --Mobile-Body-sm-14: 14px;
+    --text-color: #2f421c;
+    --button-color-hover: #476a21;
+    --button-color: #2f421c;
+    --button-text-color: #f3f2f0;
 
 
-  /* Spacing */
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-32: 32px;
-  --spacing-40: 40px;
-  --spacing-48: 48px;
-  --spacing-56: 56px;
-  --spacing-64: 64px;
-  --spacing-80: 80px; 
-  --spacing-120: 120px;
-  
-  /*Radius*/
-  --radius-round-subtle: 4px;
-  --radius-round-medium: 16px;
-  --radius-round-strong: 32px; 
+
+    /* fonts */
+    --body-text: Roboto;
+    --titles: Lora;
+
+    /* font sizes */
+    --Desktop-H1-64: 64px;
+    --Desktop-H2-28: 28px;
+    --Desktop-Subtitles-18: 18px;
+    --Desktop-Body-18: 18px;
+    --Desktop-Body-sm-16: 16px;
+
+    --Mobile-H1-40: 40px;
+    --Mobile-H2-24: 24px;
+    --Mobile-Subtitles-16: 16px;
+    --Mobile-Body-16: 16px;
+    --Mobile-Body-sm-14: 14px;
+
+
+    /* Spacing */
+    --spacing-4: 4px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-40: 40px;
+    --spacing-48: 48px;
+    --spacing-56: 56px;
+    --spacing-64: 64px;
+    --spacing-80: 80px;
+    --spacing-120: 120px;
+
+    /*Radius*/
+    --radius-round-subtle: 4px;
+    --radius-round-medium: 16px;
+    --radius-round-strong: 32px;
 }
 
 
@@ -54,17 +54,23 @@ body {
     background-color: var(--background-light-gray);
 }
 
-h1, h2, p, .crew-box-title, .crew-box-bodytext, .crew-box-title-opacity, .crew-box-bodytext-opacity{
+h1,
+h2,
+p,
+.crew-box-title,
+.crew-box-bodytext,
+.crew-box-title-opacity,
+.crew-box-bodytext-opacity {
     color: var(--text-color);
     font-family: var(--body-text)
 }
 
-h1{
+h1 {
     font-size: var(--Desktop-H1-64);
     text-align: center
 }
 
-h2{
+h2 {
     font-size: var(--Desktop-Subtitles-18);
 }
 
@@ -75,54 +81,60 @@ p {
 }
 
 
-.wir-sind-amei-box{
-background-color: var(--background-white);
-width: 80%;
-padding: 40px;
-border-radius: var(--radius-round-strong);
-text-align: center;
-margin:auto;
-margin-top: 20px;
+.wir-sind-amei-box {
+    background-color: var(--background-white);
+    width: 80%;
+    padding: 40px;
+    border-radius: var(--radius-round-strong);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
 }
 
 /*---------------------------------------
 crew box               
 -----------------------------------------*/
-.box-section{
+.box-section {
     display: flex;
     width: 70%;
-    justify-content: center; /* Platz zwischen den Boxen */
+    justify-content: center;
+    /* Platz zwischen den Boxen */
     margin: auto;
 }
 
-.crew-box{
+.crew-box {
     background-color: var(--background-white);
-    width: 100%; /* Box nimmt 100% des Containers ein */
-    min-width: 280px; /* Maximale Breite bleibt erhalten */
-    min-height: 650px; /* Höhe bleibt erhalten beim Seiten wechseln */
+    width: 100%;
+    /* Box nimmt 100% des Containers ein */
+    min-width: 280px;
+    /* Maximale Breite bleibt erhalten */
+    min-height: 650px;
+    /* Höhe bleibt erhalten beim Seiten wechseln */
     height: auto;
     padding: 40px;
     margin: 12px;
     border-radius: var(--radius-round-strong);
     text-align: center;
-    box-sizing: border-box; /* Element bleibt genau so groß, wie in width und height definiert, und der Inhalt passt sich entsprechend an. */
+    box-sizing: border-box;
+    /* Element bleibt genau so groß, wie in width und height definiert, und der Inhalt passt sich entsprechend an. */
     gap: 40px;
 }
 
-.crew-box-image{
+.crew-box-image {
     width: 100%;
     height: auto;
-    display: block; /* Verhindert unnötige Inline-Abstände */
+    display: block;
+    /* Verhindert unnötige Inline-Abstände */
     border-radius: var(--radius-round-strong);
     align-content: center;
 }
 
-.crew-box-title{
+.crew-box-title {
     text-align: left;
     padding-top: 40px;
 }
 
-.crew-box-bodytext{
+.crew-box-bodytext {
     font-size: var(--Desktop-Body-sm-16);
     text-align: left;
 }
@@ -130,120 +142,128 @@ crew box
 /*---------------------------------------
 crew box less opacity               
 -----------------------------------------*/
-.crew-box-opacity{
+.crew-box-opacity {
     background-color: var(--background-white);
-    width: 100%; /* Box nimmt 100% des Containers ein */
-    min-width: 280px; /* Maximale Breite bleibt erhalten */
+    width: 100%;
+    /* Box nimmt 100% des Containers ein */
+    min-width: 280px;
+    /* Maximale Breite bleibt erhalten */
     height: auto;
     padding: 40px;
     margin: 12px;
     border-radius: var(--radius-round-strong);
     text-align: center;
-    box-sizing: border-box; /* Innenabstand wird berücksichtigt */
+    box-sizing: border-box;
+    /* Innenabstand wird berücksichtigt */
     gap: 40px;
     opacity: 50%;
-    }
-    
-    .crew-box-image-opacity{
-        width: 100%;
-        height: auto;
-        display: block; /* Verhindert unnötige Inline-Abstände */
-        border-radius: var(--radius-round-strong);
-        align-content: center;
-        opacity: 50%;
-    }
-    
-    .crew-box-title-opacity{
-        text-align: left;
-        padding-top: 40px;
-        opacity: 50%;
-    }
-    
-    .crew-box-bodytext-opacity{
-        font-size: var(--Desktop-Body-sm-16);
-        text-align: left;
-        opacity: 50%;
-    }
+}
+
+.crew-box-image-opacity {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Verhindert unnötige Inline-Abstände */
+    border-radius: var(--radius-round-strong);
+    align-content: center;
+    opacity: 50%;
+}
+
+.crew-box-title-opacity {
+    text-align: left;
+    padding-top: 40px;
+    opacity: 50%;
+}
+
+.crew-box-bodytext-opacity {
+    font-size: var(--Desktop-Body-sm-16);
+    text-align: left;
+    opacity: 50%;
+}
 
 
 /*---------------------------------------
 button crew box               
 -----------------------------------------*/
 
-.crew-box-button{
-background-color: var(--text-color);
-width: 200px;
-height: 40px;
-border-radius: var(--radius-round-strong);
-margin: auto;
-margin-top: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding-left: 16px;
-padding-right: 16px;
+.crew-box-button {
+    background-color: var(--text-color);
+    width: 200px;
+    height: 40px;
+    border-radius: var(--radius-round-strong);
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.crew-box-single-dots{
-height: 16px;
-width: 16px;
-background-color: var(--background-white);
-border-radius: 50%; /* Kreis entsteht */
-margin: auto;
-margin-inline: 8px;
+.crew-box-single-dots {
+    height: 16px;
+    width: 16px;
+    background-color: var(--background-white);
+    border-radius: 50%;
+    /* Kreis entsteht */
+    margin: auto;
+    margin-inline: 8px;
 }
 
-.crew-box-single-dots-hover{
+.crew-box-single-dots-hover {
     height: 16px;
     width: 16px;
     background-color: var(--button-color-hover);
     border-radius: 50%;
     margin: auto;
     margin-inline: 8px;
-    }
+}
 
 #crew-box-stopp {
-    scroll-margin: 13vh; /* Passt die Scrollposition beim Wechsel der seite an */
-    }
+    scroll-margin: 13vh;
+    /* Passt die Scrollposition beim Wechsel der seite an */
+}
 
 
 /* Tablet: Bis 834 */
 @media (max-width: 834px) {
 
-    .crew-box{
+    .crew-box {
         width: 70%;
         min-height: 650px;
     }
-    .crew-box-opacity{
+
+    .crew-box-opacity {
         display: none;
     }
-        
-   
+
+
 
 }
 
 /* Mobile: Bis 390px */
 @media (max-width: 390px) {
-    
-    h1{
+
+    h1 {
         font-size: var(--Mobile-H2-24);
     }
 
-    h2{
+    h2 {
         font-size: var(--Mobile-Subtitles-16);
     }
 
-    .wir-sind-amei-box{
+    .wir-sind-amei-box {
         font-size: var(--Mobile-Body-sm-14);
     }
 
-    .box-section{
+    .box-section {
         display: flex;
         width: auto;
-        justify-content: center; /* Platz zwischen den Boxen */
+        justify-content: center;
+        /* Platz zwischen den Boxen */
         margin: auto;
     }
-    
+
     .crew-box {
         width: 100%;
         min-width: auto;
@@ -252,31 +272,34 @@ margin-inline: 8px;
     }
 
     .crew-box-opacity {
-        display: none; /* Elemente ausblenden */
+        display: none;
+        /* Elemente ausblenden */
     }
 
-    .crew-box-title{
+    .crew-box-title {
         font-size: var(--Mobile-Subtitles-16);
     }
-    .crew-box-bodytext{
+
+    .crew-box-bodytext {
         font-size: var(--Mobile-Body-sm-14);
     }
 
-    .crew-box-button{
+    .crew-box-button {
         height: 30px;
         width: 140px;
         border-radius: var(--radius-round-strong);
     }
 
-        .crew-box-single-dots, .crew-box-single-dots-hover{
-            height: 12px;
-            border-radius: 50%;
-            margin-left: 6px;
-            margin-right: 6px;
-        }
-
-        #crew-box-stopp {
-            scroll-margin: 10vh; /* Passt die Scrollposition beim Wechsel der seite an */
-            }
+    .crew-box-single-dots,
+    .crew-box-single-dots-hover {
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
+    #crew-box-stopp {
+        scroll-margin: 10vh;
+        /* Passt die Scrollposition beim Wechsel der seite an */
+    }
+}
