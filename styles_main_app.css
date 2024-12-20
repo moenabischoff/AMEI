@@ -32,7 +32,7 @@
 
     /* Spacing */
     --spacing-20: 20px;
-    }
+}
 
 
 /*Mobile Version*/
@@ -40,7 +40,8 @@
 /* Text Styles */
 
 .text-in-card {
-    margin: 0 10%; /*top & bottom = 0px, right & left = 10%*/
+    margin: 0 10%;
+    /*top & bottom = 0px, right & left = 10%*/
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -49,11 +50,14 @@
 }
 
 
-.h2, .subtitle, .lauftext {
+.h2,
+.subtitle,
+.lauftext {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: var(--spacing-20) 0; /*top & bottom = 20px, right & left = 0*/
+    margin: var(--spacing-20) 0;
+    /*top & bottom = 20px, right & left = 0*/
 }
 
 .h2 {
@@ -91,10 +95,12 @@
     gap: 12px;
 }
 
-.button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
+.button-text a {
+    /* a eintragen, da sich es sonst nur auf <b> beschränkt */
     position: relative;
     color: var(--button-text-color);
-    text-decoration: none; /* keine Unterstreichung */
+    text-decoration: none;
+    /* keine Unterstreichung */
 }
 
 .downloads {
@@ -115,22 +121,30 @@
 
 .parent-container {
     display: flex;
-    justify-content: space-around; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    justify-content: space-around;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 .frame {
-    max-width: 1200px; /* Limit maximum width on larger screens */
-    width: auto; /* Allow the frame to take its natural width */
+    max-width: 1200px;
+    /* Limit maximum width on larger screens */
+    width: auto;
+    /* Allow the frame to take its natural width */
     border-radius: var(--radius-round-strong);
     background-color: var(--background-light-gray);
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
+    /* Stack content vertically */
     align-items: center;
     padding: 32px 12px;
-    gap: 20px; /* Spacing between child elements */
-    box-sizing: border-box; /* Include padding in size calculations */
+    gap: 20px;
+    /* Spacing between child elements */
+    box-sizing: border-box;
+    /* Include padding in size calculations */
     margin-top: var(--spacing-20);
     margin-left: var(--spacing-20);
     margin-right: var(--spacing-20);
@@ -156,7 +170,7 @@
 }
 
 /* Version: Tablet & Desktop sind gleich */
-    /* Media Queries */
+/* Media Queries */
 
 @media only screen and (min-width: 768px) {
     .grid-container {
@@ -179,19 +193,24 @@
         font-size: var(--Desktop-Body-sm-16);
     }
 
-    
+
 }
 
 @media only screen and (min-width: 1200px) {
     .frame {
-        max-width: 1200px; /* Set a maximum width */
-        width: 100%; /* Ensure it takes the full width up to the max-width */
-        margin: 0 auto; /* Center the frame horizontally */
+        max-width: 1200px;
+        /* Set a maximum width */
+        width: 100%;
+        /* Ensure it takes the full width up to the max-width */
+        margin: 0 auto;
+        /* Center the frame horizontally */
         margin-top: var(--spacing-20);
         display: flex;
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center content horizontally */
-        justify-content: center; /* Center content vertically */
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: center;
+        /* Center content horizontally */
+        justify-content: center;
+        /* Center content vertically */
     }
 }
-
