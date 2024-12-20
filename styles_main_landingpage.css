@@ -23,51 +23,62 @@
     --spacing-20: 20px;
     --spacing-40: 40px;
 }
+
 * {
     margin: 0;
     padding: 0;
     line-height: normal;
-    box-sizing: border-box; /* Hilfreich für einheitliche Layouts */
+    box-sizing: border-box;
+    /* Hilfreich für einheitliche Layouts */
 }
+
 body {
     margin-left: auto;
     margin-right: auto;
     min-height: 100vh;
 }
+
 .header {
     position: relative;
-  }
+}
+
 /* Definition Fliesstext */
 .fliesstext {
     margin: var(--spacing-20);
     font-family: var(--body-text);
     font-size: var(--Mobile-Body-16);
 }
+
 .shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
+
 /* Anpassung Schriftgrösse ab 389px Bildschirm */
-    @media (max-width: 389px) {
-        .fliesstext {
-            font-size: var(--Desktop-Body-18);
-        }
+@media (max-width: 389px) {
+    .fliesstext {
+        font-size: var(--Desktop-Body-18);
     }
+}
 
 /*--------Homescreen Landingpage-------*/
 .startbild {
-    width: 100vw; /* Vollbildweite */
+    width: 100vw;
+    /* Vollbildweite */
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Vollbildhöhe */
+    height: 100vh;
+    /* Vollbildhöhe */
     object-fit: cover;
     display: flex;
 }
+
 .amei {
     position: relative;
     display: inline-block;
     font-size: 100px;
     text-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, 0.40);
 }
+
 .slogan {
     position: relative;
     font-size: var(--Mobile-H2-24);
@@ -78,6 +89,7 @@ body {
 .pfeil {
     margin-top: 20px;
 }
+
 .title {
     margin: var(--spacing-20);
     position: absolute;
@@ -88,6 +100,7 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
 }
+
 .homescreen {
     border-radius: 0px 0px 20px 20px;
     height: 844px;
@@ -112,9 +125,12 @@ body {
     justify-content: center;
     padding: 10px 20px;
 }
+
 .button-download-app {
-    gap: 10px; /* Lückenweite zwischen Wort und Bild im Button */
+    gap: 10px;
+    /* Lückenweite zwischen Wort und Bild im Button */
 }
+
 .button-common {
     overflow: hidden;
     display: flex;
@@ -124,13 +140,17 @@ body {
     padding: 10px 20px;
     text-align: center;
 }
+
 .button-common :hover {
     background-color: var(--button-color-hover);
 }
-.button-text a { /* a eintragen, da sich es sonst nur auf <b> beschränkt */
+
+.button-text a {
+    /* a eintragen, da sich es sonst nur auf <b> beschränkt */
     position: relative;
-    color: var(--button-text-color); 
-    text-decoration: none; /* keine Unterstreichung */
+    color: var(--button-text-color);
+    text-decoration: none;
+    /* keine Unterstreichung */
 }
 
 /*------Box Ueber uns Langingpage------*/
@@ -139,25 +159,32 @@ body {
     display: inline-block;
     font-size: var(--Mobile-H1-40);
 }
+
 .heading-h2 {
     font-size: var(--Mobile-H2-24);
 }
+
 @media (max-width: 389px) {
     .heading {
         font-size: var(--Desktop-H1-64);
     }
+
     .heading-h2 {
         font-size: var(--Desktop-H2-28);
     }
 }
+
 .textbox-ueber-uns {
-    margin: 30px 180px 30px 180px; /*Textbox Seitenabstände, damit Text nicht zu sehr auseinander gezogen wird*/
+    margin: 30px 180px 30px 180px;
+    /*Textbox Seitenabstände, damit Text nicht zu sehr auseinander gezogen wird*/
 }
+
 @media (max-width: 900px) {
-.textbox-ueber-uns {
-    margin: var(--spacing-20);
+    .textbox-ueber-uns {
+        margin: var(--spacing-20);
     }
 }
+
 .box-1-ueber-uns {
     width: auto;
     display: flex;
@@ -170,7 +197,8 @@ body {
     padding: var(--spacing-40) 0px;
     margin: var(--spacing-20);
     margin-top: 40px;
-    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
+    box-sizing: border-box;
+    /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
     color: var(--text-color);
 }
@@ -179,10 +207,13 @@ body {
 .background-image {
     width: 100%;
     background-image: url('image/Landingpage/action-shot_2_mobile.png');
-    background-size: cover; /* Bild proportional skalieren */
+    background-size: cover;
+    /* Bild proportional skalieren */
     background-position: center;
-    min-height: 700px; /* damit bei mobile-view nicht zu sehr skaliert wird */
+    min-height: 700px;
+    /* damit bei mobile-view nicht zu sehr skaliert wird */
 }
+
 /* Ab einer Breite von 1200px anderes Bild */
 @media (min-width: 1200px) {
     .background-image {
@@ -190,10 +221,12 @@ body {
         height: 65vh;
     }
 }
+
 .frame-icon {
     width: 24px;
     height: 24px;
 }
+
 .box-2-download {
     align-self: stretch;
     border-radius: 20px;
@@ -203,27 +236,34 @@ body {
     justify-content: flex-end;
     position: relative;
     margin: var(--spacing-20);
-    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
+    box-sizing: border-box;
+    /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
-    }
+}
+
 .textbox-download {
     justify-content: flex-end;
     margin-top: 100%;
     margin-bottom: var(--spacing-40);
 }
+
 /* Ab einer Bildschirmbreite von 1200px */
 @media (min-width: 1200px) {
     .textbox-download {
-        text-align: center; 
+        text-align: center;
         margin-top: 13%;
-        margin-left: 250px; /* Abstand vom linken Rand */
-        max-width: 450px; /* definiert max. Breite von Textblock */
+        margin-left: 250px;
+        /* Abstand vom linken Rand */
+        max-width: 450px;
+        /* definiert max. Breite von Textblock */
     }
+
     .ueberschrift-download {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
     }
-    
+
 }
+
 .ueberschrift-download {
     position: relative;
     margin: var(--spacing-20);
@@ -235,14 +275,17 @@ body {
 .ueberschrift-app {
     font-size: var(--Desktop-H2-28);
     display: inline-block;
-    margin: 0px var(--spacing-20);;
+    margin: 0px var(--spacing-20);
+    ;
 }
+
 .fliesstext-app {
     position: relative;
     font-size: var(--Desktop-Body-18);
     font-family: var(--body-text);
     display: inline-block;
 }
+
 .box-3-app {
     align-self: stretch;
     width: auto;
@@ -259,10 +302,11 @@ body {
     margin: var(--spacing-20);
     color: var(--text-color);
 }
+
 .textbox-app {
-   position: relative;
-   display: flex;
-   flex-direction: column; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /*------Box News Langingpage------*/
@@ -276,24 +320,31 @@ body {
     justify-content: center;
     position: relative;
     margin: var(--spacing-20);
-    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
+    box-sizing: border-box;
+    /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
 }
+
 .background-image2 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url('image/Landingpage/wohnzimmer.jpeg');
-    background-size: cover; /* Bild proportional skalieren */
+    background-size: cover;
+    /* Bild proportional skalieren */
     background-position: center;
-    min-height: 700px; /* damit bei mobile-view nicht zu sehr skaliert wird */
+    min-height: 700px;
+    /* damit bei mobile-view nicht zu sehr skaliert wird */
 }
+
 .textbox-news {
-    text-align: center; /* Zentrierter Text */
+    text-align: center;
+    /* Zentrierter Text */
     margin-top: 10vh;
     max-width: 800px;
 }
+
 .ueberschrift-news {
     position: relative;
     margin: var(--spacing-20);
@@ -313,31 +364,38 @@ body {
     justify-content: center;
     padding: var(--spacing-40) 0px;
     margin: var(--spacing-20);
-    box-sizing: border-box; /* nimmt Textbox und Buttonbox zusammen */
+    box-sizing: border-box;
+    /* nimmt Textbox und Buttonbox zusammen */
     gap: 10px;
     font-size: var(--Desktop-Body-18);
     font-family: var(--titles);
     color: var(--text-color);
 }
+
 .sponsor-container {
-    display: flex; 
-    flex-wrap: wrap; /* Elemente umbrechen, wenn kein Platz mehr ist */
-    justify-content: space-around; /* Platz zwischen Logos gleichmässig verteilen */
-    align-items: center; 
-    gap: 50px; 
-    padding: var(--spacing-20); 
-  }
+    display: flex;
+    flex-wrap: wrap;
+    /* Elemente umbrechen, wenn kein Platz mehr ist */
+    justify-content: space-around;
+    /* Platz zwischen Logos gleichmässig verteilen */
+    align-items: center;
+    gap: 50px;
+    padding: var(--spacing-20);
+}
+
 @media (max-width: 500px) {
     .sponsor-container {
-      flex-direction: column; /* Elemente untereinander anordnen */
-      align-items: center; 
+        flex-direction: column;
+        /* Elemente untereinander anordnen */
+        align-items: center;
     }
 }
-  .sponsor-logo {
+
+.sponsor-logo {
     max-width: 100px;
-    min-width: none; 
-    height: auto; 
-  }
+    min-width: none;
+    height: auto;
+}
 
 /*------Gerüst Landingpage------*/
 .title-background-parent {
@@ -353,6 +411,7 @@ body {
     justify-content: flex-start;
     gap: 10px;
 }
+
 .frame-landingpage {
     width: 100%;
     position: relative;
