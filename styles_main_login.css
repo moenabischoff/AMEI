@@ -68,7 +68,6 @@ h2 {
 p {
     color: var(--text-color);
     font-style: var(--Desktop-Body-18);
-    display: flex;
 }
 
 /* Beschreibung ganzer Block */
