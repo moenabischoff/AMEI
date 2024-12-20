@@ -248,7 +248,7 @@ margin-inline: 8px;
         width: 100%;
         min-width: auto;
         max-width: 280px;
-        min-height: 500px;
+        min-height: 550px;
     }
 
     .crew-box-opacity {
@@ -274,5 +274,9 @@ margin-inline: 8px;
             margin-left: 6px;
             margin-right: 6px;
         }
+
+        #crew-box-stopp {
+            scroll-margin-bottom: 50vh; /* Passt die Scrollposition beim Wechsel der seite an */
+            }
     }
 
