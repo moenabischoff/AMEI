@@ -76,7 +76,6 @@ h2 {
 
 p {
     font-size: var(--Desktop-Body-sm-16);
-    display: flex;
     margin-top: 20px;
 }
 
